@@ -295,6 +295,8 @@
 % generic names for the translation column's type roles (used in text/<lang>/)
 \newcommand{\tremph}[1]{\zhemph{#1}}
 \newcommand{\trital}[1]{\zhital{#1}}
+% text inside a figure shared by all editions: \trcap{Chinese}{English}
+\newcommand{\trcap}[2]{#1}
 
 % ---------------------------------------------------------------- Latin-script translation edition
 % main_en.tex defines \translang before \input{preamble}. The right column then
@@ -307,6 +309,7 @@
   \renewcommand{\ZHi}{\ZH\itshape}
   \renewcommand{\zhemph}[1]{\capsemph{#1}}
   \renewcommand{\zhital}[1]{{\itshape #1}}
+  \renewcommand{\trcap}[2]{#2}
   \RenewDocumentCommand{\zhdisp}{O{14} m}{\dispcaps[#1][4]{#2}}
   \fancyhead[CE]{\runhead{OBSERVAT. SIDEREAE}{Sidereal Observations}}
   \fancyhead[CO]{\runhead{RECENS HABITAE.}{Recently Made}}

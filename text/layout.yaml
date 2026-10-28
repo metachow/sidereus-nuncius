@@ -449,12 +449,12 @@
       % each title stands over its own chart; bottom-aligned, so the left title sits lower, as in 1610
       \spanfig{%
         \begin{minipage}[b]{0.4\textwidth}\centering
-          \capsemph{Nebulosa Orionis.}\\[1pt]{\small\zhemph{猎户头部星云}}\\[3mm]
+          \capsemph{Nebulosa Orionis.}\\[1pt]{\small\zhemph{\trcap{猎户头部星云}{the Nebula of Orion's Head}}}\\[3mm]
           \scalebox{0.88}{\input{figures/chart_orion_head}}
         \end{minipage}%
         \hspace{5mm}\rule{0.5pt}{86mm}\hspace{5mm}%
         \begin{minipage}[b]{0.4\textwidth}\centering
-          \capsemph{Nebulosa Praesepe.}\\[1pt]{\small\zhemph{鬼星团}}\\[3mm]
+          \capsemph{Nebulosa Praesepe.}\\[1pt]{\small\zhemph{\trcap{鬼星团}{the Nebula Praesepe}}}\\[3mm]
           \scalebox{0.88}{\input{figures/chart_praesepe}}
         \end{minipage}}
 - file: f17r
