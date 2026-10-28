@@ -1,21 +1,34 @@
 """Render a Chinese character as an aged woodblock initial, to match the
 woodcut initials of the 1610 edition.
 
-usage: python tools/make_zh_initial.py CHAR FONTFILE OUT.png [--seed N]
+usage: python tools/make_zh_initial.py CHAR FONTFILE OUT.png [--seed N] [--wght W]
 
 Double-ruled square block with a hatched ground, the character in solid ink
 with a white halo, then worn: ragged edges, uneven inking, specks where the
 ink did not take. Output: greyscale PNG, 900 px square (about 35 mm at 657 dpi).
+
+The character is scaled to fill the frame, as the roman capitals of the 1610
+woodcut initials do, and set in a Song (serif) face: the woodcut letters are
+plain roman capitals, so the Chinese counterpart is the plain book face too.
+--wght instances a variable font (e.g. NotoSerifSC-VF.ttf --wght 900).
 """
+import io
 import sys
 
 import numpy as np
+from fontTools.ttLib import TTFont
+from fontTools.varLib import instancer
 from PIL import Image, ImageDraw, ImageFont
 from scipy import ndimage as ndi
 
 char, fontfile, out = sys.argv[1], sys.argv[2], sys.argv[3]
 seed = int(sys.argv[sys.argv.index('--seed') + 1]) if '--seed' in sys.argv else 1
 rng = np.random.default_rng(seed)
+if '--wght' in sys.argv:
+    w = int(sys.argv[sys.argv.index('--wght') + 1])
+    inst = instancer.instantiateVariableFont(TTFont(fontfile), {'wght': w})
+    fontfile = io.BytesIO()
+    inst.save(fontfile)
 
 S = 900
 ink = Image.new('L', (S, S), 0)          # 255 = ink
@@ -34,17 +47,23 @@ gmask = Image.new('L', (S, S), 0)
 ImageDraw.Draw(gmask).rectangle([66, 66, S - 67, S - 67], fill=255)
 ink.paste(ground, (0, 0), gmask)
 
-# character: white halo, then solid ink
-font = ImageFont.truetype(fontfile, 620)
+# character: white halo, then solid ink; sized so its larger side is FILL px
+FILL = 730
+if isinstance(fontfile, io.BytesIO):
+    fontfile.seek(0)
+    data = fontfile.getvalue()
+    load = lambda size: ImageFont.truetype(io.BytesIO(data), size)
+else:
+    load = lambda size: ImageFont.truetype(fontfile, size)
+box = d.textbbox((0, 0), char, font=load(600))
+font = load(round(600 * FILL / max(box[2] - box[0], box[3] - box[1])))
 box = d.textbbox((0, 0), char, font=font)
 x = (S - (box[2] - box[0])) / 2 - box[0]
 y = (S - (box[3] - box[1])) / 2 - box[1]
 glyph = Image.new('L', (S, S), 0)
 ImageDraw.Draw(glyph).text((x, y), char, font=font, fill=255)
 gl = np.asarray(glyph) > 127
-if '--thicken' in sys.argv:            # Kai strokes are thin for a woodblock
-    gl = ndi.binary_dilation(gl, iterations=7)
-halo = ndi.binary_dilation(gl, iterations=26)
+halo = ndi.binary_dilation(gl, iterations=16)
 a = np.asarray(ink) > 127
 a = (a & ~halo) | gl
 
