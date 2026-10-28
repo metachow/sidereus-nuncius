@@ -6,7 +6,11 @@
             top=22mm, bottom=24mm, inner=18mm, outer=16mm,
             headsep=7mm, footskip=11mm]{geometry}
 \usepackage[fontset=none, heading=false, scheme=plain]{ctex}
-\usepackage[italian, latin, provide=*]{babel}
+\ifdefined\translang   % a Latin-script translation edition (main_en.tex)
+  \usepackage[english, italian, latin, provide=*]{babel}
+\else
+  \usepackage[italian, latin, provide=*]{babel}
+\fi
 \usepackage{fontspec}
 \usepackage{paracol}
 \usepackage{graphicx}
@@ -280,3 +284,21 @@
       \node[\pos, inner sep=2pt] at (\p) {\p};
   \end{tikzpicture}}
 
+
+% generic names for the translation column's type roles (used in text/<lang>/)
+\newcommand{\tremph}[1]{\zhemph{#1}}
+\newcommand{\trital}[1]{\zhital{#1}}
+
+% ---------------------------------------------------------------- Latin-script translation edition
+% main_en.tex defines \translang before \input{preamble}. The right column then
+% holds an English translation, set in the same face and size as the Latin.
+\ifdefined\translang
+  \columnratio{0.5}
+  \renewcommand{\ZH}{\switchcolumn[1]\selectlanguage{english}\fontsize{10.2}{14.6}\selectfont\setlength{\parindent}{1.2em}}
+  \renewcommand{\ZHi}{\ZH\itshape}
+  \renewcommand{\zhemph}[1]{\capsemph{#1}}
+  \renewcommand{\zhital}[1]{{\itshape #1}}
+  \RenewDocumentCommand{\zhdisp}{O{14} m}{\dispcaps[#1][4]{#2}}
+  \fancyhead[CE]{\runhead{OBSERVAT. SIDEREAE}{Sidereal Observations}}
+  \fancyhead[CO]{\runhead{RECENS HABITAE.}{Recently Made}}
+\fi

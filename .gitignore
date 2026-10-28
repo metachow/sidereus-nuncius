@@ -19,3 +19,6 @@ fonts/*.ttf
 figures/*_orig.png
 
 __pycache__/
+
+# generated English pages
+folia_en/

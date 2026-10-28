@@ -1,0 +1,17 @@
+% Sidereus Nuncius (Galileo, 1610) -- Latin/English parallel edition
+% One page of this edition = one page of the 1610 Venice edition.
+% Build all:        python tools/build_book.py --lang en
+% Check one folio:  python tools/check_folio.py --lang en f08v
+\def\translang{en}
+\ifdefined\foliadir\else\def\foliadir{folia_en}\fi   % tools/check_translation.py uses its own
+\input{preamble}
+
+\begin{document}
+\ifdefined\onlyfolio
+  \ifdefined\startpage\setcounter{page}{\startpage}\fi
+  \input{\foliadir/\onlyfolio}
+\else
+  \input{front/title_en}
+  \input{folia_en/order}
+\fi
+\end{document}

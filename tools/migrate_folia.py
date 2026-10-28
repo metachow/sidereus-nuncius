@@ -113,11 +113,24 @@ def classify_la(text):
             tail = stripped[end:]
             wrap = m.group(1) + '{%s}'
             stripped = inner + tail
-        note = None
-        mm = re.search(r'(?<!\\)%(.*)$', stripped)
-        if mm and '\n' not in stripped[mm.start():]:
-            note = mm.group(0)
-            stripped = stripped[:mm.start()].rstrip()
+        # end-of-line comments (notes on the 1610 reading) can sit anywhere in a
+        # paragraph; collect them and rejoin the text as TeX would read it
+        notes, text_lines = [], []
+        for ln in stripped.split('\n'):
+            mm = re.search(r'(?<!\\)%.*$', ln)
+            if mm:
+                notes.append(mm.group(0))
+                ln = ln[:mm.start()]
+                text_lines.append((ln.rstrip(), ln != ln.rstrip() or not ln))
+            else:
+                text_lines.append((ln.strip(), True))
+        joined = ''
+        for t, space_after in text_lines:
+            if t:
+                joined += t + (' ' if space_after else '')
+        note = ' '.join(notes) if notes else None
+        if note and joined.strip():
+            stripped = joined.strip()
         noindent = stripped.startswith('\\noindent')
         core = re.sub(r'^\\noindent\s*', '', stripped)
         flow = bool(re.match(r'([A-Za-z(]|\\(woodinitial|lettrine|capsemph|lital|textit)\b)', core)) \

@@ -3,9 +3,12 @@
 usage: python tools/gen_folia.py [--lang zh] [--out folia]
 
 zh (default) uses text/zh.yaml, translation stored per alignment block.
-Any other language uses text/<lang>.yaml, translation stored per Latin sentence
-('p012.03': ...): each sentence goes to the block, and so the page, where its
-Latin sentence starts. Missing sentences are marked [p012.03].
+Any other language uses text/<lang>.yaml or all *.yaml files in text/<lang>/,
+translation stored per Latin sentence ('p012.03': ...): each sentence goes to the
+block, and so the page, where its Latin sentence starts. Keys naming a block
+('f01r.1') give that block's translation whole; this is how blocks with special
+layout (title page, headings, signatures) are translated. Missing sentences are
+marked [p012.03], missing special blocks [f01r.1].
 Do not edit folia/ by hand: edit text/ and regenerate.
 """
 import argparse
@@ -22,7 +25,13 @@ def build(lang='zh', out='folia'):
     T = os.path.join(ROOT, 'text')
     la = {p['id']: p for p in load_yaml(os.path.join(T, 'la.yaml'))}
     layout = load_yaml(os.path.join(T, 'layout.yaml'))
-    trans = load_yaml(os.path.join(T, f'{lang}.yaml')) or {}
+    trans = {}
+    if os.path.exists(os.path.join(T, f'{lang}.yaml')):
+        trans.update(load_yaml(os.path.join(T, f'{lang}.yaml')) or {})
+    if os.path.isdir(os.path.join(T, lang)):
+        for fn in sorted(os.listdir(os.path.join(T, lang))):
+            if fn.endswith('.yaml'):
+                trans.update(load_yaml(os.path.join(T, lang, fn)) or {})
     segs = {pid: segments(p) for pid, p in la.items()}
 
     def seg_text(ref):
@@ -83,7 +92,14 @@ def build(lang='zh', out='folia'):
                         glue = []
                     if glue:
                         la_out.append('\n'.join(glue))
-                    tr = trans.get(it['pair'], '') if lang == 'zh' else sentence_block(it)
+                    if lang == 'zh':
+                        tr = trans.get(it['pair'], '')
+                    elif it['pair'] in trans:
+                        tr = trans[it['pair']]
+                    elif any('raw' in part for part in it['la']):
+                        tr = f"[{it['pair']}]"
+                    else:
+                        tr = sentence_block(it)
                     chunks.append(f'\\LA{mode}\n' + '\n\n'.join(la_out))
                     chunks.append(f'\\ZH{mode}\n' + tr)
             body = f"\\folium{star}{{{page['folio']}}}\n\n" + '\n\n'.join(chunks) + '\n\n\\folioend\n'

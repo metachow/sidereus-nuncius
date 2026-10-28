@@ -65,10 +65,7 @@
   - pair: f02v.1
     mode: i
     la:
-    - raw: |-
-        \noindent sed Musarum custodiae et incorruptis litterarum monumentis consecrarunt. At quid ego ista commemoro? quasi vero humana solertia, his contenta regionibus, ulterius progredi non sit ausa; attamen longius illa prospiciens, cum optime intellegeret omnia humana monumenta vi, tempestate ac vetustate tandem interire, incorruptiora signa excogitavit, in quae tempus edax atque invidiosa vetustas nullum sibi ius vindicaret. % 1610: in qua
-        In caelum itaque migrans, clarissimorum siderum notis sempiternis illis orbibus eorum nomina consignavit, qui ob egregia ac prope divina facinora digni habiti sunt, qui una cum astris aevo sempiterno fruerentur. Quam ob rem non prius Iovis, Martis, Mercurii, Herculis ceterorumque heroum, quorum nominibus stellae appellantur, fama obscurabitur, quam ipsorum siderum splendor exstinguatur. Hoc autem humanae sagacitatis inventum, cum primis nobile ac mirandum, multorum iam saeculorum intervallo exolevit, priscis heroibus lucidas illas sedes occupantibus ac suo quasi iure tenentibus: in quorum coetum frustra pietas Augusti Iulium Caesarem cooptare conata est; nam cum stellam suo tempore exortam, ex iis quas Graeci cometas, nostri crinitas vocant, Iulium sidus nuncupari voluisset, brevi illa evanescens, tantae cupiditatis spem delusit. % 1610: coaptare
-        Atqui longe veriora ac feliciora, Princeps Serenissime, Celsitudini tuae possumus augurari; nam vix dum in terris immortalia animi tui decora fulgere coeperunt, cum in caelis lucida sidera sese offerunt, quae tamquam linguae praestantissimas
+    - seg: p002:1
 - file: f03r
   folio: 3r
   nohead: true
@@ -76,7 +73,7 @@
   - pair: f03r.1
     mode: i
     la:
-    - seg: p002:1
+    - seg: p002:2
 - file: f03v
   folio: 3v
   nohead: true
@@ -84,7 +81,7 @@
   - pair: f03v.1
     mode: i
     la:
-    - seg: p002:2
+    - seg: p002:3
 - file: f04r
   folio: 4r
   nohead: true
@@ -92,7 +89,7 @@
   - pair: f04r.1
     mode: i
     la:
-    - seg: p002:3
+    - seg: p002:4
   - pair: f04r.2
     mode: i
     la:
@@ -237,18 +234,13 @@
   items:
   - pair: f09r.1
     la:
-    - raw: |-
-        \noindent exiguae lucere coeperunt; donec, Luna iam occasum versus tendente, trigona illa figura, extensa et amplior iam facta, cum reliqua luminosa parte nectebatur, ac instar ingentis promontorii, a tribus iam commemoratis lucidis verticibus adhuc obsessa, in tenebrosum sinum erumpebat. In extremis quoque cornibus, tam superiori quam inferiori, splendida quaedam puncta, et omnino a reliquo lumine disiuncta, emergebant, veluti in eadem figura depictum cernitur. Eratque magna obscurarum macularum vis in utroque cornu, maxime autem in inferiori: quarum maiores et obscuriores apparent, quae termino lucis et tenebrarum viciniores sunt; remotiores vero obscurae minus ac magis dilutae. Semper tamen, ut supra quoque meminimus, nigricans ipsius maculae pars irradiationis solaris locum respicit, splendidior vero limbus nigricantem maculam in parte Soli aversa, et Lunae tenebrosam plagam respiciente, circumdat. Haec lunaris superficies, qua maculis, instar pavonis caudae caeruleis oculis, distinguitur, % 1610: Pavonis cauda
-        vitreis illis vasculis redditur consimilis, quae adhuc calentia in frigidam immissa, perfractam undosamque superficiem acquirunt, ex quo a vulgo glaciales cyathi nuncupantur. % 1610: Glaciales Ciati nuncunpantur; Favaro (Wikisource): glaciales Gyathi
-        Verum magnae eiusdem Lunae maculae consimili modo interruptae atque lacunis et eminentiis confertae minime cernuntur, sed magis aequabiles et uniformes; solummodo enim clarioribus nonnullis areolis hac illac scatent; adeo ut, si quis veterem Pythagoreorum sententiam exsuscitare velit, Lunam scilicet esse quasi Tellurem alteram, eius pars lucidior terrenam superficiem, obscurior vero aqueam, magis congrue repraesentet: mihi autem dubium fuit numquam, terrestris globi a longe conspecti atque a radiis solaribus perfusi, terream superficiem clariorem, obscuriorem vero aqueam, sese in conspectum
+    - seg: p016:1
 - file: f09v
   folio: 9v
   items:
   - pair: f09v.1
     la:
-    - raw: |-
-        \noindent daturam. Depressiores insuper in Luna cernuntur magnae maculae, quam clariores plagae; in illa enim, tam crescente quam decrescente, semper in lucis tenebrarumque confinio prominent hinc inde circa ipsas magnas maculas contermini partis lucidioris, veluti in describendis figuris observavimus: % 1610: prominente
-        neque depressiores tantummodo sunt dictarum macularum termini, sed aequabiliores, nec rugis aut asperitatibus interrupti. Lucidior vero pars maxime prope maculas eminet; adeo ut, et ante quadraturam primam, et in ipsa ferme secunda, circa maculam quandam, superiorem, borealem nempe, Lunae plagam occupantem, valde attollantur, tam supra illam quam infra, ingentes quaedam eminentiae, veluti appositae prae se ferunt delineationes.
+    - seg: p016:2
   - fig: |-
       % 扫描 0022：月面铜版画（上弦前后的月亮：右侧亮、左侧暗）。明暗交界线曲折不平；上部有亮点伸入暗部，交界线中部和下部可见凸出的亮块；交界线下部有一个大圆形环形山（即 f11r 所说居月面中部的大圆形洼地）；亮部中有大斑。图中无字母。
       \spanfig{\includegraphics[width=94mm]{figures/luna_2}}
@@ -276,31 +268,27 @@
   items:
   - pair: f11r.1
     la:
-    - raw: |-
-        Unum quoque oblivioni minime tradam, quod non nisi aliqua cum admiratione adnotavi: medium quasi Lunae locum a cavitate quadam occupatum esse reliquis omnibus maiori, ac figura perfectae rotunditatis; hanc prope quadraturas ambas conspexi, eandemque in secundis supra positis figuris quantum licuit imitatus sum: eundem, quoad obumbrationem et illuminationem, facit aspectum, ac faceret in terris regio consimilis Bohemiae, si montibus altissimis, inque peripheriam perfecti circuli dispositis, occluderetur undique; in Luna enim adeo elatis iugis vallatur, ut extrema ora tenebrosae Lunae parti contermina, Solis lumine perfusa spectetur, priusquam lucis umbraeque terminus ad mediam ipsius figurae diametrum pertingat. % 1610: extrema hora
-        De more autem reliquarum macularum, umbrosa illius pars Solem respicit, luminosa vero versus tenebras Lunae constituitur; quod tertio libenter observandum admoneo, tamquam firmissimum argumentum asperitatum inaequalitatumque per totam Lunae clariorem plagam dispersarum: quarum quidem macularum semper nigriores sunt illae, quae confinio luminis et tenebrarum conterminae sunt, remotiores vero tum minores, tum obscurae minus apparent; ita ut tandem, cum Luna in oppositione totum impleverit orbem, modico admodumque tenui discrimine cavitatum opacitas ab eminentiarum candore discrepet.
     - seg: p018:0
+    - seg: p019:0
 - file: f11v
   folio: 11v
   items:
   - pair: f11v.1
     la:
-    - seg: p018:1
-    - seg: p019:0
+    - seg: p019:1
+    - seg: p020:0
 - file: f12r
   folio: 12r
   items:
   - pair: f12r.1
     la:
-    - seg: p019:1
+    - seg: p020:1
 - file: f12v
   folio: 12v
   items:
   - pair: f12v.1
     la:
-    - raw: |-
-        \noindent idem planum videntur extensi, quamvis inter fluctus maxima voraginum et lacunarum sit frequentia, adeoque profundarum, ut sublimium navigiorum non modo carinae, verum etiam puppes, mali ac vela inter illas abscondantur. Quia igitur in ipsa Luna et circa eius perimetrum multiplex est eminentiarum et cavitatum coordinatio, et oculus e longinquo spectans in eodem fere plano cum verticibus illarum locatur; nemini mirum esse debet, quod radio visorio illos abradenti, secundum aequabilem lineam minimeque anfractuosam sese offerant. Huic rationi altera subnecti potest: quod nempe circa lunare corpus est, veluti circa Terram, orbis quidam densioris substantiae reliquo aethere, qui Solis irradiationem concipere atque reflectere valet, quamvis tanta non sit opacitate praeditus, ut visui (praesertim dum illuminatus non fuerit) transitum inhibere valeat. Orbis iste a radiis solaribus illuminatus lunare corpus sub maioris sphaerae speciem reddit repraesentatque; % 1610: Orbis istae
-        essetque potis aciem nostram terminare, quominus ad Lunae soliditatem pertingeret, si crassities eius foret profundior: atque profundior quidem est circa Lunae peripheriam; profundior, inquam, non absolute, sed ad radios nostros, oblique illum secantes, relatus: ac proinde visum nostrum inhibere potest, ac praesertim luminosus exsistens, Lunaeque peripheriam Soli expositam obtegere. Quod clarius in apposita figura intellegitur, in qua lunare corpus ABC
+    - seg: p020:2
   - fig: |-
       % 扫描 0028：几何示意图（月球周围的水汽球层）。实线圆为月球本体 ABC：A 在左端，B 在下端，C 在右端；外面大致同心的虚线圆为水汽球层 DEG：D 在左，紧贴 A 外侧，E 在左下、靠近 B，G 在右，紧贴 C 外侧。眼睛位于左方远处的 F；直线 FDA 水平，穿过薄薄一层水汽到达 A；直线 FEB 斜向右下，斜穿较厚的水汽层，在 B 处（月球下缘偏左）几乎与月面相切。两条线均为实线，自 F 发出。
       \spanfig{\begin{tikzpicture}[x=1mm, y=1mm, font=\small]
@@ -328,19 +316,17 @@
   items:
   - pair: f13r.1
     la:
-    - raw: |-
-        \noindent ab orbe vaporoso circumdatur DEG; oculus vero ex F ad partes intermedias Lunae, ut ad A, pertingit per vapores DA minus profundos: at versus extremam oram, profundiorum copia vaporum EB aspectum nostrum suo termino praecludit. % 1610: extremam horam
-        Signum huius est, quod pars Lunae lumine perfusa amplioris circumferentiae apparet, quam reliquum orbis tenebrosi: atque hanc eandem causam quispiam forte rationabilem existimabit, cur maiores Lunae maculae nulla ex parte ad extremum usque ambitum protendi conspiciantur, cum tamen opinabile sit nonnullas etiam circa illum reperiri; inconspicuas tamen esse credibile videtur ex eo, quod sub profundiori ac lucidiori vaporum copia abscondantur.
+    - seg: p020:3
   - pair: f13r.2
     la:
-    - seg: p020:0
     - seg: p021:0
+    - seg: p022:0
 - file: f13v
   folio: 13v
   items:
   - pair: f13v.1
     la:
-    - seg: p021:1
+    - seg: p022:1
   - fig: |-
       % 初版插图在 “circuli maximi,” 与 “luminosam” 之间；按规范第 2 节第 5 条移到该句句末，两栏同时移动
       % 扫描 0030：几何示意图（月球山高的计算）。大圆 CAF，圆心 E；竖直直径 CF，C 在顶端、F 在底端；过 C 作水平切线 GCD，D 在左、G 在右；A 在圆周上 C 的左侧不远处；半径 EA 自 E 向左上延长，越过 A 与切线交于 D（AD 为山高）。
@@ -364,69 +350,61 @@
       \end{tikzpicture}}
   - pair: f13v.2
     la:
-    - seg: p021:2
+    - seg: p022:2
 - file: f14r
   folio: 14r
   items:
   - pair: f14r.1
     la:
-    - seg: p021:3
+    - seg: p022:3
   - pair: f14r.2
     la:
-    - seg: p022:0
+    - seg: p023:0
   - pair: f14r.3
     la:
-    - seg: p023:0
+    - seg: p024:0
 - file: f14v
   folio: 14v
   items:
   - pair: f14v.1
     la:
-    - raw: |-
-        \noindent reliqua lunaris globi aspectui nostro exposita relinquatur; tunc luce non exigua hanc quoque Lunae plagam, licet solari lumine destitutam, splendere deprehendet, idque potissimum, si iam nocturnus horror ob Solis absentiam increverit; in campo enim obscuriori eadem lux clarior apparet. % 1610: orror
-        Compertum insuper est, hanc secundam (ut ita dicam) Lunae claritatem maiorem esse, quo ipsa minus a Sole distiterit: per elongationem enim ab eo remittitur magis magisque, adeo ut post primam quadraturam, et ante secundam, debilis et admodum incerta comperiatur, licet in obscuriori caelo spectetur; cum tamen in sextili et minori elongatione, quamvis inter crepuscula, mirum in modum fulgeat; fulgeat, inquam, adeo, ut ope exacti perspicilli magnae maculae in ipsa distinguantur. Hic mirabilis fulgor non modicam philosophantibus intulit admirationem; pro cuius causa afferenda alii alia in medium protulerunt. Quidam enim proprium esse ac naturalem ipsiusmet Lunae splendorem dixerunt; alii, a Venere illi esse impertitum; alii, a stellis omnibus; alii, a Sole, qui radiis suis profundam Lunae soliditatem permeet. Verum huiuscemodi prolata exiguo labore coarguuntur, ac falsitatis evincuntur. Si enim aut proprium esset aut a stellis collatum eiusmodi lumen, illud maxime in eclipsibus retineret ostenderetque, cum in obscurissimo caelo destituatur; quod tamen adversatur experientiae: fulgor enim, qui in deliquiis apparet in Luna, longe minor est, subrufus ac quasi aeneus; hic vero clarior et candidior. Est insuper ille mutabilis ac loco mobilis; vagatur enim per Lunae faciem, adeo ut pars illa, quae peripheriae circuli umbrae terrestris propinquior est, clarior, reliqua vero obscurior, semper spectetur: ex quo omni procul dubio id accidere intellegimus, ex radiorum solarium
+    - seg: p024:1
 - file: f15r
   folio: 15r
   items:
   - pair: f15r.1
     la:
-    - raw: |-
-        \noindent vicinitate tangentium crassiorem quandam regionem, quae Lunam orbiculariter ambit; ex quo contactu aurora quaedam in vicinas Lunae plagas effunditur, non secus ac in terris, tum mane, tum vesperi, crepusculinum spargitur lumen: qua de re fusius in libro \textit{De systemate mundi} pertractabimus. % 1610: de Sistemate mundi
-        Asserere autem a Venere impertitam eiusmodi lucem, puerile adeo est, ut responsione sit indignum. Quis enim adeo inscius erit, ut non intellegat, circa coniunctionem et intra sextilem aspectum partem Lunae Soli aversam, ut a Venere spectetur, omnino esse impossibile? Esse autem ex Sole, qui suo lumine profundam Lunae soliditatem penetret atque perfundat, pariter est inopinabile: numquam enim imminueretur, cum semper hemisphaerium Lunae a Sole sit illustratum, tempore lunarium eclipsium excepto; diminuitur tamen dum Luna ad quadraturam properat, et omnino etiam hebetatur, dum quadraturam superaverit. % 1610: quadratum
-        Cum itaque eiusmodi secundarius fulgor nec Lunae sit congenitus atque proprius, nec a stellis ullis nec a Sole mutuatus, cumque iam in mundi vastitate corpus aliud supersit nullum, nisi sola Tellus, quid, quaeso, opinandum? quid proferendum? numquid a Terra ipsum lunare corpus, aut quidpiam aliud opacum atque tenebrosum lumine perfundi? quid mirum? maxime: aequa grataque permutatione rependit Tellus parem illuminationem ipsi Lunae, qualem et ipsa a Luna in profundioribus noctis tenebris toto fere tempore recipit. Rem clarius aperiamus. Luna in coniunctionibus, cum medium inter Solem et Terram obtinet locum, solaribus radiis in superiori suo hemisphaerio Terrae averso perfunditur; hemisphaerium vero inferius, quo Terram aspicit, tenebris est obductum; nullatenus igitur terrestrem superficiem illustrat. Luna, paulatim a Sole digressa, iam iam aliqua ex parte in hemisphaerio inferiori ad nos vergente illuminatur, albicantia cornua, subtilia tamen, ad nos convertit, et leviter Terram illustrat: crescit in Luna
+    - seg: p024:2
 - file: f15v
   folio: 15v
   items:
   - pair: f15v.1
     la:
-    - seg: p023:1
+    - seg: p024:3
 - file: f16r
   folio: 16r
   items:
   - pair: f16r.1
     la:
-    - seg: p023:2
+    - seg: p024:4
   - pair: f16r.2
     la:
-    - raw: |-
-        Diximus hucusque de observationibus circa lunare corpus habitis; nunc de stellis fixis ea, quae hactenus a nobis inspecta fuerunt, breviter in medium adferamus. % 1610: actenus
-        Ac primo illud animadversione dignum est, quod scilicet stellae, tam fixae, quam errabundae, dum adhibito perspicillo spectantur, nequaquam magnitudine augeri videntur iuxta proportionem eandem, secundum quam obiecta reliqua, et ipsamet quoque Luna, acquirunt incrementa: verum in stellis talis auctio longe minor apparet; adeo ut perspicillum, quod reliqua obiecta secundum centuplam, gratia exempli, rationem multiplicare potens erit, vix secundum quadruplam aut quintuplam stellas multiplices reddere credas. Ratio autem huius est, quod scilicet astra, dum libera ac naturali oculorum acie spectantur, non secundum suam simplicem nudamque, ut ita dicam, magnitudinem sese nobis offerunt, sed fulgoribus quibusdam irradiata, micantibusque radiis crinita, idque potissimum cum iam increverit nox; ex quo longe maiores videntur, quam si ascititiis illis crinibus essent exuta: angulus enim visorius, non a primario stellae corpusculo, sed a late circumfuso splendore, terminatur. % 1610: ascitiis
-        Hoc apertissime intellegas licet ex
+    - seg: p025:0
 - file: f16v
   folio: 16v
   items:
   - pair: f16v.1
     la:
-    - seg: p023:3
+    - seg: p025:1
   - pair: f16v.2
     la:
-    - seg: p024:0
+    - seg: p026:0
 - file: f16ar
   folio: 16a\,r
   items:
   - pair: f16ar.1
     la:
-    - seg: p024:1
+    - seg: p026:1
   - pair: f16ar.2
     la:
     - pre: \vspace{1.5\baselineskip}
@@ -450,18 +428,18 @@
       \spanfig{\input{figures/chart_pleiades}}
   - pair: f16br.2
     la:
-    - seg: p025:0
+    - seg: p027:0
   - pair: f16br.3
     la:
-    - seg: p026:0
+    - seg: p028:0
 - file: f16bv
   folio: 16b\,v
   items:
   - pair: f16bv.1
     la:
-    - seg: p026:1
-    - seg: p027:0
-    - seg: p028:0
+    - seg: p028:1
+    - seg: p029:0
+    - seg: p030:0
   - fig: |-
       % 扫描 0040：两幅星图并列，中间以竖线分隔；左图图题略低于右图图题。\\[0.5ex]左：NEBULOSA ORIONIS（猎户头部星云，即 λ Ori 一带的星群，二十一颗单线小星）；\\右：NEBULOSA PRAESEPE（鬼星团，三十六颗单线小星，另有两颗双线大星为“驴星”，一在左上、一在右下）。
       % each title stands over its own chart; bottom-aligned, so the left title sits lower, as in 1610
@@ -480,158 +458,158 @@
   items:
   - pair: f17r.1
     la:
-    - seg: p029:0
+    - seg: p031:0
   - pair: f17r.2
     la:
-    - seg: p030:0
+    - seg: p032:0
   - fig: \spanfig{\jove[I.\,7]{-4.9/1.3, -1.6/1, 2.7/1.3}}
 - file: f17v
   folio: 17v
   items:
   - pair: f17v.1
     la:
-    - seg: p030:1
+    - seg: p032:1
   - fig: \spanfig{\jove[I.\,8]{1.6/1, 2.9/1, 4.3/1}}
   - pair: f17v.2
     la:
-    - seg: p030:2
-    - seg: p031:0
+    - seg: p032:2
+    - seg: p033:0
   - fig: \spanfig{\jove[I.\,10]{-3.3/1, -1.6/1}}
   - pair: f17v.3
     la:
-    - seg: p031:1
+    - seg: p033:1
 - file: f18r
   folio: 18r
   items:
   - pair: f18r.1
     la:
-    - seg: p031:2
-    - seg: p032:0
+    - seg: p033:2
+    - seg: p034:0
   - fig: \spanfig{\jove[I.\,11]{-4.3/1.1, -3.0/0.95}}
   - pair: f18r.2
     la:
-    - seg: p032:1
-    - seg: p033:0
+    - seg: p034:1
+    - seg: p035:0
 - file: f18v
   folio: 18v
   items:
   - fig: \spanfig{\jove[I.\,12]{-2.0/1.2, -0.8/0.7, 1.9/1}}
   - pair: f18v.1
     la:
-    - seg: p033:1
-    - seg: p034:0
+    - seg: p035:1
+    - seg: p036:0
   - fig: \spanfig{\jove[I.\,13]{-1.8/1, 0.8/1, 1.9/1}[1.3/1/0.25]}
   - pair: f18v.2
     la:
-    - seg: p034:1
-    - seg: p035:0
-    - seg: p036:0
+    - seg: p036:1
+    - seg: p037:0
+    - seg: p038:0
   - fig: \spanfig{\jove[I.\,15, h.\,3]{1.8/0.7, 2.9/1, 6.3/1.3}[4.2/1.2/0.2]}
   - pair: f18v.3
     la:
-    - seg: p036:1
+    - seg: p038:1
 - file: f19r
   folio: 19r
   items:
   - pair: f19r.1
     la:
-    - seg: p036:2
+    - seg: p038:2
   - fig: \spanfig{\jove[I.\,15, h.\,7]{2.8/0.6, 3.6/1, 5.8/1}}
   - pair: f19r.2
     la:
-    - seg: p036:3
-    - seg: p037:0
+    - seg: p038:3
+    - seg: p039:0
   - fig: \spanfig{\jove[I.\,16]{-0.9/1, 0.9/1, 4.9/1}}
   - pair: f19r.3
     la:
-    - seg: p037:1
-    - seg: p038:0
+    - seg: p039:1
+    - seg: p040:0
   - fig: \spanfig{\jove[I.\,17, h.\,0, m.\,30]{-1.8/1.3, 4.5/0.9}}
   - pair: f19r.4
     la:
-    - seg: p038:1
+    - seg: p040:1
 - file: f19v
   folio: 19v
   items:
   - pair: f19v.1
     la:
-    - seg: p038:2
+    - seg: p040:2
   - fig: \spanfig{\jove[I.\,17, h.\,5]{-2.5/1.2, 5.2/1}[-1.9/0.8/-0.25]}
   - pair: f19v.2
     la:
-    - seg: p038:3
-    - seg: p039:0
+    - seg: p040:3
+    - seg: p041:0
   - fig: \spanfig{\jove[I.\,18]{-4.0/1.3, 5.3/0.9}}
   - pair: f19v.3
     la:
-    - seg: p039:1
-    - seg: p040:0
+    - seg: p041:1
+    - seg: p042:0
   - fig: \spanfig{\jove[I.\,19, h.\,2]{-3.1/1, 2.6/1, 4.7/1}}
   - pair: f19v.4
     la:
-    - seg: p040:1
+    - seg: p042:1
 - file: f20r
   folio: 20r
   items:
   - pair: f20r.1
     la:
-    - seg: p040:2
+    - seg: p042:2
   - fig: \spanfig{\jove[I.\,19, h.\,5]{-2.9/1, -1.4/0.7, 2.4/1, 3.8/1}}
   - pair: f20r.2
     la:
-    - seg: p040:3
-    - seg: p041:0
+    - seg: p042:3
+    - seg: p043:0
   - fig: \spanfig{\jove[I.\,20, h.\,1, m.\,15]{-1.0/0.7, 1.1/0.7, 1.8/0.7}}
   - pair: f20r.3
     la:
-    - seg: p041:1
+    - seg: p043:1
   - fig: \spanfig{\jove[I.\,20, h.\,6]{-1.4/0.7, 0.9/0.7, 1.2/0.7}}
   - pair: f20r.4
     la:
-    - seg: p041:2
+    - seg: p043:2
   - fig: \spanfig{\jove[I.\,20, h.\,7]{-1.5/0.7, 1.2/0.7}[0.7/0.7/0.15, 1.5/0.7/0.15]}
   - pair: f20r.5
     la:
-    - seg: p041:3
+    - seg: p043:3
 - file: f20v
   folio: 20v
   items:
   - pair: f20v.1
     la:
-    - seg: p041:4
-    - seg: p042:0
+    - seg: p043:4
+    - seg: p044:0
   - fig: \spanfig{\jove[I.\,21]{-1.9/1, -1.3/1, -0.9/0.6, 2.3/1}}
   - pair: f20v.2
     la:
-    - seg: p042:1
-    - seg: p043:0
+    - seg: p044:1
+    - seg: p045:0
   - fig: \spanfig{\jove[I.\,22, h.\,2]{-3.1/1, 1.1/0.8, 3.5/1}[1.6/0.8/-0.15]}
   - pair: f20v.3
     la:
-    - seg: p043:1
+    - seg: p045:1
   - fig: \spanfig{\jove[I.\,22, h.\,6]{-3.1/0.6, 1.2/0.7, 1.9/1, 2.7/1}}
   - pair: f20v.4
     la:
-    - seg: p043:2
+    - seg: p045:2
 - file: f21r
   folio: 21r
   items:
   - pair: f21r.1
     la:
-    - seg: p043:3
-    - seg: p044:0
+    - seg: p045:3
+    - seg: p046:0
   - fig: \spanfig{\jove[I.\,23, h.\,0, m.\,40]{-4.4/1, -1.7/1, 1.6/1}}
   - pair: f21r.2
     la:
-    - seg: p044:1
+    - seg: p046:1
   - fig: \spanfig{\jove[I.\,23, h.\,5]{-3.7/1}}
   - pair: f21r.3
     la:
-    - seg: p045:0
+    - seg: p047:0
   - fig: \spanfig{\jove[I.\,24]{-5.8/1, -1.7/1}[-2.3/1/-0.2]}
   - pair: f21r.4
     la:
-    - seg: p045:1
+    - seg: p047:1
   - fig: |-
       % 初版此图在 "duae" 与 "solummodo"（21v）之间；句子延续到 21v，故放在本页末尾
       \spanfig{\jove[I.\,24, h.\,6]{-2.2/1}}
@@ -640,42 +618,42 @@
   items:
   - pair: f21v.1
     la:
-    - seg: p045:2
-    - seg: p046:0
+    - seg: p047:2
+    - seg: p048:0
   - fig: \spanfig{\jove[I.\,25]{-6.1/1.2, -3.2/1.2}}
   - pair: f21v.2
     la:
-    - seg: p046:1
-    - seg: p047:0
+    - seg: p048:1
+    - seg: p049:0
   - fig: \spanfig{\jove[I.\,26, h.\,0, m.\,40]{-6.3/1, -3.3/1, 2.8/1}}
   - pair: f21v.3
     la:
-    - seg: p047:1
+    - seg: p049:1
   - fig: \spanfig{\jove[I.\,26, h.\,5]{-6.5/1, -3.5/1, 3.0/1}[-0.8/0.7/0.2]}
   - pair: f21v.4
     la:
-    - seg: p048:0
+    - seg: p050:0
 - file: f22r
   folio: 22r
   items:
   - pair: f22r.1
     la:
-    - seg: p048:1
+    - seg: p050:1
   - fig: \spanfig{\jove[I.\,27]{-4.1/0.7}}
   - pair: f22r.2
     la:
-    - seg: p048:2
-    - seg: p049:0
-    - seg: p050:0
+    - seg: p050:2
+    - seg: p051:0
+    - seg: p052:0
   - fig: \spanfig{\jove[I.\,30]{-1.6/1, 2.6/0.7}[2.0/1/0.12]}
   - pair: f22r.3
     la:
-    - seg: p050:1
-    - seg: p051:0
+    - seg: p052:1
+    - seg: p053:0
   - fig: \spanfig{\jove[I.\,31, h.\,2]{-2.3/1, 4.7/0.8}[-1.7/1/0.15]}
   - pair: f22r.4
     la:
-    - seg: p051:1
+    - seg: p053:1
   - fig: |-
       % 初版此图在 "viciniores" 与 "ad invicem"（22v）之间；句子延续到 22v，故放在本页末尾
       \spanfig{\jove[I.\,31, h.\,4]{-2.2/1}[-1.7/1/0.15, 5.2/0.8/-0.33]}
@@ -684,40 +662,40 @@
   items:
   - pair: f22v.1
     la:
-    - seg: p051:2
-    - seg: p052:0
+    - seg: p053:2
+    - seg: p054:0
   - fig: \spanfig{\jove[II.\,1]{-3.7/1, -0.7/0.6, 4.7/1}}
   - pair: f22v.2
     la:
-    - seg: p052:1
-    - seg: p053:0
+    - seg: p054:1
+    - seg: p055:0
   - fig: \spanfig{\jove[II.\,2]{-3.6/1, 2.7/1, 6.7/1}}
   - pair: f22v.3
     la:
-    - seg: p053:1
+    - seg: p055:1
   - fig: \spanfig{\jove[II.\,2, h.\,7]{-3.7/1, -1.4/1, 3.9/1, 7.9/1}}
   - pair: f22v.4
     la:
-    - seg: p053:2
-    - seg: p054:0
+    - seg: p055:2
+    - seg: p056:0
 - file: f23r
   folio: 23r
   items:
   - fig: \spanfig{\jove[II.\,3]{-1.1/1, 1.6/1, 6.9/1}}
   - pair: f23r.1
     la:
-    - seg: p054:1
-    - seg: p055:0
+    - seg: p056:1
+    - seg: p057:0
   - fig: \spanfig{\jove[II.\,4, h.\,2]{-2.5/1, -0.9/0.75, 2.6/1, 5.3/1}}
   - pair: f23r.2
     la:
-    - seg: p055:1
+    - seg: p057:1
   - fig: \spanfig{\jove[II.\,4, h.\,7]{-2.2/1, -1.6/1, 2.7/1, 4.1/1}}
   - pair: f23r.3
     la:
-    - seg: p055:2
-    - seg: p056:0
-    - seg: p057:0
+    - seg: p057:2
+    - seg: p058:0
+    - seg: p059:0
   - fig: |-
       % 初版此图在 "medium" 与 "Iovem"（23v）之间；句子延续到 23v，故放在本页末尾
       \spanfig{\jove[II.\,6]{-1.7/1, 2.2/1}}
@@ -726,44 +704,44 @@
   items:
   - pair: f23v.1
     la:
-    - seg: p057:1
-    - seg: p058:0
+    - seg: p059:1
+    - seg: p060:0
   - fig: \spanfig{\jove[II.\,7]{-1.5/1, -0.9/1}}
   - pair: f23v.2
     la:
-    - seg: p058:1
-    - seg: p059:0
+    - seg: p060:1
+    - seg: p061:0
   - fig: \spanfig{\jove[II.\,8]{-3.7/0.6, -3.3/1.3, -1.3/0.8}}
   - pair: f23v.3
     la:
-    - seg: p059:1
-    - seg: p060:0
+    - seg: p061:1
+    - seg: p062:0
 - file: f24r
   folio: 24r
   items:
   - pair: f24r.1
     la:
-    - seg: p060:1
+    - seg: p062:1
   - fig: \spanfig{\jove[II.\,9]{-5.9/0.8, -3.9/1.3, 2.5/0.8}}
   - pair: f24r.2
     la:
-    - seg: p060:2
+    - seg: p062:2
   - pair: f24r.3
     la:
-    - seg: p061:0
+    - seg: p063:0
   - fig: \spanfig{\jove[II.\,10]{-5.6/0.6, -0.8/0.6}}
   - pair: f24r.4
     la:
-    - seg: p061:1
+    - seg: p063:1
   - pair: f24r.5
     la:
-    - seg: p062:0
+    - seg: p064:0
   - fig: |-
       % 初版此图在 "Distabat occidentalis a | Iove" 之间；按规范放在引出它的句子之后
       \spanfig{\jove[II.\,11, h.\,1]{-6.4/1, -2.3/1, 2.7/1}}
   - pair: f24r.6
     la:
-    - seg: p062:1
+    - seg: p064:1
   - fig: |-
       % 初版此图在 "Sed hora tertia" 与 "Stella quarta" 之间；这句话延续到 24v，故放在本页末尾
       \spanfig{\jove[II.\,11, h.\,3]{-6.4/1, -2.5/1, -0.85/0.6, 2.5/1}}
@@ -772,196 +750,192 @@
   items:
   - pair: f24v.1
     la:
-    - seg: p062:2
+    - seg: p064:2
   - fig: \spanfig{\jove[II.\,11, h.\,5, m.\,30]{-6.9/1, -2.4/1, -1.4/1, 2.7/1}}
   - pair: f24v.2
     la:
-    - seg: p063:0
+    - seg: p065:0
   - fig: |-
       % 初版此图在 "Orientalis remotior | a Iove" 之间；按规范放在引出它的句子之后
       \spanfig{\jove[II.\,12]{-5.55/1, -0.65/0.6, 0.95/0.6, 4.65/1}}
   - pair: f24v.3
     la:
-    - seg: p063:1
-    - seg: p064:0
+    - seg: p065:1
+    - seg: p066:0
   - fig: |-
       % 初版此图在 "Orientalis ac Iovi | vicinior" 之间；按规范放在引出它的句子之后
       \spanfig{\jove[II.\,13]{-3.9/0.8, -1.6/1, 2.0/0.6, 2.5/1}}
   - pair: f24v.4
     la:
-    - seg: p064:1
+    - seg: p066:1
 - file: f25r
   folio: 25r
   items:
   - pair: f25r.1
     la:
-    - seg: p064:2
+    - seg: p066:2
   - pair: f25r.2
     la:
-    - seg: p065:0
+    - seg: p067:0
   - fig: |-
       % 初版此图在 "nulla ve-|rò cernebatur" 之间；按规范放在引出它的分句之后
       \spanfig{\jove[II.\,15, h.\,1]{-2.4/1.3, -1.25/0.6, -0.9/0.6}}
   - pair: f25r.3
     la:
-    - seg: p065:1
+    - seg: p067:1
   - fig: \spanfig{\jove[II.\,15, h.\,5]{-2.55/1, -0.72/0.6}}
   - pair: f25r.4
     la:
-    - seg: p065:2
+    - seg: p067:2
   - fig: \spanfig{\jove[II.\,15, h.\,6]{-2.75/1, -0.75/0.6, 1.4/0.6}}
   - pair: f25r.5
     la:
-    - seg: p066:0
+    - seg: p068:0
 - file: f25v
   folio: 25v
   items:
   - pair: f25v.1
     la:
-    - seg: p066:1
+    - seg: p068:1
   - fig: |-
       % 引出此图的 "in tali constitutione steterunt:" 在 25r；初版此图在本页 "eius-|dem" 之间，放在本页第一句之后
       \spanfig{\jove[II.\,16]{-4.4/1, 3.3/1, 4.9/1}}
   - pair: f25v.2
     la:
-    - seg: p067:0
+    - seg: p069:0
   - fig: |-
       % 初版此图在 "distas | min. 10" 之间；按规范放在引出它的分句之后
       \spanfig{\jove[II.\,17]{-2.2/1, 5.9/0.8}}
   - pair: f25v.3
     la:
-    - seg: p067:1
+    - seg: p069:1
   - pair: f25v.4
     la:
-    - seg: p068:0
+    - seg: p070:0
   - fig: |-
       % 初版此图在 "distabat orientalis a Iove | min. 3" 之间；按规范放在引出它的分句之后
       \spanfig{\jove[II.\,18, h.\,1]{-2.2/1, 1.7/1, 5.6/1}}
   - pair: f25v.5
     la:
-    - seg: p068:1
+    - seg: p070:1
 - file: f26r
   folio: 26r
   items:
   - pair: f26r.1
     la:
-    - seg: p068:2
+    - seg: p070:2
   - fig: |-
       % 引出此图的 "in tali configuratione:" 在 25v；初版此图在本页 "min. 3. | haec vero" 之间
       \spanfig{\jove[II.\,18, h.\,6]{-2.6/1, -1.1/0.8, 2.4/1, 6.7/1}}
   - pair: f26r.2
     la:
-    - seg: p068:3
+    - seg: p070:3
   - pair: f26r.3
     la:
-    - seg: p069:0
+    - seg: p071:0
   - fig: |-
       % 初版此图在 "eadem re-|cta" 之间；这一整句即引出此图的句子
       \spanfig{\jove[II.\,19]{3.7/1.3, 6.7/1.3}}
   - pair: f26r.4
     la:
-    - seg: p069:1
-    - seg: p070:0
-    - seg: p071:0
+    - seg: p071:1
+    - seg: p072:0
+    - seg: p073:0
   - fig: |-
       % 初版此图在 "Orientalis aberat a Iove | m. 2" 之间；按规范放在引出它的分句之后
       \spanfig{\jove[II.\,21]{-1.8/0.8, 2.0/0.8, 5.75/0.8}}
   - pair: f26r.5
     la:
-    - seg: p071:1
-    - seg: p072:0
+    - seg: p073:1
+    - seg: p074:0
   - fig: \spanfig{\jove[II.\,25]{-4.6/1, -2.6/1, 1.8/1}}
   - pair: f26r.6
     la:
-    - seg: p072:1
+    - seg: p074:1
 - file: f26v
   folio: 26v
   items:
   - pair: f26v.1
     la:
-    - seg: p072:2
+    - seg: p074:2
   - pair: f26v.2
     la:
-    - seg: p073:0
+    - seg: p075:0
   - fig: |-
       % 初版此图在 "Occidentalis altera | distans m. 6" 之间；按规范放在引出它的分句之后
       \spanfig{\jove[II.\,26, h.\,0, m.\,30]{-5.3/0.8, 3.7/1}}
   - pair: f26v.3
     la:
-    - seg: p073:1
+    - seg: p075:1
   - fig: |-
       % 初版此图在 "duas iam | adnotatas" 之间；按规范放在引出它的分句之后
       \spanfig{\jove[II.\,26, h.\,5]{-5.15/0.8, 0.75/0.6, 3.3/1}}
   - pair: f26v.4
     la:
-    - seg: p073:2
+    - seg: p075:2
   - fig: |-
       % 初版此图右侧无 Occ.
       \spanfig{\jove[II.\,26, h.\,5]{-5.55/0.8, 0.7/0.6, 3.35/1}[][-10.0/1/-2.1]}
   - pair: f26v.5
     la:
-    - seg: p074:0
+    - seg: p076:0
 - file: f27r
   folio: 27r
   items:
   - pair: f27r.1
     la:
-    - seg: p074:1
+    - seg: p076:1
   - fig: |-
       % 引出此图的 "in tali configuratione:" 在 26v；初版此图夹在 "Vici-|niores" 一词的两半之间，即位于 "min. 1." 句末之后
       \spanfig{\jove[II.\,27]{-5.6/1, -0.75/0.6, 2.0/0.6, 2.75/1.3}[][-7.45/1/-2.15]}
   - pair: f27r.2
     la:
-    - seg: p074:2
+    - seg: p076:2
   - pair: f27r.3
     la:
-    - seg: p075:0
+    - seg: p077:0
   - fig: |-
       % 初版此图在 "Erant | satis conspicuae" 之间；按规范放在引出它的 "veluti in figura:" 之后（同 Favaro）
       \spanfig{\jove[II.\,28, h.\,1]{-5.2/1, 1.5/1}[][-5.2/1/-2.7]}
   - pair: f27r.4
     la:
-    - seg: p075:1
+    - seg: p077:1
   - fig: \spanfig{\jove[II.\,28, h.\,5]{-5.5/1, -1.25/1, 1.6/1}}
   - pair: f27r.5
     la:
-    - seg: p076:0
+    - seg: p078:0
 - file: f27v
   folio: 27v
   items:
   - pair: f27v.1
     la:
-    - raw: |-
-        \noindent omnes conspectae sunt, quarum Iovi proxima aberat ab eo min. 2, sequens ab hac min. 1, tertia min. 0, sec. 20, eratque reliquis clarior; ab ista vero distabat orientalior min. 4, et reliquis erat minor. % 1610: sec. 20（放大扫描确认）; Favaro (Wikisource): sec. 2
-        Rectam proxime designabant lineam, nisi quod tertia a Iove paululum attollebatur. Fixa cum Iove et orientaliori trigonum aequilaterum constituebat, ut in figura:
+    - seg: p078:1
   - fig: |-
       % 初版此图在 "eratque | reliquis clarior" 之间；按规范放在引出它的 "ut in figura:" 之后（同 Favaro）
       \spanfig{\jove[III.\,1]{-4.35/0.6, -2.15/0.8, -1.45/0.8}[-2.8/1/0.23][-2.75/1/-2.9]}
   - pair: f27v.2
     la:
-    - seg: p077:0
+    - seg: p079:0
   - fig: \spanfig{\jove[III.\,2]{-3.45/0.6, 1.85/1.3}[-3.95/1.3/0.15][1.85/1/-3.75]}
   - pair: f27v.3
     la:
-    - seg: p077:1
-    - seg: p078:0
+    - seg: p079:1
+    - seg: p080:0
 - file: f28r
   folio: 28r
   items:
   - pair: f28r.1
     la:
-    - seg: p078:1
+    - seg: p080:1
   - pair: f28r.2
     la:
-    - raw: |-
-        Hae sunt observationes quattuor Mediceorum planetarum, recens ac primo a me repertorum, ex quibus, quamvis illorum periodos numeris colligere nondum detur, licet saltem quaedam animadversione digna pronunciare. Ac primo, cum Iovem consimilibus interstitiis modo consequantur, modo praeeant, ab eoque tum versus ortum, tum in occasum angustissimis tantum divaricationibus elongentur, eundemque retrogradum pariter atque directum concomitentur, quin circa illum suas conficiant conversiones, interea dum circa mundi centrum omnes una duodecennales periodos absolvunt, nemini dubium esse potest. % 1610: duo decẽnales
-        Convertuntur insuper in circulis inaequalibus: quod manifeste colligitur ex eo, quia in maioribus a Iove digressionibus numquam binos planetas iunctos videre licuit; cum tamen prope Iovem duo, tres et interdum omnes simul constipati reperti sint. Deprehenditur insuper, velociores esse conversiones planetarum angustiores circa Iovem circulos describentium: propinquiores enim Iovi stellae saepius spectantur orientales, cum pridie ex occasu apparuerint, et e contra: at planeta, maximum permeans orbem, accurate praeadnotatas reversiones perpendenti, restitutiones semimenstruas habere videtur. Eximium praeterea praeclarumque habemus argumentum pro scrupulo ab illis demendo, qui in systemate Copernicano conversionem planetarum circa Solem aequo animo ferentes, adeo perturbantur ab unius Lunae circa Terram latione, interea dum ambo annuum orbem circa Solem absolvunt, ut hanc universi constitutionem, tamquam impossibilem, evertendam esse arbitrentur: nunc enim, nedum planetam unum circa alium convertibilem habemus, dum ambo magnum circa Solem perlustrant orbem, verum quattuor circa Iovem, instar Lunae circa Tellurem, sensus nobis vagantes
+    - seg: p081:0
 - file: f28v
   folio: 28v
   items:
   - pair: f28v.1
     la:
     - pre: '% 1610: MEDICEA (planetae \capsemph{medicei} below)'
-    - seg: p078:2
+    - seg: p081:1
       wrap: \taperpar{%s}
     - raw: '{\centering\addfontfeatures{LetterSpace=25}FINIS\par}'
