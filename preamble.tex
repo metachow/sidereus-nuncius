@@ -113,6 +113,14 @@
 % \zhwoodinitial[lines]{name} uses figures/orn_zh_name.png
 \NewDocumentCommand{\zhwoodinitial}{O{3} m}{%
   \noindent\lettrine[image=true, lines=#1, findent=0.35em, nindent=0pt, loversize=0.05]{figures/orn_zh_#2}{}}
+% decorated initial for a Latin-script translation: Goudy Initialen (TeX Live
+% `initials' collection), a roman capital on a foliage ground in a square, the
+% same build as the 1610 woodcut initials. \trwoodinitial{N}{oble}[lines]
+\input{GoudyIn.fd}
+\newif\iftrinit
+\renewcommand{\LettrineFontHook}{\iftrinit\usefont{U}{GoudyIn}{xl}{n}\fi}
+\NewDocumentCommand{\trwoodinitial}{m m O{5}}{%
+  \global\trinittrue\lettrine[lines=#3, loversize=0.1, findent=0.4em]{#1}{#2}\global\trinitfalse}
 % headpiece band across both columns
 \newcommand{\headpiece}[1]{\spanfig{\includegraphics[width=0.62\textwidth]{figures/orn_head_#1}}}
 

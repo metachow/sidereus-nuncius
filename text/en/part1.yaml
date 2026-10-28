@@ -26,7 +26,7 @@ f02r.1: |-
    \dispcaps[16.5][2]{Fourth Grand Duke}\\[1pt]
    \dispcaps[11][15]{of Tuscany}\par}
 p001.01: >-
-  Noble indeed, and full of humanity, was the practice of those who have striven to protect from envy the splendid deeds of men outstanding in virtue, and to rescue from oblivion and destruction names worthy of immortality.
+  \trwoodinitial{N}{oble} indeed, and full of humanity, was the practice of those who have striven to protect from envy the splendid deeds of men outstanding in virtue, and to rescue from oblivion and destruction names worthy of immortality.
 p001.02: >-
   Hence the likenesses handed down to the memory of posterity, whether carved in marble or cast in bronze; hence the statues set up, both standing and equestrian; hence, as the poet says, the costly columns and pyramids raised to the stars;\footnote{The Roman poet Propertius, \textit{Elegies} III.2.} hence, finally, the cities built and called by the names of those whom a grateful posterity judged worthy to be entrusted to eternity.
 p001.03: >-
@@ -104,7 +104,7 @@ f05r.1: |-
   \litsw{with the aid of a new spyglass, on the face of the Moon, the Milky Way and nebulous stars, innumerable fixed stars, and also on four planets, never seen until now, called}\\
   \lital{\addfontfeatures{LetterSpace=12}THE MEDICEAN STARS.}\par}
 p007.01: >-
-  Great indeed are the things I set forth in this small treatise for all students of nature to inspect and contemplate.
+  \trwoodinitial{G}{reat} indeed are the things I set forth in this small treatise for all students of nature to inspect and contemplate.
 p007.02: >-
   Great, I say, both for the excellence of the subject itself, and for their novelty, unheard of through all the ages, and also on account of the instrument by whose aid they have presented themselves to our senses.
 p008.01: >-
@@ -120,7 +120,7 @@ p011.02: >-
 p012.01: >-
   Other things, perhaps more remarkable, will in time be found, by me or by others, with the help of a similar instrument; its form and construction, and the occasion of devising it, ⟦6r⟧ I shall first describe briefly, and then I shall relate the history of the observations I have made.
 p013.01: >-
-  About ten months ago a report reached our ears that a certain Netherlander had made a spyglass by whose help visible objects, though very far from the eye of the observer, were seen distinctly as if near; and some accounts of trials of this truly wonderful effect were going around, which some believed and others denied.
+  \lettrine[lines=2, findent=0.15em]{A}{bout} ten months ago a report reached our ears that a certain Netherlander had made a spyglass by whose help visible objects, though very far from the eye of the observer, were seen distinctly as if near; and some accounts of trials of this truly wonderful effect were going around, which some believed and others denied.
 p013.02: >-
   A few days later it was confirmed to me by a letter from the noble Frenchman Jacques Badovere, from Paris;\footnote{Jacques Badovere (Giacomo Badoer), by his own certificate of 1607, lodged around 1598 in Galileo's house in Padua and studied mathematics with him. Lutetia is the old Latin name of Paris.} and that finally was the reason why I turned wholly to inquiring into the principles and devising the means by which I might arrive at the invention of a similar instrument. This I attained a little later, relying on the theory of refraction. First I prepared for myself a tube of lead, at whose ends I fitted two glass lenses, both plane on one side, while on the other one was spherically convex and the other concave. Then, putting my eye to the concave one, I saw objects fairly large and near: they appeared three times closer and nine times larger than when viewed with the natural eye alone.\footnote{Galileo's “times closer” refers to linear magnification, his “times larger” to magnification of area: three times closer means nine times larger. Below, “more than sixty times larger” is about eightfold in linear terms, and “nearly a thousand times larger” about thirtyfold.}
 p013.03: >-
