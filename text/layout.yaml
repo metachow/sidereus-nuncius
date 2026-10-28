@@ -165,10 +165,6 @@
   - pair: f05r.4
     la:
     - seg: p009:0
-  tr_size:
-    ja:
-    - 9.0
-    - 13.8
 - file: f05v
   folio: 5v
   items:
@@ -184,10 +180,6 @@
   - pair: f05v.4
     la:
     - seg: p012:0
-  tr_size:
-    ja:
-    - 9.4
-    - 14.5
 - file: f06r
   folio: 6r
   items:
@@ -278,14 +270,6 @@
     la:
     - seg: p018:0
     - seg: p019:0
-  tr_size:
-    ja:
-    - 8.8
-    - 13.4
-  la_size:
-    ja:
-    - 10.0
-    - 13.4
 - file: f11v
   folio: 11v
   items:
@@ -327,10 +311,6 @@
         \node[left, inner sep=1.5pt] at (\r,0) {C};
         \node[right, inner sep=1.5pt] at (\R+0.6,0) {G};
       \end{tikzpicture}}
-  tr_size:
-    ja:
-    - 9.4
-    - 15.0
 - file: f13r
   folio: 13r
   items:
@@ -383,10 +363,6 @@
   - pair: f14r.3
     la:
     - seg: p024:0
-  tr_size:
-    ja:
-    - 9.4
-    - 15.0
 - file: f14v
   folio: 14v
   items:
@@ -396,7 +372,7 @@
   tr_size:
     ja:
     - 9.4
-    - 14.5
+    - 15.0
 - file: f15r
   folio: 15r
   items:
@@ -408,8 +384,8 @@
     - 10.2
     - 14.2
     ja:
-    - 9.2
-    - 14.2
+    - 9.4
+    - 14.5
 - file: f15v
   folio: 15v
   items:
@@ -517,10 +493,6 @@
   - pair: f17v.3
     la:
     - seg: p033:1
-  tr_size:
-    ja:
-    - 9.2
-    - 14.2
 - file: f18r
   folio: 18r
   items:
@@ -533,10 +505,6 @@
     la:
     - seg: p034:1
     - seg: p035:0
-  tr_size:
-    ja:
-    - 9.4
-    - 15.0
 - file: f18v
   folio: 18v
   items:
@@ -1005,12 +973,12 @@
     - 9.8
     - 13.2
     ja:
-    - 9.0
-    - 13.8
+    - 8.8
+    - 13.4
   la_size:
     en:
     - 10.2
     - 13.6
     ja:
-    - 10.2
-    - 14.2
+    - 10.0
+    - 13.4

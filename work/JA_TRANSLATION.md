@@ -24,8 +24,8 @@ begins, so you do not deal with pages at all.
   One entry per Latin sentence key, no more, no fewer. Use `>-` for prose and `|-` for
   special blocks (keeps their line breaks). Never merge two Latin sentences into one entry
   or move content between entries: if Japanese wants different sentence boundaries, you may
-  use several Japanese sentences inside one entry. Japanese word order differs from the
-  Latin, so a sentence is never split across pages: do not write page markers ⟦…⟧.
+  use several Japanese sentences inside one entry. Do not write page markers ⟦…⟧ while
+  translating; they are added afterwards (§8).
 - Check your file: `PYTHONIOENCODING=utf-8 python tools/check_translation.py ja text/ja/partN.yaml p015 p022`
   (completeness, LaTeX sanity, Chinese-text check, compiles your pages). It must say
   "OK, no problems". Pages "running long" are fine: page fitting is done afterwards.
@@ -131,3 +131,20 @@ New terms you decide on: list them at the end of your notes file.
 Write `work/notes/ja_partN.md`: range done, check result, new glossary decisions, passages
 where you were unsure (key + why), and footnotes you added or dropped compared with the
 Chinese and English editions.
+
+## 8. Page breaks inside a sentence (added after the first build)
+
+48 Latin sentences run across a page of the 1610 print; their Latin carries the page marker
+(⟦2v⟧ …). Without a marker in the Japanese, the whole Japanese sentence goes to the earlier
+page and the next page's Japanese column starts with a blank. So the Japanese gets the same
+marker(s), at a **clause boundary** — after 、 or 。, or between two Japanese sentences inside the
+entry — chosen so that the Japanese before the marker renders, as nearly as Japanese allows,
+the Latin before the break. Rules:
+- natural Japanese first: never inside a word, never between a modifier and its noun or a
+  noun and its particle; light reordering of clauses inside the entry is allowed only if the
+  Japanese stays natural and faithful;
+- where the Japanese order inverts the Latin (verb last, relative clauses before the noun),
+  take the clause boundary that best matches the amount of Latin on each side;
+- a footnote stays attached to the phrase it explains;
+- the same number of markers as the Latin sentence, same labels (`list_breaks.py ja` lists
+  them; `check_translation.py` checks the count).

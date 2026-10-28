@@ -6,7 +6,7 @@
 - **Latin–English parallel edition**：同一拉丁文，右栏为直接译自拉丁文的新英译；
 - **ラテン語・日本語対訳『星界の使者』**：同一拉丁文，右栏为直接译自拉丁文的新日译。
 
-三个版本都用 XeLaTeX 排版，**每页对应 1610 年初版的一页**：页眉、断页、字体分工照初版；木星卫星图、星图、几何示意图按初版逐点测量重绘为矢量图；月面铜版画、木刻首字母、花饰与印刷商标取自初版扫描，经去黄和折痕修补。英语与拉丁文语序接近，英译也在初版断页的位置断开；中文和日文整句归入其开头所在之页。
+三个版本都用 XeLaTeX 排版，**每页对应 1610 年初版的一页**：页眉、断页、字体分工照初版；木星卫星图、星图、几何示意图按初版逐点测量重绘为矢量图；月面铜版画、木刻首字母、花饰与印刷商标取自初版扫描，经去黄和折痕修补。英译在初版断页的位置断开；中文和日文语序不同，在最接近的分句处断开。
 
 *A re-typeset edition of Galileo's* Sidereus Nuncius *(Venice, 1610), page for page with the first edition: modernised Latin beside a new Chinese, English or Japanese translation made directly from the Latin, with the original's type roles, redrawn figures and restored engravings.*
 
@@ -65,7 +65,7 @@ python tools/build_book.py --lang ja    # 日语版：生成 folia_ja/，编译�
 | `text/la.yaml` | 拉丁文：81 段、315 句，按段落和句子编号（如 `p032.01`）；`⟦8v⟧` 标出初版断页，`⟦\|⟧` 标出同一页内的对齐块分界（多在插图处） |
 | `text/zh.yaml` | 中文：按对齐块存放，与拉丁文的块一一对应 |
 | `text/en/part1–5.yaml` | 英语：按句存放，键与拉丁文相同；跨页的句子带同样的断页标记，生成时在那里切开 |
-| `text/ja/part1–5.yaml` | 日语：按句存放，键与拉丁文相同；整句归入其开头所在之页 |
+| `text/ja/part1–5.yaml` | 日语：按句存放，键与拉丁文相同；跨页的句子在最接近的分句处带断页标记 |
 | `text/layout.yaml` | 每一叶的结构：页面样式、对齐块、插图和特殊排版块的顺序；个别排得满的页在此微调字号行距（`tr_size`、`la_size`） |
 
 改拉丁文改 `la.yaml`，改译文改 `zh.yaml`、`en/` 或 `ja/`，改插图位置和特殊排版改 `layout.yaml`，然后重新编译。
