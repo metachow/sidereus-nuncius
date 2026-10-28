@@ -1,0 +1,65 @@
+% Front and back cover of the English edition; same design as front/cover.tex
+% (which must be \input first for the colours and \coverframe).
+
+\newcommand{\frontcoveren}{%
+  \thispagestyle{empty}\coverframe
+  \begin{tikzpicture}[remember picture, overlay, every node/.style={inner sep=0, align=center, text=coverink}]
+    \node[anchor=north] at ([yshift=-30mm]current page.north)
+      {\dispcaps[34][22]{Sidereus}\\[4mm]\dispcaps[22][26]{Nuncius}};
+    \node[anchor=north, text=coverred] at ([yshift=-64mm]current page.north)
+      {\dispcaps[17][14]{The Starry Messenger}};
+    \draw[coverred, line width=0.6pt] ([xshift=-28mm, yshift=-79mm]current page.north) -- ++(56mm,0);
+    \node at ([yshift=-4mm]current page.center)
+      {\includegraphics[width=96mm]{figures/cover_moon}};
+    \node[anchor=south] at ([yshift=50mm]current page.south)
+      {\dispcaps[13][8]{Galilaeus Galilaeus}\\[2.5mm]
+       {\large Galileo Galilei}\\[4mm]
+       {\addfontfeatures{LetterSpace=8}\small VENETIIS\ \ MDCX}\quad{\small\color{coverred}·}\quad{\small Venice, 1610}};
+    \node[anchor=south] at ([yshift=26mm]current page.south)
+      {{\color{coverred}\small\addfontfeatures{LetterSpace=4}LATIN – ENGLISH PARALLEL EDITION}\\[2.5mm]
+       {\small edited by metachow}};
+  \end{tikzpicture}%
+  \mbox{}\clearpage}
+
+\newcommand{\backcoveren}{%
+  \thispagestyle{empty}\coverframe
+  \begin{tikzpicture}[remember picture, overlay, every node/.style={inner sep=0, align=center, text=coverink}]
+    \node[anchor=north] at ([yshift=-34mm]current page.north) {%
+      \begin{minipage}{128mm}\color{coverink}
+        % the announcement of the four new planets (f. 17r)
+        {\centering\itshape\large \ldots\ quattuor {\upshape\addfontfeatures{LetterSpace=8}PLANETAS}\\
+          a primo mundi exordio ad nostra usque tempora\\ numquam conspectos \ldots\par}
+        \vspace{4mm}
+        {\centering\large \ldots\ four \textcolor{coverred}{\addfontfeatures{LetterSpace=8}PLANETS},\\
+          never seen from the first beginning of the world\\ until our own day \ldots\par}
+        \vspace{12mm}
+        % the first four nights, as drawn in the book
+        {\centering\scalebox{0.82}{\begin{tabular}{@{}c@{}}
+          \jove[I.\,7]{-4.9/1.3, -1.6/1, 2.7/1.3}\\[4mm]
+          \jove[I.\,8]{1.6/1, 2.9/1, 4.3/1}\\[4mm]
+          \jove[I.\,10]{-3.3/1, -1.6/1}\\[4mm]
+          \jove[I.\,11]{-4.3/1.1, -3.0/0.95}
+         \end{tabular}}\par}
+        \vspace{12mm}
+        {\fontsize{10.5}{15}\selectfont\setlength{\parindent}{1.2em}\setlength{\parskip}{0pt}
+         In March 1610 Galileo published in Venice this slim book. Turning a spyglass of his own
+         making to the sky, he found that the Moon is not smooth but rough with mountains and
+         hollows, that the Milky Way is a throng of countless stars, and that Jupiter is attended by
+         four moons no one had seen before, changing their places night after night. These
+         observations shook a picture of the heavens that had stood for two thousand years.\par
+         This edition follows the 1610 printing page by page: on the left the Latin, in modernised
+         spelling; on the right a new English translation made directly from it. The star maps and
+         the diagrams of Jupiter's companions are redrawn from measurements of the original; the
+         engravings of the Moon and the woodcut ornaments are taken from a scan of the first
+         edition.\par}
+      \end{minipage}};
+    % the printer's device of the 1610 title page, as an emblem
+    \node[anchor=south] at ([yshift=44mm]current page.south)
+      {\includegraphics[width=48mm]{figures/cover_device}};
+    \draw[coverred, line width=0.6pt] ([xshift=-28mm, yshift=36mm]current page.south) -- ++(56mm,0);
+    \node[anchor=south] at ([yshift=22mm]current page.south)
+      {{\small edited by metachow\quad·\quad translated, proofread and typeset with Claude (Anthropic)}\\[2mm]
+       {\footnotesize\color{edgray} Translation, notes and typesetting: CC BY 4.0\quad·\quad
+        Latin text and scans of the 1610 edition: public domain}};
+  \end{tikzpicture}%
+  \mbox{}\clearpage}

@@ -90,7 +90,7 @@ The Chinese edition's block shows how the same structure was carried into anothe
 | coniunctio (of the Moon) | conjunction | |
 | ecliptica; zodiacus | the ecliptic; the zodiac | *iuxta longitudinem zodiaci* = along the length of the zodiac |
 | minutum (primum); secundum | minute; second (of arc) | |
-| hora noctis prima | the first hour of the night | Italian hours, counted from sunset; the note is on f. 17r (p030) |
+| hora noctis prima | the first hour of the night | Italian hours, counted from sunset; the note is at the first occurrence, p032.01 (f. 17r) |
 | orientalis / occidentalis | eastern / western | Ori. / Occ. in the figures stay untranslated |
 | miliaria Italica | Italian miles | |
 | Cosmus Medices II; Magnus Etruriae Dux | Cosimo II de' Medici; Grand Duke of Tuscany | |

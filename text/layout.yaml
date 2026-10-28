@@ -375,6 +375,10 @@
   - pair: f15r.1
     la:
     - seg: p024:2
+  tr_size:
+    en:
+    - 10.2
+    - 14.2
 - file: f15v
   folio: 15v
   items:
@@ -930,6 +934,14 @@
   - pair: f28r.2
     la:
     - seg: p081:0
+  tr_size:
+    en:
+    - 10.0
+    - 13.4
+  la_size:
+    en:
+    - 10.2
+    - 13.9
 - file: f28v
   folio: 28v
   items:
@@ -939,3 +951,11 @@
     - seg: p081:1
       wrap: \taperpar{%s}
     - raw: '{\centering\addfontfeatures{LetterSpace=25}FINIS\par}'
+  tr_size:
+    en:
+    - 9.8
+    - 13.2
+  la_size:
+    en:
+    - 10.2
+    - 13.6

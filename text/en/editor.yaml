@@ -1,0 +1,5 @@
+# Editor's entries for the English edition (layout parts inside mixed blocks).
+# f28v.1: the last page; its sentences come from part5.yaml and are tapered like
+# the Latin; part 2 of the block is the closing word.
+f28v.1#2: |-
+  {\centering\addfontfeatures{LetterSpace=25}THE END\par}

@@ -11,7 +11,15 @@
   \ifdefined\startpage\setcounter{page}{\startpage}\fi
   \input{\foliadir/\onlyfolio}
 \else
+  \input{front/cover}
+  \input{front/cover_en}
+  \frontcoveren
+  \thispagestyle{empty}\mbox{}\clearpage   % inside of the front cover
+  \setcounter{page}{1}
   \input{front/title_en}
   \input{folia_en/order}
+  % the back cover falls on an even (left-hand) page
+  \clearpage\ifodd\value{page}\thispagestyle{empty}\mbox{}\clearpage\fi
+  \backcoveren
 \fi
 \end{document}

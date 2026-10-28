@@ -42,6 +42,7 @@ for page in layout:
 if pending:                                   # trailing specials: attach to the last paragraph
     specials.setdefault(ids[-1], []).extend(pending)
 
+printed = set()   # a block shared by several paragraphs is shown once
 for p in la:
     if p['id'] not in wanted:
         continue
@@ -56,4 +57,7 @@ for p in la:
         print(f'{p["id"]}.{k}: {t}')
     if show_zh:
         for bk in blocks_of.get(p['id'], []):
+            if bk in printed:
+                continue
+            printed.add(bk)
             print(f'  [Chinese edition, block {bk}]: {zh.get(bk, "")}')

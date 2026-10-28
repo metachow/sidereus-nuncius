@@ -26,6 +26,10 @@ python tools/build_book.py        # 由 text/ 生成 folia/，编译两遍并检
 
 只改某一页时：先 `python tools/gen_folia.py`，再 `python tools/check_folio.py f17v`，检查这一页是否正好排满一页并生成预览图。
 
+### 英语版（Latin–English）
+
+`python tools/build_book.py --lang en` → `main_en.pdf`。英语译文在 `text/en/part1–5.yaml`（按句，键为 `p012.03`），规范与术语表见 `work/EN_TRANSLATION.md`。英语和拉丁文语序接近，所以英语也按原文断页：跨页的句子在英译中对应位置插入同样的断页标记（如 `⟦8v⟧`），生成时在那里切开；`tools/list_breaks.py en` 列出全部 48 个跨页句子及其标记情况。少数排得满的页由 `tools/fit_pages.py --lang en` 微调该页的字号行距（记录在 `text/layout.yaml` 的 `tr_size`/`la_size`）。
+
 ### 增加其他语言的译文
 
 按句翻译即可，不必考虑分页：在 `text/<语言>.yaml` 里为 `la.yaml` 的每一句写一条译文，键为“段落.句号”（如 `p012.03`）。`python tools/gen_folia.py --lang en` 会把每句译文放进其拉丁原句开头所在的对齐块，也就是所在的那一页。`tools/test_distribution.py` 检查这一分配：每句恰好出现一次、位置正确。

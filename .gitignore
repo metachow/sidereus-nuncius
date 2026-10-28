@@ -3,7 +3,7 @@
 *.log
 *.out
 *.toc
-main.pdf
+main*.pdf
 build/
 
 # released separately (GitHub Releases)
@@ -22,3 +22,6 @@ __pycache__/
 
 # generated English pages
 folia_en/
+
+# English edition PDF (released separately)
+Sidereus_Nuncius_la-en.pdf

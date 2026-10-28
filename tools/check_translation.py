@@ -62,10 +62,15 @@ if extra:
     problems.append(f'not in this range: {extra[:12]}')
 if empty:
     problems.append(f'empty: {empty[:12]}')
+la_sent = {f'{p["id"]}.{s}': t for p in la for s, t in p['s'].items()}
 for k, v in data.items():
     v = str(v)
     if '⟦' in v:
-        problems.append(f'{k}: contains a page marker ⟦…⟧')
+        # page-break markers are allowed where the Latin sentence has them, same number
+        n_tr = len(re.findall(r'⟦[^⟧]*⟧', v))
+        n_la = len(re.findall(r'⟦[^⟧|]+⟧', la_sent.get(k, '')))
+        if n_tr != n_la:
+            problems.append(f'{k}: {n_tr} page marker(s), the Latin sentence has {n_la}')
     if re.search(r'[一-鿿]', v):
         problems.append(f'{k}: contains Chinese characters')
     depth = 0

@@ -293,6 +293,8 @@
 % main_en.tex defines \translang before \input{preamble}. The right column then
 % holds an English translation, set in the same face and size as the Latin.
 \ifdefined\translang
+  % (curly quotes and dashes in the translation are written as TeX ligatures by
+  % tools/gen_folia.py, so xeCJK never treats them as CJK punctuation)
   \columnratio{0.5}
   \renewcommand{\ZH}{\switchcolumn[1]\selectlanguage{english}\fontsize{10.2}{14.6}\selectfont\setlength{\parindent}{1.2em}}
   \renewcommand{\ZHi}{\ZH\itshape}
