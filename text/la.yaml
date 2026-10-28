@@ -1,0 +1,488 @@
+# Latin source: one entry per paragraph, one key per sentence.
+# ⟦8v⟧ = page break of the 1610 edition (the text after it is on folio 8v);
+# ⟦|⟧ = split into two alignment blocks on the same page (usually a figure).
+- id: p001
+  s:
+    '01': \woodinitial{P}{raeclarum} sane atque humanitatis plenum eorum fuit institutum, qui excellentium virtute virorum res praeclare gestas ab invidia tutari, eorumque immortalitate digna nomina ab oblivione atque interitu vindicare, conati sunt.
+    '02': Hinc ad memoriam posteritatis proditae imagines, vel marmore insculptae, vel ex aere fictae; hinc positae statuae, tam pedestres, quam equestres; hinc columnarum atque pyramidum, ut inquit ille, sumptus ad sidera ducti; hinc denique urbes aedificatae, eorumque insignitae nominibus, quos grata posteritas aeternitati commendandos existimavit.
+    '03': Eiusmodi est enim humanae mentis conditio, ut nisi assiduis rerum simulacris in eam extrinsecus irrumpentibus pulsetur, omnis ex illa recordatio facile effluat.
+- id: p002
+  s:
+    '01': Verum alii firmiora ac diuturniora spectantes, aeternum summorum virorum praeconium non saxis ac metallis, ⟦3r⟧ virtutes tuas in omne tempus loquantur ac celebrent.
+    '02': En igitur quattuor sidera tuo inclito nomini reservata, neque illa de gregario ac minus insigni inerrantium numero, sed ex illustri vagantium ordine; quae quidem disparibus inter se motibus circum Iovis stellam ceterarum nobilissimam, tamquam germana eius progenies, cursus suos orbesque conficiunt celeritate mirabili, interea dum unanimi concordia circa mundi centrum, circa Solem nempe ipsum, omnia simul duodecimo quoque anno magnas convolutiones absolvunt.
+    '03': Ut autem inclito Celsitudinis tuae nomini prae ceteris novos hosce planetas destinarem, ipsemet siderum Opifex perspicuis argumentis me admonere visus est.
+    '04': Etenim, quemadmodum hae stellae, tamquam Iove digna proles, numquam ab illius latere, nisi exiguo intervallo, discedunt; ita quis ignorat clementiam, animi mansuetudinem, morum suavitatem, regii sanguinis splendorem, in actionibus maiestatem, auctoritatis et imperii in alios amplitudinem, quae quidem omnia in tua Celsitudine sibi domicilium ac sedem collocarunt, quis, inquam, ignorat, haec omnia ex benignissimo Iovis astro, secundum Deum omnium bonorum fontem, emanare?
+    '05': Iuppiter, Iuppiter, inquam, a primo Celsitudinis tuae ortu, turbidos horizontis vapores iam transgressus, mediumque caeli cardinem occupans, orientalemque angulum sua regia illustrans, felicissimum partum ex sublimi illo throno prospexit, omnemque splendorem atque amplitudinem suam in purissimum aerem profudit, ut universam ⟦3v⟧ illam vim ac potestatem tenerum corpusculum una cum animo, nobilioribus ornamentis iam a Deo decorato, primo spiritu hauriret.
+    '06': Verum, quid ego probabilibus utor argumentationibus, cum id necessaria propemodum ratione concludere ac demonstrare queam?
+    '07': Placuit Deo Optimo Maximo, ut a Serenissimis parentibus tuis non indignus existimarer, qui Celsitudini tuae in tradendis mathematicis disciplinis operam navarem; quod quidem praestiti quattuor superioribus annis proxime elapsis, eo anni tempore, quo a severioribus studiis otium esse consuevit.
+    08: Quocirca cum mihi divinitus plane contigerit, ut Celsitudini tuae inservirem, atque ideo incredibilis clementiae ac benignitatis tuae radios propius exceperim, quid mirum si animus meus adeo incaluit, ut nihil aliud propemodum dies noctesque meditetur, quam ut ego, qui non solum animo, sed etiam ipso ortu ac natura, sub tua dominatione sum, tuae gloriae cupidissimus et quam gratissimus erga te esse cognoscar?
+    09: Quae cum ita sint, cum, te auspice, \capsemph{Cosme} Serenissime, has stellas superioribus astronomis omnibus incognitas exploraverim, optimo iure eas augustissimo prosapiae tuae nomine insignire decrevi.
+    '10': Quod si illas primus indagavi, quis me iure reprehendat, si iisdem quoque nomen imposuero, ac \capsemph{medicea sidera} appellaro? sperans fore, ut tantum dignitatis ex hac appellatione iis sideribus accedat, quantum alia ceteris heroibus attulerunt.
+    '11': Nam, ut taceam de Serenissimis tuis maioribus, quorum gloriam sempiternam omnium ⟦4r⟧ historiarum monumenta testantur, sola tua virtus, Maxime Heros, illis astris impertiri potest nominis immortalitatem.
+    '12': Cui enim dubium esse potest, quin, quam tui exspectationem felicissimis imperii auspiciis concitasti, quamvis summam, eam non solum sustineas ac tuearis, verum etiam longo intervallo superaturus sis? ut cum alios tui similes viceris, tecum nihilominus ipse certes, ac te ipso ac magnitudine tua in dies maior evadas.
+  notes:
+    2: '% 1610: MEDICAEA SYDERA'
+- id: p003
+  s:
+    '01': Suscipe itaque, Clementissime Princeps, hanc tibi ab astris reservatam gentiliciam gloriam, et illis divinis bonis, quae non tam a stellis, quam a stellarum Opifice ac Moderatore Deo, tibi deferuntur, quam diutissime fruere.
+- id: p004
+  s:
+    '01': Datum Patavii, 4 Idus Martii, MDCX.
+- id: p005
+  s:
+    '01': Gli Eccellentissimi Signori Capi dell'Eccelso Consiglio de' X infrascritti, havuta fede dalli Signori Reformatori del Studio di Padova per relatione delli due a questo deputati, cioè dal Reverendo Padre Inquisitor, e dal Circospetto Secretario del Senato Gio. Maraviglia, con giuramento, come nel libro intitolato \capsemph{sydereus nuncius}, etc. di D. Galileo Galilei non si trova alcuna cosa contraria alla Santa Fede Cattolica, Prencipi, e buoni costumi, e che è degno di stampa, concedono licenza, che possi esser stampato in questa Città.
+  notes:
+    0: '% 1610: hauuia; Ecc. Cons.; Sig.; Reuer. P.; Circ:; &c.'
+- id: p006
+  s:
+    '01': Datum die primo Martii 1610.
+- id: p007
+  s:
+    '01': \woodinitial{M}{agna} equidem in hac exigua tractatione singulis de natura speculantibus inspicienda contemplandaque propono.
+    '02': Magna, inquam, tum ob rei ipsius praestantiam, tum ob inauditam per aevum novitatem, tum etiam propter organum, cuius beneficio eadem sensui nostro obviam sese fecerunt.
+  notes:
+    0: '% 1610: aequidem'
+- id: p008
+  s:
+    '01': Magnum sane est, supra numerosam inerrantium stellarum multitudinem, quae naturali facultate in hunc usque diem conspici potuerunt, alias innumeras superaddere oculisque palam exponere, antehac conspectas numquam, et quae veteres ac notas plus quam supra decuplam multiplicitatem superent.
+- id: p009
+  s:
+    '01': 'Pulcherrimum atque visu iucundissimum est, lunare corpus, per sex denas fere terrestres semidiametros a nobis remotum, tam ex propinquo intueri, ac si ⟦5v⟧ per duas tantum easdem dimensiones distaret; adeo ut eiusdem Lunae diameter vicibus quasi terdenis, superficies vero noningentis, solidum autem corpus vicibus proxime viginti septem millibus maius appareat, quam dum libera tantum acie spectatur: ex quo deinde sensata certitudine quispiam intellegat, Lunam superficie leni et perpolita nequaquam esse indutam, sed aspera et inaequali; ac, veluti ipsiusmet Telluris facies, ingentibus tumoribus, profundis lacunis atque anfractibus undiquaque confertam exsistere.'
+  notes:
+    0: '% 1610: diametros'
+    1: '% 1610: milllbus; Favaro: libera tantum oculorum acie'
+- id: p010
+  s:
+    '01': Altercationes insuper de Galaxia, seu de Lacteo Circulo, sustulisse, eiusque essentiam sensui, nedum intellectui, manifestasse, parvi momenti existimandum minime videtur; insuperque substantiam stellarum, quas nebulosas hucusque astronomorum quilibet appellavit, digito demonstrare, longeque aliam esse quam creditum hactenus est, iucundum erit atque perpulcrum.
+  notes:
+    0: '% 1610: Galaxya; substulisse'
+- id: p011
+  s:
+    '01': Verum, quod omnem admirationem longe superat, quodve admonitos faciendos cunctos astronomos atque philosophos nos apprime impulit, illud est, quod scilicet quattuor erraticas stellas, nemini eorum, qui ante nos, cognitas aut observatas, adinvenimus, quae circa stellam quandam insignem e numero cognitarum, instar Veneris atque Mercurii circa Solem, suas habent periodos, eamque modo praeeunt, modo subsequuntur, numquam extra certos limites ab illa digredientes.
+    '02': Quae omnia ope perspicilli a me excogitati, divina prius illuminante gratia, paucis abhinc diebus reperta atque observata fuerunt.
+  notes:
+    0: '% 1610: ad Monitos'
+- id: p012
+  s:
+    '01': Alia forte praestantiora, vel a me, vel ab aliis, in dies adinvenientur consimilis organi beneficio; cuius formam et apparatum, necnon illius excogitandi occasionem ⟦6r⟧ prius breviter commemorabo, deinde habitarum a me observationum historiam recensebo.
+- id: p013
+  s:
+    '01': \lettrine[lines=2, findent=0.15em]{M}{ensibus} abhinc decem fere, rumor ad aures nostras increpuit, fuisse a quodam Belga perspicillum elaboratum, cuius beneficio obiecta visibilia, licet ab oculo inspicientis longe dissita, veluti propinqua distincte cernebantur; ac huius profecto admirabilis effectus nonnullae experientiae circumferebantur, quibus fidem alii praebebant, negabant alii.
+    '02': 'Idem paucos post dies mihi per litteras a nobili Gallo Iacobo Badovere ex Lutetia confirmatum est; quod tandem in causa fuit, ut ad rationes inquirendas, necnon media excogitanda, per quae ad consimilis organi inventionem devenirem, me totum converterem; quam paulo post, doctrinae de refractionibus innixus, assecutus sum: ac tubum primo plumbeum mihi paravi, in cuius extremitatibus vitrea duo perspicilla, ambo ex altera parte plana, ex altera vero unum sphaerice convexum, alterum vero cavum aptavi; oculum deinde ad cavum admovens obiecta satis magna et propinqua intuitus sum; triplo enim viciniora, nonuplo vero maiora apparebant, quam dum sola naturali acie spectarentur.'
+    '03': Alium postmodum exactiorem mihi elaboravi, qui obiecta plus quam sexagies maiora repraesentabat.
+    '04': Tandem, labori nullo nullisque sumptibus parcens, eo a me deventum est, ut organum mihi construxerim adeo excellens, ut res per ipsum visae millies fere maiores appareant, ac plus quam in terdecupla ratione viciniores, quam si naturali tantum facultate spectentur.
+    '05': Huius instrumenti quot quantaque sint commoda, tam in re terrestri quam in maritima, omnino supervacaneum foret enumerare.
+    '06': Sed, missis terrenis, ad caelestium speculationes me contuli; ac Lunam prius tam ex propinquo sum intuitus, ⟦6v⟧ ac si vix per duas Telluris diametros abesset.
+    '07': Post hanc, stellas tum fixas, tum vagas, incredibili animi iucunditate saepius observavi; cumque harum maximam frequentiam viderem, de ratione, qua illarum interstitia dimetiri possem, excogitare coepi, ac demum repperi.
+    08: Qua de re singulos praemonitos esse decet, qui ad huiuscemodi observationes accedere volunt.
+    09: 'Primo enim necessarium est, ut sibi perspicillum parent exactissimum, quod obiecta pellucida, distincta et nulla caligine obducta repraesentet; eademque ad minus secundum quatercentuplam rationem multiplicet; tunc enim illa bisdecuplo viciniora commonstrabit: nisi enim tale fuerit instrumentum, ea omnia quae a nobis conspecta sunt in caelis, quaeve infra enumerabuntur, intueri tentabitur frustra.'
+    '10': 'Ut autem de multiplicatione instrumenti quilibet parvo negotio certior reddatur, circulos binos aut quadrata bina chartacea contornabit, quorum alterum quatercenties altero maius exsistat; id autem erit tunc, cum maioris diameter ad diametrum alterius longitudine fuerit vigecupla: deinde superficies ambas in eodem pariete infixas simul a longe spectabit, minorem quidem altero oculo ad perspicillum admoto, maiorem vero altero oculo libero; commode enim id fieri licet uno eodemque tempore, oculis ambobus adapertis: tunc enim figurae ambae eiusdem apparebunt magnitudinis, si organum secundum optatam proportionem obiecta multiplicaverit.'
+    '11': 'Consimili parato instrumento, de ratione distantiarum dimetiendarum inquirendum erit: quod tali artificio assequemur.'
+    '12': Sit enim, facilioris intellegentiae gratia, tubus ABCD.
+    '13': 'Oculus inspicientis esto E. Radii, dum nulla in tubo adessent perspicilla, ad obiectum FG secundum lineas rectas ECF, EDG ferrentur; sed, appositis perspicillis, ⟦7r⟧ ferantur secundum lineas refractas ECH, EDI: coarctantur enim, et qui prius liberi ad FG obiectum dirigebantur, partem tantummodo HI comprehendent. ⟦|⟧'
+    '14': Accepta deinde ratione distantiae EH ad lineam HI, per tabulam sinuum reperietur quantitas anguli in oculo ex obiecto HI constituti, quem minuta quaedam tantum continere comperiemus.
+    '15': Quod si specillo CD bracteas, alias maioribus, alias vero minoribus perforatas foraminibus, aptaverimus, modo hanc, modo illam, prout opus fuerit, superimponentes, angulos alios atque alios pluribus paucioribusque minutis subtendentes pro libito constituemus; quorum ope stellarum intercapedines, per aliquot minuta ad invicem dissitarum, citra unius aut alterius minuti peccatum, commode dimetiri poterimus.
+    '16': Haec tamen sic leviter tetigisse, et quasi primoribus libasse labiis, in praesentiarum sit satis; per aliam enim occasionem absolutam huius organi theoriam in medium proferemus.
+    '17': Nunc observationes a nobis duobus proxime elapsis mensibus habitas recenseamus, ad magnarum profecto contemplationum exordia omnes verae philosophiae cupidos convocantes.
+  notes:
+    0: '% 1610: Badouere; assequutus; sexageties; Marittima'
+    1: '% 1610: pellucida (Favaro: perlucida), cartacea'
+- id: p014
+  s:
+    '01': De facie autem Lunae, quae ad aspectum nostrum ⟦7v⟧ vergit, primo loco dicamus.
+    '02': 'Quam, facilioris intellegentiae gratia, in duas partes distinguo, alteram nempe clariorem, obscuriorem alteram: clarior videtur totum hemisphaerium ambire atque perfundere, obscurior vero, veluti nubes quaedam, faciem ipsam inficit maculosamque reddit.'
+    '03': 'Istae autem maculae, subobscurae et satis amplae, unicuique sunt obviae, illasque aevum omne conspexit; quapropter magnas, seu antiquas, eas appellabimus, ad differentiam aliarum macularum amplitudine minorum, at frequentia ita consitarum, ut totam lunarem superficiem, praesertim vero lucidiorem partem, conspergant; hae vero a nemine ante nos observatae fuerunt: ex ipsarum autem saepius iteratis inspectionibus in eam deducti sumus sententiam, ut certo intellegamus, Lunae superficiem non perpolitam, aequabilem, exactissimaeque sphaericitatis exsistere, ut magna philosophorum cohors de ipsa deque reliquis corporibus caelestibus opinata est, sed, contra, inaequalem, asperam, cavitatibus tumoribusque confertam, non secus ac ipsiusmet Telluris facies, quae montium iugis valliumque profunditatibus hinc inde distinguitur.'
+    '04': Apparentiae vero, ex quibus haec colligere licuit, eiusmodi sunt.
+- id: p015
+  s:
+    '01': 'Quarta aut quinta post coniunctionem die, cum splendidis Luna sese nobis cornibus offert, iam terminus partem obscuram a luminosa dividens non aequabiliter secundum ovalem lineam extenditur, veluti in solido perfecte sphaerico accideret; sed inaequabili, aspera et admodum sinuosa linea designatur, veluti apposita figura repraesentat: complures enim veluti excrescentiae lucidae ultra lucis tenebrarumque confinia in partem obscuram extenduntur, et, contra, tenebricosae particulae intra lumen ingrediuntur.'
+    '02': Quin immo, et magna nigricantium macularum ⟦8r⟧ exiguarum copia, omnino a tenebrosa parte separatarum, totam fere plagam iam Solis lumine perfusam undiquaque conspergit, illa saltem excepta parte, quae magnis et antiquis maculis est affecta.
+    '03': Adnotavimus autem, modo dictas exiguas maculas in hoc semper et omnes convenire, ut partem habeant nigricantem locum Solis respicientem; ex adverso autem Solis lucidioribus terminis, quasi candentibus iugis, coronentur.
+    '04': 'At consimilem penitus aspectum habemus in Terra circa Solis exortum, dum valles nondum lumine perfusas, montes vero illas ex adverso Solis circumdantes iam iam splendore fulgentes intuemur: ac veluti terrestrium cavitatum umbrae, Sole sublimiora petente, imminuuntur, ita et lunares istae maculae, crescente parte luminosa, tenebras amittunt.'
+- id: p016
+  s:
+    '01': Verum non modo tenebrarum et luminis confinia in Luna inaequalia ac sinuosa cernuntur; sed, quod maiorem infert admirationem, permultae apparent lucidae cuspides intra tenebrosam Lunae partem, omnino ab illuminata plaga divisae et avulsae, ab eaque non per exiguam intercapedinem dissitae; quae paulatim, aliqua interiecta mora, magnitudine et lumine augentur, post vero secundam horam aut tertiam reliquae parti lucidae et ampliori iam factae iunguntur; interim tamen aliae atque aliae, hinc inde quasi pullulantes, intra tenebrosam partem accenduntur, augentur, ac demum eidem luminosae superficiei, magis adhuc extensae, copulantur.
+    '02': Huius exemplum eadem figura nobis exhibet.
+    '03': At nonne in terris ante Solis exortum, umbra adhuc planities occupante, altissimorum cacumina montium solaribus radiis illustrantur?
+    '04': Nonne exiguo interiecto tempore ampliatur lumen, dum mediae et largiores eorundem montium partes illuminantur; ac tandem, orto iam Sole, planitierum et collium illuminationes iunguntur?
+    '05': Huiusmodi autem eminentiarum et cavitatum discrimina in Luna longe lateque terrestrem asperitatem superare videntur, ut infra demonstrabimus.
+    '06': 'Interim silentio minime involvam quid animadversione dignum a me observatum, dum Luna ad primam quadraturam properaret, cuius etiam imaginem eadem supra posita delineatio prae se fert: ingens enim sinus tenebrosus in partem luminosam subit, versus inferius cornu locatus; quem quidem sinum cum diutius observassem, totumque obscurum vidissem, tandem post duas fere horas, paulo infra medium cavitatis, vertex quidam luminosus exsurgere coepit; hic vero paulatim crescens trigonam figuram prae se ferebat, eratque omnino adhuc a luminosa facie revulsus ac separatus; mox circa illum tres aliae cuspides'
+- id: p017
+  s:
+    '01': 'Haec eadem macula ante secundam quadraturam nigrioribus quibusdam terminis circumvallata conspicitur; qui, tamquam altissima montium iuga, ex parte Soli aversa obscuriores apparent, qua vero Solem respiciunt lucidiores exstant: cuius oppositum in cavitatibus accidit; quarum pars Soli aversa splendens apparet, obscura vero ac umbrosa quae ex parte Solis sita est.'
+    '02': Imminuta deinde luminosa superficie, cum primum tota ferme dicta macula tenebris est obducta, clariora montium dorsa eminenter tenebras scandunt.
+    '03': Hanc duplicem apparentiam sequentes figurae commonstrant.
+- id: p018
+  s:
+    '01': 'Haec, quae recensuimus, in clarioribus Lunae regionibus observantur; verum in magnis maculis talis non conspicitur lacunarum eminentiarumque differentia, qualem necessario constituere cogimur in parte lucidiori, ob mutationem figurarum ex alia atque alia illuminatione radiorum Solis, prout multiplici positu Lunam respicit: at in magnis maculis exsistunt quidem ⟦11v⟧ areolae nonnullae subobscuriores, veluti in figuris adnotavimus; attamen istae eundem semper faciunt aspectum, neque intenditur earum opacitas aut remittitur, sed exiguo admodum discrimine paululum obscuriores modo apparent, modo vero clariores, si magis aut minus obliqui in eas radii solares incidant: iunguntur praeterea cum proximis macularum partibus leni quadam copula, confinia miscentes ac confundentes: secus vero in maculis accidit splendidiorem Lunae superficiem occupantibus; quasi enim abruptae rupes asperis et angulatis scopulis consitae, umbrarum luminumque rudibus discriminibus ad lineam disterminantur.'
+    '02': 'Spectantur insuper intra easdem magnas maculas areolae quaedam, aliae clariores, immo nonnullae lucidissimae: verum, et harum et obscuriorum, idem semper est aspectus, nulla aut figurarum aut lucis aut opacitatis mutatio; adeo ut compertum indubitatumque sit, apparere illas ob veram partium dissimilaritatem, non autem ob inaequalitates tantum in figuris earundem partium, umbras ex variis Solis illuminationibus diversimode moventibus: quod bene contingit de maculis aliis minoribus clariorem Lunae partem occupantibus; in dies enim permutantur, augentur, imminuuntur, abolentur, quippe quae ab umbris tantum eminentiarum ortum ducunt.'
+- id: p019
+  s:
+    '01': Verum magna hic dubitatione complures affici sentio, adeoque gravi difficultate occupari, ut iam explicatam et tot apparentiis confirmatam conclusionem in dubium revocare cogantur.
+    '02': Si enim pars illa lunaris superficiei, quae splendidius solares radios retorquet, anfractibus, tumoribus scilicet et lacunis innumeris, est repleta, cur in crescenti Luna extrema circumferentia, quae occasum versus spectat, in decrescenti vero altera semicircumferentia orientalis, ac in ⟦12r⟧ plenilunio tota peripheria, non inaequabilis, aspera et sinuosa, verum exacte rotunda et circinata nullisque tumoribus aut cavitatibus corrosa, conspicitur? atque ex eo maxime, quia totus integer limbus ex clariori Lunae substantia constat, quam tuberosam lacunosamque totam esse diximus; magnarum enim macularum nulla ad extremum usque perimetrum exporrigitur, sed omnes procul ab orbita aggregatae cernuntur.
+    '03': Huius apparentiae, ansam tam graviter dubitandi praebentis, duplicem causam, ac proinde duplicem dubitationis solutionem, in medium affero.
+    '04': 'Primo enim, si tumores et cavitates in corpore lunari secundum unicam tantum circuli peripheriam, hemisphaerium nobis conspicuum terminantem, protenderentur, tunc posset quidem, immo deberet, Luna sub specie quasi dentatae rotae sese nobis ostendere, tuberoso, nempe, ac sinuoso ambitu terminata: at si non una tantum eminentiarum series, iuxta unicam solummodo circumferentiam dispositarum, sed permulti montium ordines cum suis lacunis et anfractibus circa extremum Lunae ambitum coordinati fuerint, iique non modo in hemisphaerio apparente, sed in averso etiam (prope tamen hemisphaeriorum finitorem), tunc oculus a longe prospiciens eminentiarum cavitatumque discrimina deprehendere minime poterit; intercapedines enim montium, in eodem circulo seu in eadem serie dispositorum, obiectu aliarum eminentiarum in aliis atque aliis ordinibus constitutarum occultantur; idque maxime, si oculus aspicientis in eadem recta cum dictarum eminentiarum verticibus fuerit locatus.'
+    '05': Sic in terra multorum ac frequentium montium iuga secundum planam superficiem disposita apparent, si prospiciens procul fuerit et in pari altitudine constitutus.
+    '06': Sic aestuosi pelagi sublimes undarum vertices secundum
+- id: p020
+  s:
+    '01': Esse igitur clariorem Lunae superficiem tumoribus atque lacunis undiquaque conspersam, ex iam explicatis apparitionibus satis apertum esse reor.
+    '02': 'Superest ut de illorum magnitudinibus dicamus, demonstrantes terrestres asperitates lunaribus esse longe minores; minores, inquam, etiam absolute loquendo, non autem in ratione tantum ad suorum globorum magnitudines: idque sic manifeste declaratur.'
+- id: p021
+  s:
+    '01': Cum saepius a me observatum sit in aliis atque aliis Lunae ad Solem constitutionibus, vertices nonnullos intra tenebrosam Lunae partem, licet a termino lucis satis remotos, lumine perfusos apparere, conferens eorum distantiam ad integram Lunae diametrum, cognovi, interstitium hoc vicesimam interdum diametri partem superare.
+    '02': Quo sumpto, intellegatur lunaris globus, cuius maximus circulus CAF, centrum vero E, dimetiens CF, qui ad Terrae diametrum est ut duo ad septem; cumque terrestris diameter, secundum exactiores observationes, miliaria Italica 7000 contineat, erit CF 2000, CE ⟦13v⟧ vero 1000; pars autem vicesima totius CF, miliaria 100.
+    '03': Sit modo CF dimetiens circuli maximi, luminosam Lunae partem ab obscura dividentis (ob maximam enim elongationem Solis a Luna hic circulus a maximo sensibiliter non differt), ac secundum vicesimam illius partem distet A a puncto C, et protrahatur semidiameter EA, qui extensus occurrat cum contingente GCD (quae radium illuminantem repraesentat) in puncto D. ⟦|⟧
+    '04': 'Erit igitur arcus CA, seu recta CD, 100 qualium CE est 1000, et aggregatum quadratorum DC, CE 1010000, cui quadratum DE aequale est: tota igitur ED erit plus quam 1004, et AD plus quam 4 qualium CE fuit 1000.'
+    '05': Sublimitas igitur AD in Luna, quae verticem quempiam ad usque Solis radium GCD elatum, et a termino C per distantiam CD remotum, designat, eminentior est ⟦14r⟧ miliaribus Italicis 4.
+    '06': Verum in Tellure nulli exstant montes, qui vix ad unius miliarii altitudinem perpendicularem accedant; manifestum igitur relinquitur, lunares eminentias terrestribus esse sublimiores.
+- id: p022
+  s:
+    '01': Lubet hoc loco alterius cuiusdam lunaris apparitionis, admiratione dignae, causam assignare; quae licet a nobis non recens, sed multis abhinc annis, observata sit, nonnullisque familiaribus amicis et discipulis ostensa, explicata atque per causam declarata, quia tamen eius observatio perspicilli ope facilior redditur atque evidentior, non incongrue hoc in loco reponendam esse duxi; idque etiam tum maxime, ut cognatio atque similitudo inter Lunam atque Tellurem clarius appareat.
+- id: p023
+  s:
+    '01': Dum Luna, tum ante tum etiam post coniunctionem, non procul a Sole reperitur, non modo ipsius globus, ex parte qua lucentibus cornibus exornatur, visui nostro spectandum sese offert; verum etiam tenuis quaedam sublucens peripheria tenebrosae partis, Soli nempe aversae, orbitam delineare, atque ab ipsius aetheris obscuriori campo seiungere, videtur.
+    '02': 'Verum, si exactiori inspectione rem consideremus, videbimus, non tantum extremum tenebrosae partis limbum incerta quadam claritate lucentem, sed integram Lunae faciem, illam nempe quae Solis fulgorem nondum sentit, lumine quodam, nec exiguo, albicare: apparet tamen primo intuitu subtilis tantummodo circumferentia lucens propter obscuriores caeli partes sibi conterminas; reliqua vero superficies obscurior e contra videtur ob fulgentium cornuum, aciem nostram obtenebrantium, contactum.'
+    '03': 'Verum si quis talem sibi eligat situm, ut a tecto vel camino aut aliquo alio obice inter visum et Lunam (sed procul ab oculo posito) cornua ipsa lucentia occultentur, pars vero ⟦15v⟧ iam ad quadraturam accedente, solaris illuminatio; augetur in terris eius luminis reflexio; extenditur adhuc supra semicirculum splendor in Luna, et nostrae clariores effulgent noctes: tandem integer Lunae vultus, quo Terram aspicit, ab opposito Sole clarissimis fulgoribus irradiatur; enitet longe lateque terrestris superficies lunari splendore perfusa: postmodum decrescens Luna debiliores ad nos radios emittit, debilius illuminatur Terra: Luna ad coniunctionem properat, atra nox Terram occupat.'
+    '04': 'Tali itaque periodo alternis vicibus lunaris fulgor menstruas illuminationes, clariores modo, debiliores alias, nobis largitur: verum aequa lance beneficium a Tellure compensatur.'
+    '05': 'Dum enim Luna sub Sole circa coniunctiones reperitur, superficiem terrestris hemisphaerii Soli expositi vividisque radiis illustrati integram respicit, reflexumque ab ipsa lumen concipit: ac proinde ex tali reflexione inferius hemisphaerium Lunae, licet solari lumine destitutum, non modice lucens apparet.'
+    '06': 'Eadem Luna, per quadrantem a Sole remota, dimidium tantum terrestris hemisphaerii illuminatum conspicit, scilicet occiduum; altera enim medietas orientalis nocte obtenebratur: ergo, et ipsa Luna splendide minus a Terra illustratur, eiusve proinde lux illa secundaria exilior nobis apparet.'
+    '07': 'Quod si Lunam in oppositione ad Solem constituas, spectabit ipsa hemisphaerium intermediae Telluris omnino tenebrosum obscuraque nocte perfusum: si igitur ecliptica fuerit talis oppositio, nullam prorsus illuminationem recipiet Luna, solari simul ac terrestri irradiatione destituta.'
+    08: 'In aliis atque aliis ad Terram et ad Solem habitudinibus, maius minusve a terrestri reflexione recipit lumen, prout maiorem aut minorem terrestris hemisphaerii illuminati partem spectaverit: is enim inter duos hosce globos servatur tenor, ut quibus temporibus maxime a Luna illustratur Tellus, iisdem minus ⟦16r⟧ vice versa a Terra illuminetur Luna, et e contra.'
+    09: Atque haec pauca de hac re in praesenti loco dicta sufficiant, fusius enim in nostro \textit{Systemate mundi}; ubi, complurimis et rationibus et experimentis, validissima solaris luminis e Terra reflexio ostenditur illis, qui eam a stellarum chorea arcendam esse iactitant, ex eo potissimum quod a motu et a lumine sit vacua; vagam enim illam ac Lunam splendore superantem, non autem sordium mundanarumque faecum sentinam, esse demonstrabimus, et naturalibus quoque rationibus sexcentis confirmabimus. ⟦16v⟧ eo, quod stellae in Solis occasu inter prima crepuscula emergentes, tametsi primae fuerint magnitudinis, exiguae admodum apparent; et Venus ipsa, si quando circa meridiem se nobis in conspectum dederit, adeo exilis cernitur, ut vix stellulam magnitudinis ultimae aequare videatur.
+    '10': Secus in aliis obiectis, et in ipsamet Luna, contingit; quae, sive in meridiana luce sive inter profundiores tenebras spectetur, eiusdem semper molis apparet.
+    '11': 'Intonsa igitur in mediis tenebris spectantur astra, crines tamen illorum diurna lux abradere potest; at non lux ista tantum, sed tenuis quoque nubecula, quae inter sidus et oculum aspicientis interponatur: idem quoque praestant nigra velamina ac vitra colorata, quorum obiectu atque interpositione circumfusi fulgores stellas deserunt.'
+    '12': 'Hoc idem pariter efficit perspicillum: prius enim adscititios accidentalesque a stellis fulgores adimit, illarum inde globulos simplices (si tamen figura fuerint globosa) auget; atque adeo secundum minorem multiplicitatem adaucta videntur.'
+    '13': Stellula enim quintae aut sextae magnitudinis, per perspicillum visa, tamquam magnitudinis primae repraesentatur.
+  notes:
+    2: '% Favaro: demonstrationibus et; 此处从 1610: demonstrabimus, et'
+- id: p024
+  s:
+    '01': Adnotatione quoque dignum videtur esse discrimen inter planetarum atque fixarum stellarum aspectus.
+    '02': 'Planetae enim globulos suos exacte rotundos ac circinatos obiiciunt, ac, veluti lunulae quaedam undique lumine perfusae, orbiculares apparent: fixae vero stellae peripheria circulari nequaquam terminatae conspiciuntur, sed veluti fulgores quidam radios circumcirca vibrantes atque admodum scintillantes; consimili tandem figura praeditae apparent cum perspicillo, ac dum naturali intuitu spectantur, sed adeo maiores ut stellula quintae aut sextae magnitudinis Canem, maximam nempe fixarum omnium, aequare videatur. ⟦16a\,r⟧'
+    '03': 'Verum, infra stellas magnitudinis sextae, adeo numerosum gregem aliarum, naturalem intuitum fugientium, per perspicillum intueberis, ut vix credibile sit: plures enim, quam sex aliae magnitudinum differentiae, videas licet; quarum maiores, quas magnitudinis septimae, seu primae invisibilium, appellare possumus, perspicilli beneficio maiores et clariores apparent, quam magnitudinis secundae sidera, acie naturali visa.'
+    '04': Ut autem de inopinabili fere illarum frequentia unam alteramve attestationem videas, asterismos duos subscribere placuit, ut ab eorum exemplo de ceteris iudicium feras.
+    '05': 'In primo integram Orionis constellationem pingere decreveram; verum ab ingenti stellarum copia, temporis vero inopia, obrutus, aggressionem hanc in aliam occasionem distuli; adstant enim, et circa veteres, intra unius aut alterius gradus limites, disseminantur, plures quingentis: quapropter tribus quae in Cingulo, et senis quae in Ense iampridem adnotatae fuerunt, alias adiacentes octoginta recens visas apposuimus; earumque interstitia, quo exactius licuit, servavimus: notas, seu veteres, distinctionis gratia, maiores pinximus, ac duplici linea contornavimus; alias inconspicuas, minores, ac unis lineis notavimus; magnitudinum quoque discrimina, quo magis licuit, servavimus.'
+    '06': 'In altero exemplo sex stellas Tauri, \capsemph{Pleiadas} dictas, depinximus (dico autem sex, quandoquidem septima fere numquam apparet) intra angustissimos in caelo cancellos obclusas, quibus aliae, plures quam quadraginta, invisibiles adiacent; quarum nulla ab aliqua ex praedictis sex vix ultra semigradum elongatur: harum nos tantum triginta sex adnotavimus; earumque interstitia, magnitudines, necnon veterum novarumque discrimina, veluti in Orione, servavimus.'
+  notes:
+    0: '% 1610: aequere'
+    1: '% 1610 (et Favaro): octuaginta'
+- id: p025
+  s:
+    '01': Quod tertio loco a nobis fuit observatum, est ipsiusmet \capsemph{Lactei} Circuli essentia, seu materies, quam perspicilli beneficio adeo ad sensum licet intueri, ut et altercationes omnes, quae per tot saecula philosophos excruciarunt, ab oculata certitudine dirimantur, nosque a verbosis disputationibus liberemur.
+    '02': 'Est enim \capsemph{Galaxia} nihil aliud, quam innumerarum stellarum coacervatim consitarum congeries: in quamcumque enim regionem illius perspicillum dirigas, statim stellarum ingens frequentia sese in conspectum profert, quarum complures satis magnae ac valde conspicuae videntur; sed exiguarum multitudo prorsus inexplorabilis est.'
+- id: p026
+  s:
+    '01': At cum non tantum in \capsemph{Galaxia} lacteus ille candor, veluti albicantis nubis, spectetur, sed complures consimilis coloris areolae sparsim per aethera subfulgeant, si in illarum quamlibet specillum convertas, stellarum constipatarum ⟦16b\,v⟧ coetum offendes.
+    '02': Amplius (quod magis miraberis), stellae ab astronomis singulis in hanc usque diem \capsemph{nebulosae} appellatae, stellularum mirum in modum consitarum greges sunt; ex quarum radiorum commixtione, dum unaquaeque ob exilitatem, seu maximam a nobis remotionem, oculorum aciem fugit, candor ille consurgit, qui densior pars caeli, stellarum aut Solis radios retorquere valens, hucusque creditus est.
+    '03': Nos ex illis nonnullas observavimus, et duarum asterismos subnectere voluimus.
+  notes:
+    1: '% 1610: mirabilis'
+- id: p027
+  s:
+    '01': In primo habes \capsemph{nebulosam}, Capitis Orionis appellatam, in qua stellas viginti unas numeravimus.
+- id: p028
+  s:
+    '01': 'Secundus \capsemph{nebulosam Praesepe} nuncupatam continet; quae non una tantum stella est, sed congeries stellularum plurium quam quadraginta: nos, praeter Asellos, triginta sex notavimus, in hunc, qui sequitur, ordinem dispositas.'
+- id: p029
+  s:
+    '01': De Luna, de inerrantibus stellis ac de Galaxia, quae hactenus observata sunt, breviter enarravimus.
+    '02': Superest ut, quod maximum in praesenti negotio existimandum videtur, quattuor \capsemph{planetas} a primo mundi exordio ad nostra usque tempora numquam conspectos, occasionem reperiendi atque observandi, necnon ipsorum loca, atque per duos proxime menses observationes circa eorundem lationes ac mutationes habitas, aperiamus ac promulgemus; astronomos omnes convocantes, ut ad illorum periodos inquirendas atque definiendas se conferant, quod nobis in hanc usque diem, ob temporis angustiam, assequi minime licuit.
+    '03': Illos tamen iterum monitos facimus, ne ad talem inspectionem incassum accedant, perspicillo exactissimo opus esse, et quale in principio sermonis huius descripsimus.
+- id: p030
+  s:
+    '01': Die itaque septima Ianuarii, instantis anni millesimi sexcentesimi decimi, hora sequentis noctis prima, cum caelestia sidera per perspicillum spectarem, Iuppiter sese obviam fecit; cumque admodum excellens mihi parassem instrumentum (quod antea ob alterius organi debilitatem minime contigerat), tres illi adstare stellulas, exiguas quidem, verumtamen clarissimas, cognovi; quae, licet e numero inerrantium a me crederentur, nonnullam tamen intulerunt admirationem, eo quod secundum exactam lineam rectam atque eclipticae parallelam dispositae videbantur, ac ceteris magnitudine paribus splendidiores.
+    '02': 'Eratque illarum inter se et ad Iovem talis constitutio: ⟦17v⟧'
+    '03': ex parte scilicet orientali duae aderant stellae, una vero occasum versus.
+    '04': 'Orientalior atque occidentalis reliqua paulo maiores apparebant: de distantia inter ipsas et Iovem minime sollicitus fui; fixae enim, uti diximus primo, creditae fuerunt.'
+    '05': 'Cum autem die octava, nescio quo fato ductus, ad inspectionem eandem reversus essem, longe aliam constitutionem reperi: erant enim tres stellulae occidentales omnes, a Iove atque inter se, quam superiori nocte, viciniores, paribusque interstitiis mutuo disseparatae, veluti apposita praesefert delineatio. ⟦|⟧'
+    '06': 'Hic, licet ad mutuam stellarum appropinquationem minime cogitationem appulissem, haesitare tamen coepi, quonam pacto Iuppiter ab omnibus praedictis fixis posset orientalior reperiri, cum a binis ex illis pridie occidentalis fuisset: ac proinde veritus sum ne forte secus a computo astronomico directus foret, ac propterea motu proprio stellas illas antevertisset.'
+    '07': Quapropter maximo cum desiderio sequentem exspectavi noctem; verum a spe frustratus fui, nubibus enim undiquaque obductum fuit caelum.
+  notes:
+    1: '% 1610: apparabant; sollicicus'
+    2: '% 1610: exitare tamen caepit'
+- id: p031
+  s:
+    '01': 'At die decima apparuerunt stellae in eiusmodi ad Iovem positu: ⟦|⟧'
+    '02': duae enim tantum, et orientales ambae, aderant; tertia, ut opinatus fui, sub Iove latitante.
+    '03': Erant pariter, veluti antea, in eadem recta cum Iove, ac iuxta zodiaci longitudinem adamussim locatae.
+    '04': Haec cum vidissem, cumque mutationes consimiles in Iove ⟦18r⟧ nulla ratione reponi posse intellegerem, atque insuper spectatas stellas semper easdem fuisse cognoscerem (nullae enim aliae, aut praecedentes, aut consequentes, intra magnum intervallum iuxta longitudinem zodiaci aderant), iam ambiguitatem in admirationem permutans, apparentem commutationem non in Iove, sed in stellis adnotatis repositam esse comperi; ac proinde oculate et scrupulose magis deinceps observandum fore sum ratus.
+- id: p032
+  s:
+    '01': 'Die itaque undecima eiuscemodi constitutionem vidi: ⟦|⟧'
+    '02': stellas scilicet tantum duas orientales; quarum media triplo distabat a Iove, quam ab orientaliori, eratque orientalior duplo fere maior reliqua, cum tamen antecedenti nocte aequales ferme apparuissent.
+    '03': 'Statutum ideo omnique procul dubio a me decretum fuit, tres in caelis adesse stellas vagantes circa Iovem, instar Veneris atque Mercurii circa Solem; quod tandem luce meridiana clarius in aliis postmodum compluribus inspectionibus observatum est: ac non tantum tres, verum quattuor esse vaga sidera circa Iovem suas circumvolutiones obeuntia; quorum permutationes, exactius consequenter observatas, subsequens narratio ministrabit: interstitia quoque inter ipsa per perspicillum, superius explicata ratione, dimetitus sum: horas insuper observationum, praesertim cum plures in eadem nocte habitae fuerunt, apposui; adeo enim celeres horum planetarum exstant revolutiones, ut horarias quoque differentias plerumque liceat accipere.'
+- id: p033
+  s:
+    '01': 'Die igitur duodecima, hora sequentis noctis prima, hac ratione disposita sidera vidi: erat orientalior ⟦18v⟧ stella occidentaliori maior, ambae tamen valde conspicuae ac splendidae: utraque distabat a Iove scrupulis primis duobus: tertia quoque stellula apparere coepit hora tertia, prius minime conspecta, quae ex parte orientali Iovem fere tangebat, eratque admodum exigua.'
+    '02': Omnes fuerunt in eadem recta et secundum eclipticae longitudinem coordinatae.
+- id: p034
+  s:
+    '01': 'Die decima tertia primum a me quattuor conspectae fuerunt stellulae in hac ad Iovem constitutione: ⟦|⟧'
+    '02': 'erant tres occidentales et una orientalis: lineam proxime rectam constituebant; media enim occidentalium paululum a recta septentrionem versus deflectebat.'
+    '03': 'Aberat orientalior a Iove minuta duo: reliquarum et Iovis intercapedines erant singulae unius tantum minuti.'
+    '04': Stellae omnes eandem prae se ferebant magnitudinem, ac, licet exiguam, lucidissimae tamen erant ac fixis eiusdem magnitudinis longe splendidiores.
+- id: p035
+  s:
+    '01': Die decima quarta nubilosa fuit tempestas.
+- id: p036
+  s:
+    '01': 'Die decima quinta, hora noctis tertia, in proxime depicta fuerunt habitudine quattuor stellae ad Iovem: ⟦|⟧'
+    '02': 'occidentales omnes ac in eadem proxime recta linea dispositae; quae enim tertia a Iove numerabatur paululum ⟦19r⟧ in boream attollebatur; propinquior Iovi erat omnium minima, reliquae consequenter maiores apparebant: intervalla inter Iovem et tria consequentia sidera erant aequalia omnia ac duorum minutorum; at occidentalius aberat a sibi propinquo minutis quattuor.'
+    '03': Erant lucida valde, et nihil scintillantia, qualia semper, tum ante, tum post, apparuerunt.
+    '04': 'Verum hora septima tres solummodo aderant stellae, in huiuscemodi cum Iove aspectu: ⟦|⟧'
+    '05': 'erant nempe in eadem recta ad unguem: vicinior Iovi erat admodum exigua, et ab illo semota per minuta prima tria; ab hac secunda distabat min. uno; tertia vero a secunda min. 4, sec. 30.'
+    '06': 'Post vero aliam horam duae stellulae mediae adhuc viciniores erant: aberant enim sec. vix 30 tantum.'
+  notes:
+    1: '% 1610: proxim (recta)'
+    2: '% 1610: consequantia'
+- id: p037
+  s:
+    '01': 'Die decima sexta, hora prima noctis, tres vidimus stellas iuxta hunc ordinem dispositas: ⟦|⟧'
+    '02': duae Iovem intercipiebant, ab eo per min. 0, sec. 40 hinc inde remotae; tertia vero occidentalis a Iove distabat min. 8.
+    '03': Iovi proximae non maiores, sed lucidiores apparebant remotiori.
+- id: p038
+  s:
+    '01': 'Die decima septima, hora ab occasu 0, min. 30, huiusmodi fuit configuratio: ⟦|⟧'
+    '02': Stella una tantum orientalis a ⟦19v⟧ Iove distabat min. 3; occidentalis pariter una, a Iove distans min. 11.
+    '03': Orientalis duplo maior apparebat occidentali; nec plures aderant quam istae duae.
+    '04': 'Verum post horas quattuor, hora nempe proxime quinta, tertia ex parte orientali emergere coepit, quae antea, ut opinor, cum priori iuncta erat; fuitque talis positio: ⟦|⟧'
+    '05': Media stella, orientali quam proxima, min. tantum sec. 20 elongabatur ab illa, et a linea recta, per extremas et Iovem producta, paululum versus austrum declinabat.
+- id: p039
+  s:
+    '01': 'Die decima octava, hora 0, min. 20 ab occasu, talis fuit aspectus: ⟦|⟧'
+    '02': 'erat stella orientalis maior occidentali, et a Iove distans min. 8: occidentalis vero a Iove aberat min. 10.'
+- id: p040
+  s:
+    '01': 'Die decima nona, hora noctis secunda, talis fuit stellarum coordinatio: ⟦|⟧'
+    '02': 'erant nempe secundum rectam lineam ad unguem tres cum Iove stellae: orientalis una, a Iove distans min. 6: inter Iovem et primam sequentem occidentalem mediabat min. 5 interstitium: haec autem ab occidentaliori aberat min. 4.'
+    '03': Anceps eram tunc, numquid inter orientalem stellam et Iovem stellula mediaret, verum Iovi quamproxima, adeo ut illum fere tangeret.
+    '04': 'At, hora quinta, hanc manifeste vidi ⟦20r⟧ medium iam inter Iovem et orientalem stellam locum exquisite occupantem, ita ut talis fuerit configuratio: ⟦|⟧'
+    '05': Stella insuper novissime conspecta admodum exigua fuit; verumtamen, hora sexta, reliquis magnitudine fere fuit aequalis.
+  notes:
+    1: '% 1610: oberat'
+- id: p041
+  s:
+    '01': 'Die vicesima, hora 1, min. 15, constitutio consimilis visa est: ⟦|⟧'
+    '02': 'aderant tres stellulae adeo exiguae, ut vix percipi possent: a Iove, et inter se non magis distabant minuto uno: incertus eram, numquid ex occidente duae, an tres, adessent stellulae.'
+    '03': 'Circa horam sextam hoc pacto erant dispositae: ⟦|⟧'
+    '04': orientalis enim a Iove duplo magis aberat quam antea, nempe min. 2; media occidentalis a Iove distabat min. 0, sec. 40, ab occidentaliori vero min. 0, sec. 20.
+    '05': 'Tandem, hora septima, tres ex occidente visae fuerunt stellulae: ⟦|⟧'
+    '06': 'Iovi proxima aberat ab eo min. 0, sec. 20; inter hanc et occidentaliorem intervallum erat minutorum secundorum 40: inter has vero alia spectabatur paululum ad meridiem deflectens, ⟦20v⟧ ab occidentaliori non pluribus decem secundis remota.'
+- id: p042
+  s:
+    '01': 'Die vicesima prima, hora 0, min. 30, aderant ex oriente stellulae tres, aequaliter inter se et a Iove distantes: ⟦|⟧'
+    '02': interstitia vero, secundum existimationem, 50 secundorum minutorum fuere.
+    '03': Aderat quoque stella ex occidente, a Iove distans min. 4.
+    '04': Orientalis Iovi proxima erat omnium minima; reliquae vero aliquanto maiores, atque inter se proxime aequales.
+  notes:
+    0: '% 1610: dixtantes'
+- id: p043
+  s:
+    '01': 'Die vicesima secunda, hora 2, consimilis fuit stellarum dispositio: ⟦|⟧'
+    '02': a stella orientali ad Iovem minutorum primorum 5 fuit intervallum, a Iove ad occidentaliorem min. 7.
+    '03': Duae vero occidentales intermediae distabant ad invicem min. 0, sec. 40; propinquior vero Iovi aberat ab illo min. 1.
+    '04': 'Ipsae mediae stellulae minores erant extremis: fuerunt vero secundum eandem rectam lineam iuxta zodiaci longitudinem extensae, nisi quod trium occidentalium media paululum in austrum deflectebat.'
+    '05': 'Sed, hora noctis sexta, in hac constitutione visae sunt: ⟦|⟧'
+    '06': orientalis admodum exigua erat, distans a Iove, ut antea, min. 5.
+    '07': 'Tres vero occidentales, et a Iove et ad invicem, aequaliter dirimebantur, erantque intercapedines singulae min. 1, sec. 20 proxime: ⟦21r⟧'
+    08: et stella Iovi vicinior reliquis duabus sequentibus minor apparebat; omnesque in eadem recta exquisite dispositae videbantur.
+  notes:
+    1: '% 1610: dixtabant'
+    3: '% 1610: dixpositae'
+- id: p044
+  s:
+    '01': 'Die vicesima tertia, hora 0, min. 40 ab occasu, in hunc ferme modum stellarum constitutio se habuit: ⟦|⟧'
+    '02': 'erant tres stellae cum Iove in recta linea secundum zodiaci longitudinem, veluti semper fuerunt: orientales erant duae, una vero occidentalis.'
+    '03': 'Orientalior aberat a sequenti min. 7, haec vero a Iove min. 2, sec. 40, Iuppiter ab occidentali min. 3, sec. 20: erantque omnes magnitudine fere aequales.'
+    '04': 'Sed, hora quinta, duae stellae, quae prius Iovi erant proximae, amplius non cernebantur, sub Iove, ut arbitror, latitantes; fuitque talis aspectus:'
+- id: p045
+  s:
+    '01': 'Die vicesima quarta, tres stellae, orientales omnes, visae sunt, ac fere in eadem cum Iove recta linea: ⟦|⟧'
+    '02': media enim modice in austrum deflectebat.
+    '03': 'Iovi propinquior distabat ab eo min. 2, sequens ab hac min. 0, sec. 30, ab hac vero aberat orientalior min. 9: erantque omnes admodum splendidae.'
+    '04': 'Hora vero sexta, duae ⟦21v⟧ solummodo sese offerebant stellae in hoc positu: nempe cum Iove in eadem recta linea ad unguem, a quo elongabatur propinquior min. 3, altera vero ab hac min. 8: in unam, ni fallor, coierant duae mediae prius observatae stellulae.'
+- id: p046
+  s:
+    '01': 'Die vicesima quinta, hora 1, min. 40, ita se habebat constitutio: ⟦|⟧'
+    '02': 'aderant enim duae tantum stellae ex orientali plaga, eaeque satis magnae: orientalior a media distabat min. 5, media vero a Iove min. 6.'
+- id: p047
+  s:
+    '01': 'Die vicesima sexta, hora 0, min. 40, stellarum coordinatio eiusmodi fuit: ⟦|⟧'
+    '02': 'spectabantur enim stellae tres, quarum duae orientales, tertia occidentalis a Iove: haec ab eo min. 5 aberat, media vero orientalis ab eodem distabat min. 5, sec. 20; orientalior vero a media min. 6: in eadem recta constitutae, et eiusdem magnitudinis erant.'
+    '03': 'Hora deinde quinta, constitutio fere eadem fuit; in hoc tantum discrepans, quod prope Iovem quarta stellula ex oriente emergebat, ceteris minor, a Iove tunc remota min. 30, sed paululum a recta linea versus boream attollebatur, ut apposita figura demonstrat:'
+- id: p048
+  s:
+    '01': 'Die vicesima septima, hora 1 ab occasu, unica tantum ⟦22r⟧ stellula conspiciebatur, eaque orientalis, secundum hanc constitutionem: ⟦|⟧'
+    '02': eratque admodum exigua, et a Iove remota min. 7.
+- id: p049
+  s:
+    '01': Die vicesima octava et vicesima nona, ob nubium interpositionem nihil observare licuit.
+- id: p050
+  s:
+    '01': 'Die tricesima, hora prima noctis, tali pacto constituta spectabantur sidera: ⟦|⟧'
+    '02': 'unum aderat orientale, a Iove distans min. 2, sec. 30, duo vero ex occidente, quorum Iovi propinquius aberat ab eo min. 3, reliquum ab hoc min. 1: extremorum et Iovis positus in eadem recta linea fuit, at media stella paululum in boream attollebatur: occidentalior fuit reliquis minor.'
+  notes:
+    1: '% 1610: reliquuum'
+- id: p051
+  s:
+    '01': 'Die ultima, hora secunda, visae sunt orientales stellae duae, una vero occidua: ⟦|⟧'
+    '02': 'Orientalium media a Iove aberat min. 2, sec. 20; orientalior vero ab ipsa media min. 0, sec. 30; occidentalis distabat a Iove min. 10: erant in eadem recta linea proxime, orientalis tantum Iovi vicinior modicum quiddam in septentrionem elevabatur.'
+    '03': Hora vero quarta, duae orientales viciniores ⟦22v⟧ ad invicem adhuc erant; aberant enim solummodo sec. 20.
+    '04': Apparuit in hisce observationibus occidentalis stella satis exigua.
+  notes:
+    0: '% 维基文库录文误作 Stellaeie；1610 作 Stellae'
+- id: p052
+  s:
+    '01': 'Die Februarii prima, hora noctis secunda, consimilis fuit constitutio: ⟦|⟧'
+    '02': 'Distabat orientalior stella a Iove min. 6, occidentalis vero 8; ex parte orientali stella quaedam, admodum exigua, a Iove distabat minutis secundis 20: rectam ad unguem designabant lineam.'
+- id: p053
+  s:
+    '01': 'Die secunda, iuxta hunc ordinem visae sunt stellae: ⟦|⟧'
+    '02': 'Una tantum orientalis a Iove distabat min. 6; Iuppiter ab occidentali viciniori aberat min. 4; inter hanc et occidentaliorem min. 8 fuit intercapedo: erant in eadem recta ad unguem, et eiusdem fere magnitudinis.'
+    '03': 'Sed, hora septima, quattuor aderant stellae: ⟦|⟧'
+    '04': inter quas Iuppiter mediam occupabat sedem.
+    '05': 'Harum stellarum orientalior distabat a sequenti min. 4, haec a Iove min. 1, sec. 40: Iuppiter ab occidentali sibi viciniori aberat min. 6, haec vero ab occidentaliori min. 8: erantque pariter omnes in eadem recta linea, secundum zodiaci longitudinem extensa.'
+- id: p054
+  s:
+    '01': 'Die tertia, hora septima, in hac serie dispositae fuerunt stellae: orientalis a Iove distabat min. 1, sec. 30, occidentalis ⟦23r⟧ proxima min. 2: ab hac vero elongabatur occidentalior altera min. 10: erant praecise in eadem recta, et magnitudinis aequalis.'
+- id: p055
+  s:
+    '01': 'Die quarta, hora secunda, circa Iovem quattuor stabant stellae, orientales duae, ac duae occidentales, in eadem ad unguem recta linea dispositae, ut in proxima figura: ⟦|⟧'
+    '02': Orientalior distabat a sequenti min. 3, haec vero a Iove aberat min. 0, sec. 40, Iuppiter a proxima occidentali min. 4, haec ab occidentaliori min. 6.
+    '03': Magnitudine erant fere aequales; proximior Iovi reliquis paulo minor apparebat.
+    '04': Hora autem septima, orientales stellae distabant tantum min. 0, sec. 30. ⟦|⟧
+    '05': 'Iuppiter ab orientali viciniori aberat min. 2, ab occidentali vero sequente min. 4, haec vero ab occidentaliori distabat min. 3: erantque aequales omnes, et in eadem recta secundum eclipticam extensa.'
+- id: p056
+  s:
+    '01': Die quinta, caelum fuit nubilosum.
+- id: p057
+  s:
+    '01': 'Die sexta, duae solummodo apparuerunt stellae, medium ⟦23v⟧ Iovem intercipientes, ut in figura apposita spectatur: orientalis a Iove distabat min. 2, occidentalis vero min. 3: erant in eadem recta cum Iove, et magnitudine pares.'
+- id: p058
+  s:
+    '01': 'Die septima, duae adstabant stellae, a Iove orientales ambae, in hunc dispositae modum: ⟦|⟧'
+    '02': intercapedines inter ipsas et Iovem erant aequales, unius nempe minuti primi; ac per ipsas et centrum Iovis recta linea incedebat.
+- id: p059
+  s:
+    '01': 'Die octava, hora prima, aderant tres stellae orientales omnes, ut in descriptione: ⟦|⟧'
+    '02': Iovi proxima, exigua satis, distabat ab eo min. 1, sec. 20; media vero ab hac min. 4, eratque satis magna; orientalior, admodum exigua, ab hac distabat min. 0, sec. 20.
+    '03': 'Anceps eram, numquid Iovi proxima una tantum, an duae forent stellulae; videbatur enim interdum huic alia adesse versus ortum, mirum in modum exigua, et ab illa seiuncta per min. 0, sec. 10 tantum: fuerunt omnes in eadem recta linea secundum zodiaci ductum extensae.'
+    '04': 'Hora vero tertia, stella Iovi proxima illum fere tangebat; distabat enim ab eo min. 0, sec. 10 tantum: reliquae vero a Iove remotiores factae fuerunt; aberat enim media a Iove min. 6.'
+    '05': Tandem, hora quarta, quae prius Iovi proxima erat, cum eo iuncta, non cernebatur amplius.
+  notes:
+    1: '% 1610: aliam; mirum immodum; aberant'
+- id: p060
+  s:
+    '01': 'Die nona, hora 0, min. 30, adstabant Iovi stellae duae ⟦24r⟧ orientales, et una occidentalis, in tali dispositione: ⟦|⟧'
+    '02': Orientalior, quae satis exigua erat, a sequenti distabat min. 4; media, maior, a Iove aberat min. 7; Iuppiter ab occidentali, quae parva erat, distabat min. 4.
+  notes:
+    0: '% Favaro: m. 30'
+- id: p061
+  s:
+    '01': 'Die decima, hora prima, min. 30, stellulae binae, admodum exiguae, orientales ambae, in tali dispositione visae sunt: ⟦|⟧'
+    '02': remotior distabat a Iove min. 10, vicinior vero min. 0, sec. 20; erantque in eadem recta.
+    '03': 'Hora autem quarta, stella Iovi proxima amplius non apparebat: altera quoque adeo imminuta videbatur, ut vix cerni posset, licet aer praeclarus esset; et a Iove remotior, quam antea, erat; distabat siquidem min. 12.'
+- id: p062
+  s:
+    '01': Die undecima, hora prima, aderant ab oriente stellae duae, et una ab occasu. ⟦|⟧
+    '02': 'Distabat occidentalis a Iove min. 4; orientalis vicinior aberat pariter a Iove min. 4; orientalior vero ab hac distabat min. 8: erant satis perspicuae, et in eadem recta.'
+    '03': 'Sed hora tertia, stella quarta, Iovi proxima, ab oriente visa est, reliquis ⟦24v⟧ minor, a Iove dissita per min. 0, sec. 30, et a recta linea per reliquas stellas protracta, modicum in aquilonem deflectens: splendidissimae erant omnes, ac valde conspicuae.'
+    '04': 'Hora vero quinta cum dimidia, iam stella orientalis, Iovi proxima, ab illo remotior facta, medium inter ipsum et stellam orientaliorem, sibi propinquam, obtinebat locum; erantque omnes in eadem recta linea ad unguem, et eiusdem magnitudinis, ut in apposita descriptione videre licet:'
+- id: p063
+  s:
+    '01': Die duodecima, hora 0, min. 40, stellae binae ab ortu, binae pariter ab occasu, adstabant. ⟦|⟧
+    '02': Orientalis remotior a Iove distabat min. 10, longinquior vero occidentalis aberat min. 8, erantque ambae satis conspicuae; reliquae duae Iovi erant vicinissimae, et admodum exiguae, praesertim orientalis, quae a Iove distabat min. 0, sec. 40; occidentalis vero, min. 1.
+    '03': Hora vero quarta, stellula, quae Iovi erat proxima ex oriente, amplius non apparebat.
+- id: p064
+  s:
+    '01': Die decima tertia, hora 0, min. 30, duae stellae apparebant ab ortu, duae insuper ab occasu. ⟦|⟧
+    '02': Orientalis ac Iovi vicinior, satis perspicua, distabat ab eo min. 2; ab hac orientalior, minus apparens, aberat min. 4.
+    '03': Ex occidentalibus, ⟦25r⟧ remotior a Iove, conspicua valde, ab eo dirimebatur min. 4; inter hanc et Iovem intercidebat stellula exigua ac occidentaliori stellae vicinior, cum ab ea non magis abesset min. 0, sec. 30.
+    '04': Erant omnes in eadem recta secundum eclipticae longitudinem ad unguem.
+  notes:
+    0: '% 1610: decimatertia'
+- id: p065
+  s:
+    '01': 'Die decima quinta (nam decima quarta caelum nubibus fuit obductum), hora prima, talis fuit astrorum positus: ⟦|⟧'
+    '02': 'tres nempe erant orientales stellae, nulla vero cernebatur occidentalis: orientalis Iovi proxima distabat ab eo min. 0, sec. 50; sequens ab hac aberat min. 0, sec. 20, ab hac vero orientalior min. 2; eratque reliquis maior; viciniores enim Iovi erant admodum exiguae.'
+    '03': Sed, hora proxime quinta, ex stellis Iovi proximis una tantum cernebatur, a Iove distans min. 0, sec. 30; orientalioris vero elongatio a Iove adaucta erat; fuit enim tunc min. 4. ⟦|⟧
+    '04': At, hora sexta, praeter duas, ut modo dictum est, ab oriente constitutas, una versus occasum cernebatur stellula, admodum exigua, a Iove remota min. 2.
+  notes:
+    0: '% 1610: decimaquinta, decimaquarta'
+- id: p066
+  s:
+    '01': 'Die decima sexta, hora sexta, in tali constitutione steterunt: stella nempe orientalis a Iove min. 7 aberat, ⟦25v⟧ Iuppiter a sequenti occidua min. 5, haec vero a reliqua occidentaliori min. 3: erant omnes eiusdem proxime magnitudinis, satis conspicuae, et in eadem recta linea exquisite secundum zodiaci ductum.'
+  notes:
+    0: '% 1610: decimasexta'
+- id: p067
+  s:
+    '01': 'Die decima septima, hora 1, duae aderant stellae: ⟦|⟧'
+    '02': 'orientalis una, a Iove distans min. 3, occidentalis altera, distans min. 10: haec erat aliquanto minor orientali.'
+    '03': Sed, hora 6, orientalis proximior erat Iovi, distabat nempe min. 0, sec. 50; occidentalis vero remotior fuit, scilicet min. 12.
+    '04': Fuerunt in utraque observatione in eadem recta, et ambae satis exiguae, praesertim orientalis in secunda observatione.
+  notes:
+    0: '% 1610: decimaseptima'
+    1: '% 1610: distas（第二个 distans）'
+- id: p068
+  s:
+    '01': 'Die 18, hora 1, tres aderant stellae, quarum duae occidentales, orientalis vero una: ⟦|⟧'
+    '02': 'distabat orientalis a Iove min. 3, occidentalis proxima min. 2; occidentalior reliqua aberat a media min. 8: omnes fuerunt in eadem recta ad unguem, et eiusdem fere magnitudinis.'
+    '03': 'At, hora 2, stellae viciniores paribus a Iove aberant interstitiis: occidua enim aberat ipsa quoque min. 3.'
+    '04': 'Sed, hora 6, quarta stellula visa est inter orientaliorem et Iovem, in tali configuratione: orientalior distabat a sequenti min. 3, sequens a ⟦26r⟧ Iove min. 1, sec. 50, Iuppiter ab occidentali sequenti min. 3, haec vero ab occidentaliori min. 7: ⟦|⟧'
+    '05': 'erant fere aequales; orientalis tantum Iovi proxima reliquis erat paulo minor: erantque in eadem recta eclipticae parallela.'
+- id: p069
+  s:
+    '01': Die 19, hora 0, min. 40, stellae duae solummodo occiduae a Iove conspectae fuerunt, satis magnae, et in eadem recta cum Iove ad unguem, ac secundum eclipticae ductum dispositae. ⟦|⟧
+    '02': Propinquior a Iove distabat min. 7, haec vero ab occidentaliori min. 6.
+- id: p070
+  s:
+    '01': Die 20, nubilosum fuit caelum.
+- id: p071
+  s:
+    '01': 'Die 21, hora 1, min. 30, stellulae tres satis exiguae cernebantur in hac constitutione: ⟦|⟧'
+    '02': 'orientalis aberat a Iove min. 2, Iuppiter ab occidentali sequente min. 3, haec vero ab occidentaliori min. 7: erant ad unguem in eadem recta eclipticae parallela.'
+- id: p072
+  s:
+    '01': 'Die 25, hora 1, min. 30 (nam superioribus tribus noctibus caelum fuit nubibus obductum), tres apparuerunt stellae: ⟦|⟧'
+    '02': 'orientales duae, quarum distantiae inter se et a Iove ⟦26v⟧ aequales fuerunt, ac min. 4; occidentalis una aberat a Iove min. 2: erant in eadem recta ad unguem, secundum eclipticae ductum.'
+  notes:
+    2: '% Favaro (Wikisource): "ac. min. 4"'
+- id: p073
+  s:
+    '01': 'Die 26, hora 0, min. 30, binae tantum aderant stellae: ⟦|⟧'
+    '02': 'orientalis una, distans a Iove min. 10; occidentalis altera, distans min. 6: orientalis erat aliquanto minor occidentali.'
+    '03': 'Sed hora 5, tres visae sunt stellae: ⟦|⟧'
+    '04': praeter enim duas iam adnotatas, tertia ex occidente prope Iovem, admodum exigua, cernebatur, quae prius sub Iove latitabat, distabatque ab eo min. 1; orientalis vero remotior, quam antea, videbatur, distans nempe a Iove min. 11.
+    '05': 'Hac nocte primum Iovis et adiacentium planetarum progressum, secundum zodiaci longitudinem, facta relatione ad fixam quandam, observare placuit: spectabatur enim fixa stella orientem versus, distans a planeta orientali min. 11, et paululum in austrum deflectebat, in hunc qui sequitur modum:'
+- id: p074
+  s:
+    '01': 'Die 27, hora 1, min. 4, apparebant stellae in tali configuratione: orientalior distabat a Iove min. 10, sequens, Iovi proxima, min. 0, sec. 30; occidentalis sequens aberat ⟦27r⟧ min. 2, sec. 30; ab hac occidentalior distabat min. 1. ⟦|⟧'
+    '02': Viciniores Iovi exiguae apparebant, praesertim orientalis; extremae vero erant admodum conspicuae, in primis vero occidua; rectamque lineam secundum eclipticae ductum designabant ad unguem.
+    '03': Horum planetarum progressus versus ortum ex collatione ad praedictam fixam manifeste cernebatur; ipsi enim Iuppiter cum adstantibus planetis vicinior erat, ut in apposita figura videre licet.
+    '04': Sed hora 5, stella orientalis Iovi proxima aberat ab eo min. 1.
+- id: p075
+  s:
+    '01': 'Die 28, hora 1, duae tantum stellae videbantur; orientalis, distans a Iove min. 9; occidentalis vero, min. 2: erant satis conspicuae et in eadem recta: ad quam lineam fixa perpendiculariter incidebat in planetam orientalem, veluti in figura: ⟦|⟧'
+    '02': 'sed, hora 5, tertia stellula, ex oriente distans a Iove min. 2, conspecta est in eiusmodi constitutione:'
+- id: p076
+  s:
+    '01': Die 1 Martii, hora 0, min. 40, quattuor stellae orientales
+- id: p077
+  s:
+    '01': 'Die 2, hora 0, min. 40, tres adstabant planetae, orientales duo, unus vero occiduus, in tali configuratione: ⟦|⟧'
+    '02': 'Aberat orientalior a Iove min. 7, ab hoc distabat sequens min. 0, sec. 30; occidentalis vero elongabatur a Iove min. 2: erant extremi lucidiores ac maiores reliquo, qui admodum exiguus apparebat.'
+    '03': Orientalior a recta linea, per reliquos et Iovem ducta, paululum in boream videbatur elatus.
+    '04': Fixa iam adnotata ab occidentali planeta min. 8 distabat, secundum perpendicularem ab ipso planeta ductam super lineam rectam per planetas omnes extensam; veluti apposita figura demonstrat.
+- id: p078
+  s:
+    '01': Hasce Iovis et adiacentium planetarum ad fixam collationes ⟦28r⟧ apponere placuit, ut ex illis eorundem planetarum progressus, tum secundum longitudinem, tum etiam secundum latitudinem, cum motibus, qui ex tabulis hauriuntur, ad unguem congruere, quilibet intellegere possit. ⟦28v⟧ offert stellas, dum omnes simul cum Iove, 12 annorum spatio, magnum circa Solem permeant orbem.
+    '02': Praetereundum tandem non est, quanam ratione contingat, ut Medicea Sidera, dum angustissimas circa Iovem rotationes absolvunt, semetipsis interdum plusquam duplo maiora videantur.
+    '03': Causam in vaporibus terrenis minime quaerere possumus; apparent enim aucta, seu minuta, dum Iovis et propinquarum fixarum moles nil immutatae cernuntur.
+    '04': 'Accedere autem illos, adeoque a Terra elongari, circa suae conversionis perigaeum, aut apogaeum, ut tantae mutationis causam nanciscantur, omnino inopinabile videtur: nam arta circularis latio id nulla ratione praestare valet; ovalis vero motus (qui in hoc casu rectus fere esset) et inopinabilis, et iis quae apparent nulla ratione consonus, esse videtur.'
+    '05': Quod hac in re succurrit, lubens profero, ac recte philosophantium iudicio censuraeque exhibeo.
+    '06': 'Constat, terrestrium vaporum obiectu Solem Lunamque maiores, sed fixas atque planetas minores, apparere: hinc luminaria prope horizontem maiora, stellae vero, minores ac plerumque inconspicuae, imminuuntur etiam magis, si iidem vapores lumine fuerint perfusi; idcirco stellae interdiu ac intra crepuscula admodum exiles apparent; Luna non item, ut supra quoque monuimus.'
+    '07': 'Constat insuper, non modo Tellurem, sed etiam Lunam, suum habere vaporosum orbem circumfusum, tum ex his quae supra diximus, tum maxime ex iis, quae fusius in nostro systemate dicentur: at idem quoque de reliquis planetis ferre iudicium congrue possumus; adeo ut etiam circa Iovem densiorem reliquo aethere ponere orbem, inopinabile minime videatur; circa quem, instar Lunae circa elementorum sphaeram, planetae \capsemph{medicei} circumducantur, atque huius orbis obiectu, dum apogaei fuerint, minores, dum vero perigaei, per eiusdem orbis ablationem, seu attenuationem, maiores, appareant.'
+    08: Ulterius progredi temporis angustia inhibet; plura de his brevi candidus lector exspectet.
+  notes:
+    1: '% 1610: auriuntur'

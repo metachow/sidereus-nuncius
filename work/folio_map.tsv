@@ -1,0 +1,61 @@
+scan	folio	file	note
+0005	1r	f01r	title page
+0006	1v	-	blank: no file
+0007	2r	f02r	
+0008	2v	f02v	
+0009	3r	f03r	
+0010	3v	f03v	
+0011	4r	f04r	
+0012	4v	f04v	
+0013	5r	f05r	
+0014	5v	f05v	
+0015	6r	f06r	
+0016	6v	f06v	sample already done
+0017	7r	f07r	sample already done
+0018	7v	f07v	sample already done
+0019	8r	f08r	sample already done
+0020	8v	f08v	
+0021	9r	f09r	
+0022	9v	f09v	
+0023	10r	f10r	
+0024	10v	f10v	
+0025	11r	f11r	
+0026	11v	f11v	
+0027	12r	f12r	
+0028	12v	f12v	
+0029	13r	f13r	
+0030	13v	f13v	
+0031	14r	f14r	
+0032	14v	f14v	
+0033	15r	f15r	
+0034	15v	f15v	
+0035	16r	f16r	
+0036	16v	f16v	
+0037	16a r	f16ar	unnumbered leaf (star charts)
+0038	16a v	f16av	unnumbered leaf (star charts)
+0039	16b r	f16br	unnumbered leaf (star charts)
+0040	16b v	f16bv	unnumbered leaf (star charts)
+0041	17r	f17r	sample already done
+0042	17v	f17v	sample already done
+0043	18r	f18r	sample already done
+0044	18v	f18v	
+0045	19r	f19r	
+0046	19v	f19v	
+0047	20r	f20r	
+0048	20v	f20v	
+0049	21r	f21r	
+0050	21v	f21v	
+0051	22r	f22r	
+0052	22v	f22v	
+0053	23r	f23r	
+0054	23v	f23v	
+0055	24r	f24r	
+0056	24v	f24v	
+0057	25r	f25r	
+0058	25v	f25v	
+0059	26r	f26r	
+0060	26v	f26v	
+0061	27r	f27r	
+0062	27v	f27v	
+0063	28r	f28r	
+0064	28v	f28v	

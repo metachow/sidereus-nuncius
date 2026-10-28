@@ -1,0 +1,282 @@
+% Shared preamble: Sidereus Nuncius Latin/Chinese parallel edition
+% One page of this edition = one page of the 1610 Venice edition.
+\documentclass[10pt, twoside]{article}
+
+\usepackage[paperwidth=185mm, paperheight=260mm,
+            top=22mm, bottom=24mm, inner=18mm, outer=16mm,
+            headsep=7mm, footskip=11mm]{geometry}
+\usepackage[fontset=none, heading=false, scheme=plain]{ctex}
+\usepackage[italian, latin, provide=*]{babel}
+\usepackage{fontspec}
+\usepackage{paracol}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc, intersections}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{xparse}
+
+% ---------------------------------------------------------------- fonts
+\setmainfont{EBGaramond}[
+  Extension      = .otf,
+  UprightFont    = *-Regular,
+  ItalicFont     = *-Italic,
+  BoldFont       = *-SemiBold,
+  BoldItalicFont = *-SemiBoldItalic,
+  Ligatures      = {Common, TeX},
+  Numbers        = OldStyle]
+% Chinese: static weights exported from the Noto Serif SC variable font (fonts/,
+% made with fontTools.varLib.instancer). XeTeX would otherwise load only the
+% variable font's default instance, which is ExtraLight.
+\setCJKmainfont{NotoSerifSC}[
+  Path        = fonts/,
+  Extension   = .ttf,
+  UprightFont = *-Regular,
+  BoldFont    = *-Bold]
+\setCJKfamilyfont{zhsemi}{NotoSerifSC-SemiBold}[Path=fonts/, Extension=.ttf]
+\setCJKfamilyfont{zhkai}{KaiTi}
+
+\definecolor{edgray}{gray}{0.42}
+
+% ---------------------------------------------------------------- type roles of the 1610 edition
+% The 1610 print mixes roman, italic (with swash capitals) and spaced capitals
+% in several sizes. Each role has one macro for Latin and one for Chinese:
+%   1610                         Latin                  Chinese
+%   roman text                   (default)              (default, Song)
+%   italic                       \lital{..}             \zhital{..}   (Kai, the Chinese "italic")
+%   italic display lines         \litsw{..} (swash)     \zhital{..}
+%   capitals stressed in text    \capsemph{..}          \zhemph{..}   (bold)
+%   display capitals (titles)    \dispcaps[size]{..}    \zhdisp[size]{..} (SemiBold)
+\newcommand{\lital}[1]{{\itshape #1}}
+\newcommand{\litsw}[1]{{\itshape\addfontfeatures{Style=Swash}#1}}
+\newcommand{\capsemph}[1]{{\addfontfeatures{LetterSpace=6}\MakeUppercase{#1}}}
+\NewDocumentCommand{\dispcaps}{O{14} O{12} m}{% size in pt, letter spacing, text
+  {\fontsize{#1}{\dimexpr #1pt*6/5\relax}\selectfont
+   \addfontfeatures{LetterSpace=#2}\MakeUppercase{#3}}}
+\newcommand{\zhital}[1]{{\CJKfamily{zhkai}#1}}
+\NewDocumentCommand{\zhdisp}{O{14} m}{%
+  {\fontsize{#1}{\dimexpr #1pt*7/5\relax}\selectfont\CJKfamily{zhsemi}#2}}
+
+% ---------------------------------------------------------------- columns
+\setlength{\columnsep}{6.5mm}
+\columnratio{0.55}
+\footnotelayout{m}
+% \LA starts a Latin paragraph (left column, aligned with the previous pair);
+% \ZH starts its Chinese counterpart (right column)
+\newcommand{\LA}{\switchcolumn[0]*\selectlanguage{latin}\fontsize{10.2}{14.6}\selectfont\setlength{\parindent}{1.2em}}
+\newcommand{\ZH}{\switchcolumn[1]\fontsize{9.8}{17.2}\selectfont\setlength{\parindent}{2em}}
+% the same for passages the 1610 print sets wholly in italic (the dedication):
+% Latin in italic, Chinese in Kai
+\newcommand{\LAi}{\LA\itshape}
+\newcommand{\ZHi}{\ZH\CJKfamily{zhkai}}
+
+% woodcut ornaments cropped from the 1610 scans (figures/orn_*.png)
+\usepackage{lettrine}
+\setlength{\DefaultFindent}{0.5em}
+\setlength{\DefaultNindent}{0pt}
+% \woodinitial{P}{raeclarum}{rest} : decorated initial from figures/orn_initial_P.png,
+% hanging over #4 lines (default 5)
+\NewDocumentCommand{\woodinitial}{m m O{5}}{%
+  \lettrine[image=true, lines=#3, loversize=0.08]{figures/orn_initial_#1}{#2}}
+% Chinese counterpart of a decorated initial: the first character enlarged and
+% dropped over #1 lines, e.g. \zhinitial{有}些人 or \zhinitial{\CJKfamily{zhsemi}在}这篇
+\NewDocumentCommand{\zhinitial}{O{3} m}{%
+  \noindent\lettrine[lines=#1, findent=0.3em, nindent=0pt, loversize=0.04]{#2}{}}
+% the same, framed like the woodcut initials: double rule, light ground with fine
+% diagonal hatching, the character in the middle. #1 = lines, #2 = box size
+\usetikzlibrary{patterns}
+\newcommand{\zhinitbox}[2]{% #1 size, #2 character (with its font)
+  \begin{tikzpicture}[baseline=(box.south)]
+    \node[minimum size=#1, inner sep=0, outer sep=0] (box) {};
+    \fill[black!7] (box.south west) rectangle (box.north east);
+    \fill[pattern=north east lines, pattern color=black!22] (box.south west) rectangle (box.north east);
+    \draw[line width=0.9pt] (box.south west) rectangle (box.north east);
+    \draw[line width=0.3pt] ([shift={(0.7mm,0.7mm)}]box.south west) rectangle ([shift={(-0.7mm,-0.7mm)}]box.north east);
+    \node[inner sep=0] at (box.center)
+      {\fontsize{\dimexpr #1*66/100\relax}{\dimexpr #1*66/100\relax}\selectfont #2};
+  \end{tikzpicture}}
+\newlength{\zhinitsize}
+\newsavebox{\zhinitboxsave}
+\NewDocumentCommand{\zhinitialbox}{O{3} m}{%
+  % size the box from the text's leading, and build it before lettrine sees it
+  % (lettrine expands its argument, which a tikzpicture does not survive)
+  \setlength{\zhinitsize}{\dimexpr #1\baselineskip-0.25\baselineskip\relax}%
+  \sbox{\zhinitboxsave}{\zhinitbox{\zhinitsize}{#2}}%
+  \noindent\lettrine[lines=#1, realheight=true, findent=0.35em, nindent=0pt, lraise=0]%
+    {\usebox{\zhinitboxsave}}{}}
+% Chinese woodblock initial, rendered by tools/make_zh_initial.py:
+% \zhwoodinitial[lines]{name} uses figures/orn_zh_name.png
+\NewDocumentCommand{\zhwoodinitial}{O{3} m}{%
+  \noindent\lettrine[image=true, lines=#1, findent=0.35em, nindent=0pt, loversize=0.05]{figures/orn_zh_#2}{}}
+% headpiece band across both columns
+\newcommand{\headpiece}[1]{\spanfig{\includegraphics[width=0.62\textwidth]{figures/orn_head_#1}}}
+
+% figure spanning both columns, placed at the current point of both texts
+\newcommand{\spanfig}[1]{\switchcolumn[0]*[{\centering\vspace{0.15\baselineskip}#1\par\vspace{0.35\baselineskip}}]}
+
+% ---------------------------------------------------------------- pages of the 1610 edition
+% \folium{7r} ... \folioend : one page of the original, set on one page here
+% \folium*{2r}             : the same for a page that has no running head in 1610
+%                            (title page, dedication, licence, full-page plates)
+% \blankfolium{1v}         : a page left blank in 1610
+\newcommand{\foliolabel}{}
+\NewDocumentCommand{\folium}{s m}{%
+  \clearpage\gdef\foliolabel{#2}%
+  \IfBooleanT{#1}{\thispagestyle{folioonly}}%
+  \begin{paracol}{2}\sloppy}
+\newcommand{\folioend}{\end{paracol}}
+\newcommand{\blankfolium}[1]{\clearpage\gdef\foliolabel{#1}\thispagestyle{folioonly}\mbox{}\clearpage}
+
+% running heads as in the 1610 edition: the title is split across the opening
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\newcommand{\runhead}[2]{{\footnotesize\addfontfeatures{LetterSpace=12}#1}\quad{\color{edgray}\fontsize{8}{8}\selectfont #2}}
+\fancyhead[CE]{\runhead{OBSERVAT. SIDEREAE}{星际观测}}
+\fancyhead[CO]{\runhead{RECENS HABITAE.}{新近所得}}
+\fancyhead[LE,RO]{\footnotesize\color{edgray}[\,\foliolabel\,]}
+\fancyfoot[C]{\footnotesize\thepage}
+\fancypagestyle{folioonly}{%
+  \fancyhf{}%
+  \fancyhead[LE,RO]{\footnotesize\color{edgray}[\,\foliolabel\,]}%
+  \fancyfoot[C]{\footnotesize\thepage}}
+
+% ---------------------------------------------------------------- Jupiter and its satellites
+% \jove[label]{x/size, x/size, ...}[x/size/dy, ...][x/size/dy, ...]
+%   x    : position in Jupiter diameters, negative = east (Ori.), positive = west (Occ.)
+%   size : 1 = ordinary star; larger values for the stars Galileo calls larger
+%   dy   : for stars off the line, in Jupiter diameters, positive = above
+%   4th argument: fixed stars (marked "fixa" beside the star)
+%   Measure from the scan with tools/jove_measure.py
+\newcommand{\starmark}[3]{% x, y, size
+  \foreach \a in {90,30,150}
+    \draw[line width=0.6pt, line cap=round]
+      ($(#1,#2)+(\a:0.30*#3)$) -- ($(#1,#2)+(\a+180:0.30*#3)$);}
+\NewDocumentCommand{\jove}{O{} m O{} O{}}{%
+  % #1 date label, #2 stars on the line (x/size), #3 stars off the line (x/size/dy, dy>0 = above),
+  % #4 fixed stars (x/size/dy)
+  \begin{tikzpicture}[x=5mm, y=5mm, baseline=(J.base)]
+    \node[anchor=base west, inner sep=0] at (-13.5,-0.2) {\itshape Ori.};
+    \node[anchor=base east, inner sep=0] at ( 13.5,-0.2) {\itshape Occ.};
+    \draw[line width=0.8pt] (0,0) circle (0.5);
+    \node[inner sep=0] (J) at (0,0) {};
+    \if\relax\detokenize{#2}\relax\else
+      \foreach \x/\s in {#2} { \starmark{\x}{0}{\s} }
+    \fi
+    \if\relax\detokenize{#3}\relax\else
+      \foreach \x/\s/\dy in {#3} { \starmark{\x}{\dy}{\s} }
+    \fi
+    \if\relax\detokenize{#4}\relax\else
+      \foreach \x/\s/\dy in {#4} {
+        \starmark{\x}{\dy}{\s}
+        \node[anchor=west, font=\scriptsize\itshape, inner sep=0] at (\x+0.4,\dy) {fixa};
+      }
+    \fi
+    \if\relax\detokenize{#1}\relax\else
+      \node[anchor=north, font=\scriptsize\color{edgray}, inner sep=0] at (0,-0.8) {#1};
+    \fi
+  \end{tikzpicture}}
+
+% ---------------------------------------------------------------- tapered ending (cul-de-lampe)
+% \taperpar[k]{paragraph}: full-width lines, then the last k lines narrow
+% step by step and are centred, so the paragraph ends in an inverted triangle,
+% as on the last page of the 1610 edition. The number of full lines is found
+% by trial typesetting; footnote numbers are restored after each trial.
+\makeatletter
+\newcount\tp@M \newcount\tp@k \newcount\tp@P \newcount\tp@n
+\newcount\tp@i \newcount\tp@fn \newcount\tp@tries
+\newdimen\tp@W \newdimen\tp@w \newdimen\tp@ind
+\newtoks\tp@spec
+\def\tp@build{% \parshape for \tp@M full lines and \tp@k tapered lines -> \tp@ps
+  \tp@spec{}\tp@i=0
+  \loop\ifnum\tp@i<\tp@M
+    \edef\tp@tmp{\the\tp@spec 0pt \the\tp@W\space}\tp@spec=\expandafter{\tp@tmp}%
+    \advance\tp@i by 1
+  \repeat
+  \tp@i=1
+  \loop\ifnum\tp@i>\tp@k\else
+    % width = W * (5k-4i)/(5k): from about 0.87 W down to 0.2 W for k = 6
+    \tp@w=\tp@W \divide\tp@w by \numexpr5*\tp@k\relax
+    \multiply\tp@w by \numexpr5*\tp@k-4*\tp@i\relax
+    \tp@ind=\tp@W \advance\tp@ind by -\tp@w \divide\tp@ind by 2
+    \edef\tp@tmp{\the\tp@spec \the\tp@ind\space \the\tp@w\space}\tp@spec=\expandafter{\tp@tmp}%
+    \advance\tp@i by 1
+  \repeat
+  \tp@n=\numexpr\tp@M+\tp@k\relax
+  \edef\tp@ps{\noexpand\parshape \the\tp@n\space \the\tp@spec}}
+% trial typesetting: footnotes are replaced by a mark of similar width,
+% because paracol would otherwise keep the footnotes of discarded trials
+\def\tp@nofn{\def\footnote##1{\textsuperscript{0}}}
+\def\tp@trial{%
+  \setbox\z@\vbox{\tp@nofn\hsize\tp@W \tp@ps \parfillskip=0pt plus 1fil\relax
+    \tp@text\par\global\tp@P=\prevgraf}}
+\def\tp@loop{% add full lines until the text ends inside the taper
+  \tp@build \tp@trial \advance\tp@tries by 1
+  \ifnum\tp@P>\tp@n
+    \ifnum\tp@tries<25 \advance\tp@M by 1 \let\tp@next\tp@loop
+    \else \let\tp@next\relax \fi
+  \else \let\tp@next\relax \fi
+  \tp@next}
+\newcommand{\taperpar}[2][6]{%
+  \par
+  \def\tp@text{#2}%
+  \tp@k=#1\relax \tp@W=\linewidth
+  % natural number of lines at full width
+  \setbox\z@\vbox{\tp@nofn\hsize\tp@W #2\par\global\tp@P=\prevgraf}%
+  % start well below and take the fewest full lines that still let the text fit,
+  % so it runs as far down the taper as possible and ends near the point
+  \tp@M=\numexpr\tp@P-2*\tp@k\relax \ifnum\tp@M<0 \tp@M=0 \fi
+  \tp@tries=0 \tp@loop
+  \tp@build \tp@ps \parfillskip=0pt plus 1fil\relax #2\par}
+\makeatother
+
+% ---------------------------------------------------------------- star charts
+% Drawn from coordinates measured on the scans (tools/star_chart.py, figures/chart_*.tex).
+% As printed in 1610: stars known before are hollow six-pointed stars with a dot,
+% the new ones six-spoked asterisks. #3 = glyph size in mm.
+\newcommand{\oldstar}[3]{%
+  \draw[line width=0.75pt, line join=miter, fill=white]
+    ($(#1,#2)+(90:0.5*#3)$)
+    \foreach \i in {1,...,11} { -- ($(#1,#2)+({90+30*\i}:{(mod(\i,2)==0 ? 0.5 : 0.22)*#3})$) }
+    -- cycle;
+  \fill (#1,#2) circle ({0.055*#3});}
+\newcommand{\newstar}[3]{%
+  \foreach \a in {90,30,150}
+    \draw[line width=0.95pt, line cap=round]
+      ($(#1,#2)+(\a:0.42*#3)$) -- ($(#1,#2)+(\a+180:0.42*#3)$);}
+
+% placeholder for a figure that will be redrawn or cropped later
+\newcommand{\placeholderfig}[2][40mm]{%
+  \fcolorbox{edgray}{black!4}{\parbox[c][#1][c]{0.8\textwidth}{\centering\small\color{edgray}#2}}}
+
+% emphasis: words the 1610 print sets in capitals (Latin side uses \textsc)
+% always in the Song face, so the bold shows inside Kai passages too (KaiTi has no bold)
+\newcommand{\zhemph}[1]{{\CJKfamily{\CJKrmdefault}\textbf{#1}}}
+
+% ---------------------------------------------------------------- telescope diagram (redrawn)
+\newcommand{\telescope}{%
+  \begin{tikzpicture}[x=11mm, y=11mm, font=\small,
+                      ray/.style={line width=0.5pt},
+                      free/.style={line width=0.45pt, dash pattern=on 2.4pt off 1.6pt}]
+    \coordinate (E) at (0,0);
+    \coordinate (A) at (0.45, 0.30);  \coordinate (B) at (0.45,-0.30);
+    \coordinate (C) at (3.00, 0.30);  \coordinate (D) at (3.00,-0.30);
+    \coordinate (F) at (9.00, 0.90);  \coordinate (G) at (9.00,-0.90);
+    \coordinate (H) at (9.00, 0.42);  \coordinate (I) at (9.00,-0.42);
+    % tube ABCD
+    \draw[line width=0.7pt] (A) -- (C) (B) -- (D);
+    \draw[line width=0.5pt] (A) -- (B) (C) -- (D);
+    % object FG
+    \draw[line width=0.7pt] (F) -- (G);
+    % rays without lenses: ECF, EDG (straight)
+    \draw[free] (E) -- (C) -- (F);
+    \draw[free] (E) -- (D) -- (G);
+    % rays with lenses: ECH, EDI (refracted at C, D)
+    \draw[ray] (C) -- (H);
+    \draw[ray] (D) -- (I);
+    \foreach \p/\pos in {E/left, A/above, B/below, C/above, D/below,
+                         F/right, G/right, H/right, I/right}
+      \node[\pos, inner sep=2pt] at (\p) {\p};
+  \end{tikzpicture}}
+

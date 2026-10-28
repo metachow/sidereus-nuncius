@@ -1,0 +1,22 @@
+% Sidereus Nuncius (Galileo, 1610) — Latin/Chinese parallel edition
+% One page of this edition = one page of the 1610 Venice edition.
+% Build all:        xelatex main.tex
+% Check one folio:  python tools/check_folio.py f08v
+\input{preamble}
+
+\begin{document}
+\ifdefined\onlyfolio
+  \ifdefined\startpage\setcounter{page}{\startpage}\fi
+  \input{folia/\onlyfolio}
+\else
+  \input{front/cover}
+  \frontcover
+  \thispagestyle{empty}\mbox{}\clearpage   % inside of the front cover
+  \setcounter{page}{1}
+  \input{front/title}
+  \input{folia/order}
+  % the back cover falls on an even (left-hand) page
+  \clearpage\ifodd\value{page}\thispagestyle{empty}\mbox{}\clearpage\fi
+  \backcover
+\fi
+\end{document}

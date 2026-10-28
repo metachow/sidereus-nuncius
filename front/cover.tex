@@ -1,0 +1,69 @@
+% Front and back cover of the edition.
+% In the manner of an early seventeenth-century title page: paper ground,
+% black and Venetian red, spaced capitals, an engraving printed in ink.
+\definecolor{coverpaper}{RGB}{243,236,220}
+\definecolor{coverink}{RGB}{38,30,24}
+\definecolor{coverred}{RGB}{139,42,31}
+
+% paper ground and a double rule (heavy red outside, thin ink inside)
+\newcommand{\coverframe}{%
+  \begin{tikzpicture}[remember picture, overlay]
+    \fill[coverpaper] (current page.south west) rectangle (current page.north east);
+    \draw[coverred, line width=2.2pt]
+      ([shift={(11mm,11mm)}]current page.south west) rectangle ([shift={(-11mm,-11mm)}]current page.north east);
+    \draw[coverink, line width=0.5pt]
+      ([shift={(14mm,14mm)}]current page.south west) rectangle ([shift={(-14mm,-14mm)}]current page.north east);
+  \end{tikzpicture}}
+
+\newcommand{\frontcover}{%
+  \thispagestyle{empty}\coverframe
+  \begin{tikzpicture}[remember picture, overlay, every node/.style={inner sep=0, align=center, text=coverink}]
+    \node[anchor=north] at ([yshift=-30mm]current page.north)
+      {\dispcaps[34][22]{Sidereus}\\[4mm]\dispcaps[22][26]{Nuncius}};
+    \node[anchor=north, text=coverred] at ([yshift=-62mm]current page.north)
+      {\zhdisp[30]{星\hspace{0.35em}际\hspace{0.35em}信\hspace{0.35em}使}};
+    \draw[coverred, line width=0.6pt] ([xshift=-28mm, yshift=-79mm]current page.north) -- ++(56mm,0);
+    \node at ([yshift=-4mm]current page.center)
+      {\includegraphics[width=96mm]{figures/cover_moon}};
+    \node[anchor=south] at ([yshift=50mm]current page.south)
+      {\dispcaps[13][8]{Galilaeus Galilaeus}\\[2.5mm]
+       {\zhdisp[12]{伽利略}}\\[4mm]
+       {\addfontfeatures{LetterSpace=8}\small VENETIIS\ \ MDCX}\quad{\small\color{coverred}·}\quad{\small 威尼斯\hspace{0.8em}一六一〇}};
+    \node[anchor=south] at ([yshift=26mm]current page.south)
+      {{\color{coverred}\small 拉丁文—中文对照本}\\[2.5mm]
+       {\small metachow\ 编译}};
+  \end{tikzpicture}%
+  \mbox{}\clearpage}
+
+\newcommand{\backcover}{%
+  \thispagestyle{empty}\coverframe
+  \begin{tikzpicture}[remember picture, overlay, every node/.style={inner sep=0, align=center, text=coverink}]
+    \node[anchor=north] at ([yshift=-34mm]current page.north) {%
+      \begin{minipage}{128mm}\color{coverink}
+        % the announcement of the four new planets (f. 17r)
+        {\centering\itshape\large \ldots\ quattuor {\upshape\addfontfeatures{LetterSpace=8}PLANETAS}\\
+          a primo mundi exordio ad nostra usque tempora\\ numquam conspectos \ldots\par}
+        \vspace{4mm}
+        {\centering\CJKfamily{zhkai}\large ……四颗\textcolor{coverred}{\zhemph{行星}}：自开天辟地直到今天，\\[1mm]从未有人见过它们……\par}
+        \vspace{12mm}
+        % the first four nights, as drawn in the book
+        {\centering\scalebox{0.82}{\begin{tabular}{@{}c@{}}
+          \jove[I.\,7]{-4.9/1.3, -1.6/1, 2.7/1.3}\\[4mm]
+          \jove[I.\,8]{1.6/1, 2.9/1, 4.3/1}\\[4mm]
+          \jove[I.\,10]{-3.3/1, -1.6/1}\\[4mm]
+          \jove[I.\,11]{-4.3/1.1, -3.0/0.95}
+         \end{tabular}}\par}
+        \vspace{13mm}
+        {\fontsize{10}{18.5}\selectfont\setlength{\parindent}{2em}\setlength{\parskip}{0pt}
+         一六一〇年三月，伽利略在威尼斯出版了这本薄薄的小书。借助自己制作的望远镜，他看到月球表面并不光滑，而是布满山脉与洼坑；银河原来是无数恒星的集合；木星身旁还有四颗前所未见的卫星，夜复一夜地变换位置。这些观测动摇了延续两千年的宇宙图景。\par
+         本版按一六一〇年初版逐页重排：左栏为现代拼写的拉丁原文，右栏为直接译自拉丁文的中文。书中的星图与木星卫星图按初版逐点测量重绘，月面铜版画与木刻装饰取自初版扫描。\par}
+      \end{minipage}};
+    % the printer's device of the 1610 title page, as an emblem
+    \node[anchor=south] at ([yshift=44mm]current page.south)
+      {\includegraphics[width=48mm]{figures/cover_device}};
+    \draw[coverred, line width=0.6pt] ([xshift=-28mm, yshift=36mm]current page.south) -- ++(56mm,0);
+    \node[anchor=south] at ([yshift=22mm]current page.south)
+      {{\small metachow\ 编译\quad·\quad Claude（Anthropic）协作翻译、校对与排版}\\[2mm]
+       {\footnotesize\color{edgray} 译文、注释与排版以 CC BY 4.0 许可发布\quad·\quad 拉丁原文与初版扫描属公有领域}};
+  \end{tikzpicture}%
+  \mbox{}\clearpage}

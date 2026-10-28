@@ -1,0 +1,21 @@
+# LaTeX output
+*.aux
+*.log
+*.out
+*.toc
+main.pdf
+build/
+
+# released separately (GitHub Releases)
+Sidereus_Nuncius_la-zh.pdf
+
+# generated from text/ by tools/gen_folia.py
+folia/
+
+# large or derived; regenerate with tools/fetch_scans.py and tools/make_fonts.py
+scans/
+work/pages/
+fonts/*.ttf
+figures/*_orig.png
+
+__pycache__/
