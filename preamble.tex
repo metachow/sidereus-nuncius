@@ -212,8 +212,12 @@
 % trial typesetting: footnotes are replaced by a mark of similar width,
 % because paracol would otherwise keep the footnotes of discarded trials
 \def\tp@nofn{\def\footnote##1{\textsuperscript{0}}}
-\def\tp@trial{%
-  \setbox\z@\vbox{\tp@nofn\hsize\tp@W \tp@ps \parfillskip=0pt plus 1fil\relax
+% never end the next-to-last line with a hyphen: the point of the triangle must
+% not be the tail of a broken word
+\def\tp@nohyph{\finalhyphendemerits=100000000\relax}
+\def\tp@trial{%  (warnings off: rejected trials may be overfull)
+  \setbox\z@\vbox{\tp@nofn\hfuzz=\maxdimen\hbadness=10000\relax
+    \hsize\tp@W \tp@ps \tp@nohyph \parfillskip=0pt plus 1fil\relax
     \tp@text\par\global\tp@P=\prevgraf}}
 \def\tp@loop{% add full lines until the text ends inside the taper
   \tp@build \tp@trial \advance\tp@tries by 1
@@ -232,7 +236,7 @@
   % so it runs as far down the taper as possible and ends near the point
   \tp@M=\numexpr\tp@P-2*\tp@k\relax \ifnum\tp@M<0 \tp@M=0 \fi
   \tp@tries=0 \tp@loop
-  \tp@build \tp@ps \parfillskip=0pt plus 1fil\relax #2\par}
+  \tp@build \tp@ps \tp@nohyph \parfillskip=0pt plus 1fil\relax #2\par}
 \makeatother
 
 % ---------------------------------------------------------------- star charts
