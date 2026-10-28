@@ -1,0 +1,57 @@
+% Front and back cover of the Japanese edition; same design as front/cover.tex
+% (which must be \input first for the colours and \coverframe).
+
+\newcommand{\frontcoverja}{%
+  \thispagestyle{empty}\coverframe
+  \begin{tikzpicture}[remember picture, overlay, every node/.style={inner sep=0, align=center, text=coverink, font=\jaliningfigures}]
+    \node[anchor=north] at ([yshift=-30mm]current page.north)
+      {\dispcaps[34][22]{Sidereus}\\[4mm]\dispcaps[22][26]{Nuncius}};
+    \node[anchor=north, text=coverred] at ([yshift=-64mm]current page.north)
+      {\zhdisp[20]{星\hspace{0.35em}界\hspace{0.35em}の\hspace{0.35em}使\hspace{0.35em}者}};
+    \draw[coverred, line width=0.6pt] ([xshift=-28mm, yshift=-79mm]current page.north) -- ++(56mm,0);
+    \node at ([yshift=-4mm]current page.center)
+      {\includegraphics[width=96mm]{figures/cover_moon}};
+    \node[anchor=south] at ([yshift=50mm]current page.south)
+      {\dispcaps[13][8]{Galilaeus Galilaeus}\\[2.5mm]
+       {\large ガリレオ・ガリレイ}\\[4mm]
+       {\addfontfeatures{LetterSpace=8}\small VENETIIS\ \ MDCX}\quad{\small\color{coverred}·}\quad{\small ヴェネツィア、1610年}};
+    \node[anchor=south] at ([yshift=26mm]current page.south)
+      {{\color{coverred}\small ラテン語・日本語対訳}\\[2.5mm]
+       {\small metachow\ 編訳}};
+  \end{tikzpicture}%
+  \mbox{}\clearpage}
+
+\newcommand{\backcoverja}{%
+  \thispagestyle{empty}\coverframe
+  \begin{tikzpicture}[remember picture, overlay, every node/.style={inner sep=0, align=center, text=coverink, font=\jaliningfigures}]
+    \node[anchor=north] at ([yshift=-34mm]current page.north) {%
+      \begin{minipage}{128mm}\color{coverink}
+        % the announcement of the four new planets (f. 17r)
+        {\centering\itshape\large \ldots\ quattuor {\upshape\addfontfeatures{LetterSpace=8}PLANETAS}\\
+          a primo mundi exordio ad nostra usque tempora\\ numquam conspectos \ldots\par}
+        \vspace{4mm}
+        {\centering\large\CJKfamily{zhkai} ……世界の始まりから今日にいたるまで\\
+          誰ひとり見たことのなかった四つの\textcolor{coverred}{\jabouten{惑星}}……\par}
+        \vspace{12mm}
+        % the first four nights, as drawn in the book
+        {\centering\scalebox{0.82}{\begin{tabular}{@{}c@{}}
+          \jove[1月7日]{-4.9/1.3, -1.6/1, 2.7/1.3}\\[4mm]
+          \jove[1月8日]{1.6/1, 2.9/1, 4.3/1}\\[4mm]
+          \jove[1月10日]{-3.3/1, -1.6/1}\\[4mm]
+          \jove[1月11日]{-4.3/1.1, -3.0/0.95}
+         \end{tabular}}\par}
+        \vspace{12mm}
+        {\fontsize{10}{18}\selectfont\setlength{\parindent}{1em}\setlength{\parskip}{0pt}
+         1610年3月、ガリレオはヴェネツィアでこの薄い一冊を世に出した。みずから作った遠眼鏡を天に向けた彼は、月の表面が滑らかではなく山と窪みに満ちていること、銀河が無数の星の群れであること、そして木星のまわりを、それまで誰も見たことのない四つの衛星がめぐり、夜ごとに位置を変えていることを見いだした。これらの観測は、二千年にわたって保たれてきた天の姿を揺るがした。\par
+         本書は1610年の初版を1ページずつ再現する。左に現代綴りのラテン語、右にそこから直接訳した新しい日本語訳を置いた。星図と木星の衛星の図は初版を実測して描き直し、月面の銅版画と木版の装飾は初版の画像から取った。\par}
+      \end{minipage}};
+    % the printer's device of the 1610 title page, as an emblem
+    \node[anchor=south] at ([yshift=44mm]current page.south)
+      {\includegraphics[width=48mm]{figures/cover_device}};
+    \draw[coverred, line width=0.6pt] ([xshift=-28mm, yshift=36mm]current page.south) -- ++(56mm,0);
+    \node[anchor=south] at ([yshift=22mm]current page.south)
+      {{\small metachow\ 編訳\quad·\quad Claude（Anthropic）協力：翻訳・校閲・組版}\\[2mm]
+       {\footnotesize\color{edgray} 訳文・注・組版：CC BY 4.0\quad·\quad
+        ラテン語原文と初版の画像：パブリックドメイン}};
+  \end{tikzpicture}%
+  \mbox{}\clearpage}

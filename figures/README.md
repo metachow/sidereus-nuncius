@@ -15,6 +15,7 @@
 | `orn_initial_P.png` | 扫描 0007（木刻首字母 P） | `crop_ornament.py 0007 190 718 500 1010` |
 | `orn_initial_M.png` | 扫描 0013（木刻首字母 M） | `crop_ornament.py 0013 212 878 508 1175` |
 | `orn_zh_you.png`、`orn_zh_zai.png`、`orn_zh_da.png` | 新制 | `make_zh_initial.py 有 fonts/NotoSerifSC-Bold.ttf … --seed 3`；`在 … --seed 5`；`大 … --seed 7`（`大` 目前未使用）。宋体粗体、撑满边框，与 1610 年木刻首字母的罗马正体大写对应 |
+| `orn_ja_toku.png`、`orn_ja_i.png` | 新制 | 日语版的木刻风格首字「徳」「偉」：`make_zh_initial.py 徳 fonts/NotoSerifJP-Bold.ttf … --seed 3`；`偉 … --seed 5`（`make_fonts.py --ja` 先导出 Noto Serif JP） |
 | `chart_*.tex` | 扫描 0038–0040 | `star_chart.py` 生成：`orion`（0038，`90 0 1402 1810 --dropxy "3418,2822;3381,2870" --split "2712,1052;2204,1292"`），`pleiades`（0039，`75 250 1160 915`），`orion_head`（0040，`400 1040 860 1590 --allsmall`），`praesepe`（0040，`895 900 1402 1690`） |
 
 折痕修补的命令都对 `*_orig.png`（第一次运行时自动保存的未修补图）操作，可以调整参数后重跑。`*_orig.png` 不进版本库，可用上表的裁切命令重新生成。

@@ -34,7 +34,7 @@ def build(lang='zh', out='folia'):
             if fn.endswith('.yaml'):
                 trans.update(load_yaml(os.path.join(T, lang, fn)) or {})
     segs = {pid: segments(p) for pid, p in la.items()}
-    if lang != 'zh':
+    if lang not in ('zh', 'ja'):
         # with ctex loaded, xeCJK treats ‘ ’ “ ” — – … as CJK punctuation (extra
         # space, line breaks after an apostrophe); write them as TeX ligatures
         tex = str.maketrans({'‘': '`', '’': "'", '“': '``', '”': "''",

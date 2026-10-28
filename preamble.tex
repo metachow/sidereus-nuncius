@@ -6,7 +6,16 @@
             top=22mm, bottom=24mm, inner=18mm, outer=16mm,
             headsep=7mm, footskip=11mm]{geometry}
 \usepackage[fontset=none, heading=false, scheme=plain]{ctex}
-\ifdefined\translang   % a Latin-script translation edition (main_en.tex)
+% editions: Chinese (main.tex, no \translang), English (\def\translang{en}),
+% Japanese (\def\translang{ja}); the Japanese one keeps the Chinese layout and
+% changes fonts and type roles, the English one sets a Latin-script column
+\newif\iflatintrans
+\newif\ifjatrans
+\ifdefined\translang
+  \def\jalangname{ja}
+  \ifx\translang\jalangname \jatranstrue \else \latintranstrue \fi
+\fi
+\iflatintrans   % a Latin-script translation edition (main_en.tex)
   \usepackage[english, italian, latin, provide=*]{babel}
 \else
   \usepackage[italian, latin, provide=*]{babel}
@@ -33,13 +42,25 @@
 % Chinese: static weights exported from the Noto Serif SC variable font (fonts/,
 % made with fontTools.varLib.instancer). XeTeX would otherwise load only the
 % variable font's default instance, which is ExtraLight.
-\setCJKmainfont{NotoSerifSC}[
-  Path        = fonts/,
-  Extension   = .ttf,
-  UprightFont = *-Regular,
-  BoldFont    = *-Bold]
-\setCJKfamilyfont{zhsemi}{NotoSerifSC-SemiBold}[Path=fonts/, Extension=.ttf]
-\setCJKfamilyfont{zhkai}{KaiTi}
+% The Japanese edition uses Noto Serif JP the same way (tools/make_fonts.py --ja),
+% and UD Digi Kyokasho (a Japanese textbook face, the counterpart of Kai) for italic.
+\ifjatrans
+  \setCJKmainfont{NotoSerifJP}[
+    Path        = fonts/,
+    Extension   = .ttf,
+    UprightFont = *-Regular,
+    BoldFont    = *-Bold]
+  \setCJKfamilyfont{zhsemi}{NotoSerifJP-SemiBold}[Path=fonts/, Extension=.ttf]
+  \setCJKfamilyfont{zhkai}{UD Digi Kyokasho N}
+\else
+  \setCJKmainfont{NotoSerifSC}[
+    Path        = fonts/,
+    Extension   = .ttf,
+    UprightFont = *-Regular,
+    BoldFont    = *-Bold]
+  \setCJKfamilyfont{zhsemi}{NotoSerifSC-SemiBold}[Path=fonts/, Extension=.ttf]
+  \setCJKfamilyfont{zhkai}{KaiTi}
+\fi
 
 \definecolor{edgray}{gray}{0.42}
 
@@ -113,6 +134,9 @@
 % \zhwoodinitial[lines]{name} uses figures/orn_zh_name.png
 \NewDocumentCommand{\zhwoodinitial}{O{4} m}{%
   \noindent\lettrine[image=true, lines=#1, findent=0.35em, nindent=0pt, loversize=0.05]{figures/orn_zh_#2}{}}
+% the same for the Japanese edition (figures/orn_ja_name.png, Noto Serif JP Bold)
+\NewDocumentCommand{\jawoodinitial}{O{4} m}{%
+  \noindent\lettrine[image=true, lines=#1, findent=0.35em, nindent=0pt, loversize=0.05]{figures/orn_ja_#2}{}}
 % decorated initial for a Latin-script translation: Goudy Initialen (TeX Live
 % `initials' collection), a roman capital on a foliage ground in a square, the
 % same build as the 1610 woodcut initials. \trwoodinitial{N}{oble}[lines]
@@ -303,13 +327,13 @@
 % generic names for the translation column's type roles (used in text/<lang>/)
 \newcommand{\tremph}[1]{\zhemph{#1}}
 \newcommand{\trital}[1]{\zhital{#1}}
-% text inside a figure shared by all editions: \trcap{Chinese}{English}
-\newcommand{\trcap}[2]{#1}
+% text inside a figure shared by all editions: \trcap{Chinese}{English}{Japanese}
+\newcommand{\trcap}[3]{#1}
 
 % ---------------------------------------------------------------- Latin-script translation edition
 % main_en.tex defines \translang before \input{preamble}. The right column then
 % holds an English translation, set in the same face and size as the Latin.
-\ifdefined\translang
+\iflatintrans
   % (curly quotes and dashes in the translation are written as TeX ligatures by
   % tools/gen_folia.py, so xeCJK never treats them as CJK punctuation)
   \columnratio{0.5}
@@ -317,8 +341,66 @@
   \renewcommand{\ZHi}{\ZH\itshape}
   \renewcommand{\zhemph}[1]{\capsemph{#1}}
   \renewcommand{\zhital}[1]{{\itshape #1}}
-  \renewcommand{\trcap}[2]{#2}
+  \renewcommand{\trcap}[3]{#2}
   \RenewDocumentCommand{\zhdisp}{O{14} m}{\dispcaps[#1][4]{#2}}
   \fancyhead[CE]{\runhead{OBSERVAT. SIDEREAE}{Sidereal Observations}}
   \fancyhead[CO]{\runhead{RECENS HABITAE.}{Recently Made}}
+\fi
+
+% ---------------------------------------------------------------- Japanese edition
+% main_ja.tex defines \translang as ja: same layout as the Chinese edition (Song/Mincho
+% column, Kai -> Kyokasho for the 1610 italic). Words the 1610 print sets in capitals
+% get bouten (a dot above each character), the Japanese emphasis.
+\ifjatrans
+  \makeatletter
+  \newsavebox{\ja@btbox}
+  \newcommand{\ja@btchar}[1]{%
+    \sbox{\ja@btbox}{#1}%
+    \rlap{\makebox[\wd\ja@btbox]{\raisebox{0.98em}{\tikz\fill (0,0) circle (0.52pt);}}}%
+    \usebox{\ja@btbox}}
+  \ExplSyntaxOn
+  \NewDocumentCommand{\jabouten}{m}{\leavevmode\tl_map_function:nN {#1} \ja@btchar}
+  \ExplSyntaxOff
+  \makeatother
+  % ruby (furigana) for rare kanji at their first occurrence: \ruby{遠眼鏡}{とおめがね};
+  % the reading at half size, centred over the word; a longer reading overhangs the
+  % neighbouring characters instead of spreading the word. It sits in the space the
+  % leading leaves, like the bouten
+  \makeatletter
+  \newcommand{\ruby}[2]{\leavevmode
+    \sbox{\ja@btbox}{#1}%
+    \setbox2=\hbox{\fontsize{\strip@pt\dimexpr\f@size pt*1/2\relax}{0}\selectfont #2}%
+    \rlap{\hbox to\wd\ja@btbox{\hss\raisebox{0.92em}{\box2}\hss}}%
+    \usebox{\ja@btbox}}
+  \makeatother
+  \renewcommand{\zhemph}[1]{\jabouten{#1}}
+  \renewcommand{\trcap}[3]{#3}
+  % Japanese runs about 1.33 times as long as the Chinese (kana): equal columns, a
+  % slightly smaller size and leading, and the usual one-character indent
+  \columnratio{0.5}
+  % Arabic numerals in Japanese text (dates, hours, minutes) in lining figures: the
+  % Japanese column, its footnotes and the Japanese front matter switch the roman
+  % family to a lining-figure copy of EB Garamond; the Latin column keeps old style
+  \newfontfamily\jalining{EBGaramond}[
+    Extension = .otf, UprightFont = *-Regular, ItalicFont = *-Italic,
+    BoldFont = *-SemiBold, BoldItalicFont = *-SemiBoldItalic,
+    Ligatures = {Common, TeX}, Numbers = Lining, NFSSFamily = EBGaramondLF]
+  \edef\jaoldstylerm{\rmdefault}
+  % a narrow space between kana/kanji and Latin letters or digits (1610年1月7日),
+  % instead of xeCJK's default word space
+  \xeCJKsetup{CJKecglue={\hskip 0.16em plus 0.05em minus 0.04em}}
+  \newcommand{\jaliningfigures}{\renewcommand{\rmdefault}{EBGaramondLF}\normalfont}
+  \renewcommand{\LA}{\switchcolumn[0]*\edef\rmdefault{\jaoldstylerm}\normalfont\selectlanguage{latin}\fontsize{10.2}{14.6}\selectfont\setlength{\parindent}{1.2em}}
+  \renewcommand{\ZH}{\switchcolumn[1]\jaliningfigures\fontsize{9.4}{15.6}\selectfont\setlength{\parindent}{1em}}
+  \renewcommand{\ZHi}{\ZH\CJKfamily{zhkai}}
+  % running heads and page numbers always in the book's old-style figures
+  \renewcommand{\runhead}[2]{{\fontfamily{\jaoldstylerm}\selectfont\footnotesize\addfontfeatures{LetterSpace=12}#1}\quad{\color{edgray}\fontsize{8}{8}\selectfont #2}}
+  \fancyhead[LE,RO]{\fontfamily{\jaoldstylerm}\selectfont\footnotesize\color{edgray}[\,\foliolabel\,]}
+  \fancyfoot[C]{\fontfamily{\jaoldstylerm}\selectfont\footnotesize\thepage}
+  \fancypagestyle{folioonly}{%
+    \fancyhf{}%
+    \fancyhead[LE,RO]{\fontfamily{\jaoldstylerm}\selectfont\footnotesize\color{edgray}[\,\foliolabel\,]}%
+    \fancyfoot[C]{\fontfamily{\jaoldstylerm}\selectfont\footnotesize\thepage}}
+  \fancyhead[CE]{\runhead{OBSERVAT. SIDEREAE}{星界の観測}}
+  \fancyhead[CO]{\runhead{RECENS HABITAE.}{新たに得られた}}
 \fi

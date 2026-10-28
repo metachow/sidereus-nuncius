@@ -1,9 +1,9 @@
-"""Side-by-side images of the same page: the 1610 scan, the Chinese edition and the
-English edition, for the README.
+"""Side-by-side images of the same page: the 1610 scan, the Chinese edition, the
+English edition and (when its PDF is there) the Japanese edition, for the README.
 
 usage: python tools/make_comparison.py f01r f02r f10v ...
-Needs work/pages/ (tools/fetch_scans.py) and the two PDFs
-(Sidereus_Nuncius_la-zh.pdf, Sidereus_Nuncius_la-en.pdf). Writes showcase/compare_<folio>.jpg.
+Needs work/pages/ (tools/fetch_scans.py) and the edition PDFs
+(Sidereus_Nuncius_la-zh.pdf, Sidereus_Nuncius_la-en.pdf, Sidereus_Nuncius_la-ja.pdf). Writes showcase/compare_<folio>.jpg.
 """
 import csv
 import os
@@ -18,6 +18,7 @@ H = 1100                     # height of each page image, px
 PAD, LABEL = 24, 54
 LATIN_FONT = 'c:/texlive/2022/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Regular.otf'
 CJK_FONT = os.path.join(ROOT, 'fonts', 'NotoSerifSC-Regular.ttf')
+JA_FONT = os.path.join(ROOT, 'fonts', 'NotoSerifJP-Regular.ttf')
 
 scan_of = {}
 with open(os.path.join(ROOT, 'work', 'folio_map.tsv'), encoding='utf-8') as f:
@@ -50,6 +51,9 @@ for name in sys.argv[1:]:
     pages = [scan, pdf_page('Sidereus_Nuncius_la-zh.pdf', label), pdf_page('Sidereus_Nuncius_la-en.pdf', label)]
     titles = [('Venetiis 1610 · 初版扫描', CJK_FONT), ('拉丁文—中文对照本', CJK_FONT),
               ('Latin–English edition', LATIN_FONT)]
+    if os.path.exists(os.path.join(ROOT, 'Sidereus_Nuncius_la-ja.pdf')):
+        pages.append(pdf_page('Sidereus_Nuncius_la-ja.pdf', label))
+        titles.append(('ラテン語・日本語対訳', JA_FONT))
     W = sum(p.width for p in pages) + PAD * (len(pages) + 1)
     out = Image.new('RGB', (W, H + LABEL + PAD), (246, 244, 240))
     d = ImageDraw.Draw(out)

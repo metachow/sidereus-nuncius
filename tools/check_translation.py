@@ -4,9 +4,10 @@ usage: python tools/check_translation.py en text/en/part1.yaml p001 p014
 
 1. the file parses; every sentence p001.01 ... p014.NN and every special block in
    the range has an entry (no extras outside the range, no empty entries)
-2. no leftover markers (⟦…⟧), no Chinese characters, balanced braces
+2. no leftover markers (⟦…⟧), no Chinese characters (for ja: no Chinese punctuation,
+   kana present), balanced braces
 3. generates the English pages into build/folia_en_<part>/ and compiles each
-   folio of the range on its own; LaTeX errors are reported. Pages that run
+   folio of the range on its own (any language: build/folia_<lang>_<part>/); LaTeX errors are reported. Pages that run
    long are listed for information only: page fitting is done later.
 """
 import os
@@ -71,7 +72,14 @@ for k, v in data.items():
         n_la = len(re.findall(r'⟦[^⟧|]+⟧', la_sent.get(k, '')))
         if n_tr != n_la:
             problems.append(f'{k}: {n_tr} page marker(s), the Latin sentence has {n_la}')
-    if re.search(r'[一-鿿]', v):
+    if lang == 'ja':
+        # kanji are fine; Chinese text pasted in shows as Chinese punctuation or no kana
+        if re.search(r'[，．]', v):
+            problems.append(f'{k}: Chinese-style comma or full stop (Japanese uses 、 and 。)')
+        body = re.sub(r'\\[a-zA-Z]+|[{}\[\]]', '', v)
+        if len(re.findall(r'[一-鿿]', body)) > 15 and not re.search(r'[ぁ-ゟ゠-ヿ]', body):
+            problems.append(f'{k}: no kana at all -- Chinese text?')
+    elif re.search(r'[一-鿿]', v):
         problems.append(f'{k}: contains Chinese characters')
     depth = 0
     for i, c in enumerate(v):

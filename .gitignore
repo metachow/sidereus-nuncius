@@ -25,3 +25,9 @@ folia_en/
 
 # English edition PDF (released separately)
 Sidereus_Nuncius_la-en.pdf
+
+# generated Japanese pages
+folia_ja/
+
+# Japanese edition PDF (released separately)
+Sidereus_Nuncius_la-ja.pdf

@@ -1,10 +1,10 @@
 """Fit overflowing pages of a translation edition onto one page by tightening the
 translation column of that page only, in small steps, lightest first.
+Steps per edition (STEPS below): English normal 10.2/14.6, Japanese 9.4/15.6.
 
 usage: python tools/fit_pages.py --lang en f05r f11r ...
 
-For each folio, tries the sizes in STEPS (font size, leading in pt; the column's
-normal setting is 10.2/14.6) until tools/check_folio.py reports one page, and
+For each folio, tries the sizes in STEPS[lang] (font size, leading in pt) until tools/check_folio.py reports one page, and
 records the result as tr_size in text/layout.yaml. A page that still overflows
 at the last step is reported for manual work (shorter note, smaller figure).
 """
@@ -20,9 +20,15 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # (Latin column, translation column); None = unchanged (10.2/14.6). Paracol aligns
 # every pair, so when the last translation block is what runs over, only a tighter
 # Latin column moves its starting point up.
-STEPS = [(None, (10.2, 14.2)), (None, (10.2, 13.9)), (None, (10.2, 13.6)), (None, (10.0, 13.4)),
-         ((10.2, 14.2), (10.0, 13.4)), ((10.2, 13.9), (10.0, 13.4)), ((10.2, 13.6), (9.8, 13.2)),
-         ((10.0, 13.4), (9.8, 13.2)), ((9.8, 13.2), (9.6, 12.9))]
+STEPS = {
+    'en': [(None, (10.2, 14.2)), (None, (10.2, 13.9)), (None, (10.2, 13.6)), (None, (10.0, 13.4)),
+           ((10.2, 14.2), (10.0, 13.4)), ((10.2, 13.9), (10.0, 13.4)), ((10.2, 13.6), (9.8, 13.2)),
+           ((10.0, 13.4), (9.8, 13.2)), ((9.8, 13.2), (9.6, 12.9))],
+    # Japanese column: normal 9.4/15.6
+    'ja': [(None, (9.4, 15.0)), (None, (9.4, 14.5)), (None, (9.2, 14.2)), (None, (9.0, 13.8)),
+           ((10.2, 14.2), (9.0, 13.8)), ((10.2, 13.9), (9.0, 13.6)), ((10.0, 13.4), (8.8, 13.4)),
+           ((9.8, 13.2), (8.8, 13.2))],
+}
 
 args = sys.argv[1:]
 i = args.index('--lang')
@@ -42,7 +48,7 @@ for name in folios:
     layout = load_yaml(path)
     page = next(p for p in layout if p['file'] == name)
     done = None
-    for la_size, tr_size in STEPS:
+    for la_size, tr_size in STEPS[lang]:
         page.setdefault('tr_size', {})[lang] = list(tr_size)
         if la_size:
             page.setdefault('la_size', {})[lang] = list(la_size)

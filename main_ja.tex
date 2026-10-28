@@ -1,0 +1,25 @@
+% Sidereus Nuncius (Galileo, 1610) -- Latin/Japanese parallel edition
+% One page of this edition = one page of the 1610 Venice edition.
+% Build all:        python tools/build_book.py --lang ja
+% Check one folio:  python tools/check_folio.py --lang ja f08v
+\def\translang{ja}
+\ifdefined\foliadir\else\def\foliadir{folia_ja}\fi   % tools/check_translation.py uses its own
+\input{preamble}
+
+\begin{document}
+\ifdefined\onlyfolio
+  \ifdefined\startpage\setcounter{page}{\startpage}\fi
+  \input{\foliadir/\onlyfolio}
+\else
+  \input{front/cover}
+  \input{front/cover_ja}
+  \frontcoverja
+  \thispagestyle{empty}\mbox{}\clearpage   % inside of the front cover
+  \setcounter{page}{1}
+  \input{front/title_ja}
+  \input{folia_ja/order}
+  % the back cover falls on an even (left-hand) page
+  \clearpage\ifodd\value{page}\thispagestyle{empty}\mbox{}\clearpage\fi
+  \backcoverja
+\fi
+\end{document}

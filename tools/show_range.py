@@ -2,7 +2,8 @@
 Chinese edition's text for the same blocks (for its footnotes) and the special-layout
 blocks that fall in the range.
 
-usage: python tools/show_range.py p001 p013 [--no-zh]
+usage: python tools/show_range.py p001 p013 [--no-zh] [--en]
+--en also prints the English edition's sentences and special blocks (text/en/).
 Output is UTF-8; on Windows set PYTHONIOENCODING=utf-8.
 
 A special block (title lines, headings, signatures; no numbered sentences) belongs
@@ -20,6 +21,12 @@ a, b = sys.argv[1], sys.argv[2]
 show_zh = '--no-zh' not in sys.argv
 la = load_yaml(os.path.join(ROOT, 'text', 'la.yaml'))
 zh = load_yaml(os.path.join(ROOT, 'text', 'zh.yaml'))
+en = {}
+if '--en' in sys.argv:
+    d = os.path.join(ROOT, 'text', 'en')
+    for fn in sorted(os.listdir(d)):
+        if fn.endswith('.yaml'):
+            en.update(load_yaml(os.path.join(d, fn)) or {})
 layout = load_yaml(os.path.join(ROOT, 'text', 'layout.yaml'))
 ids = [p['id'] for p in la]
 wanted = set(ids[ids.index(a):ids.index(b) + 1])
@@ -52,9 +59,13 @@ for p in la:
             print('LATIN:', part.get('raw') or part.get('pre'))
         if show_zh:
             print('CHINESE EDITION:', zh.get(it['pair'], ''))
+        if en:
+            print('ENGLISH EDITION:', en.get(it['pair'], ''))
     print(f'\n=== PARAGRAPH {p["id"]}')
     for k, t in p['s'].items():
         print(f'{p["id"]}.{k}: {t}')
+        if en:
+            print('    [English edition]:', en.get(f'{p["id"]}.{k}', ''))
     if show_zh:
         for bk in blocks_of.get(p['id'], []):
             if bk in printed:
