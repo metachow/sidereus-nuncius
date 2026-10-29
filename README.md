@@ -10,7 +10,7 @@
 
 *A re-typeset edition of Galileo's* Sidereus Nuncius *(Venice, 1610), page for page with the first edition: modernised Latin beside a new Chinese, English or Japanese translation made directly from the Latin, with the original's type roles, redrawn figures and restored engravings.*
 
-成书 PDF 见 [Releases](../../releases)。
+成书 PDF 见 [Releases](../../releases)。制作过程见博客：[把一本 1610 年的书重新排一遍](https://metachow.github.io/post/sidereus-nuncius/) · [Re-typesetting a book from 1610](https://metachow.github.io/post/sidereus-nuncius-en/)。
 
 <p align="center">
   <img src="showcase/00_cover_front.jpg" width="24%">
